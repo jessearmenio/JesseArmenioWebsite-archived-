@@ -1,0 +1,1081 @@
+﻿html {
+	width: 100%;
+	margin: 0 auto;
+}
+
+/* Background of page fill*/
+body {
+	background-color: black;
+	width: 100%;
+	margin: 0 auto;
+}
+
+/*Row Styling*/
+.row {
+	font-size: 20px;
+	font-family: sans-serif;
+	margin: 0 auto;
+}
+
+/*Main Name Header Title Styling*/
+h1 {
+	background-color: transparent;
+	color: #333;
+	text-align: right;
+	font-size: 65px;
+	margin-top: 20%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: -5px;
+	padding-right: 30%;
+	float: right;
+	width: 100%;
+	left: 40%;
+	animation: h1 6s infinite;
+	animation-delay: 3s;
+	-webkit-transform: translateY(30px);
+	transform: translateY(30px);
+	font-family: sans-serif;
+	font-weight: 600;
+	overflow: visible;
+}
+
+/*Main Name Header Resize at 1200px -- (Full-Window)*/
+@media only screen and (max-width: 1200px) {
+	h1 {
+		text-align: right;
+		padding-right: 15%;
+		animation: h1mobile 6s infinite;
+		animation-delay: 3s;
+		font-family: sans-serif;
+		font-weight: 600;
+		overflow: hidden;
+	}
+}
+
+/*Main Name Header Resize at 700px -- (Half-Window)*/
+@media only screen and (max-width: 1043px) {
+	h1 {
+		text-align: right;
+		padding-right: 1%;
+		animation: h1mobile 6s infinite;
+		animation-delay: 3s;
+		font-family: sans-serif;
+		font-weight: 300;
+		overflow: hidden;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	h1 {
+		text-align: right;
+		padding-right: 1%;
+		animation: h1mobile 6s infinite;
+		animation-delay: 3s;
+		font-family: sans-serif;
+		font-weight: 600;
+		overflow: hidden;
+	}
+}
+
+/* Body Paragraph Header Title*/
+h2 {
+	font-family: 'Century Gothic';
+	font-size: 30px;
+	margin-top: 0;
+	width: 100%;
+	background-color: transparent
+}
+
+/*All Header Shadow Styling*/
+h1, h2, spanT, #AboutNav a, .returnlink {
+	text-shadow: 0px 0px 6px rgba(50,25,55,0.5);
+}
+
+/*AboutPicture Styling & Positioning*/
+#AboutPicture {
+	position: absolute;
+	margin-right: 10%;
+	margin-left: 10%;
+	margin-top: 10%;
+	display: block;
+	top: 5%;
+	float: left;
+	animation: AboutPicture 3s;
+}
+
+/*About Picture Resize at 700 px -- (Half-Window)*/
+@media only screen and (max-width: 700px) {
+	#AboutPicture {
+		margin-top: 15%;
+		margin-left: 15%;
+		margin-right: 0;
+		animation: AboutPictureMobile 3s;
+		display: block;
+		top: 5%;
+		float: left;
+		position: absolute;
+	}
+}
+
+/*AboutPicture Size and Border*/
+img {
+	height: 35%;
+	width: 40%;
+	border-radius: 4%;
+}
+	/*AboutPicture Bounces when Hovered*/
+	img:hover {
+		animation: hoverbody 1s;
+	}
+
+	img:focus {
+		animation: hoverbody 1s;
+	}
+
+/*Body Paragraph Styling*/
+SpanA {
+	font-family: 'Century Gothic';
+	font-size: 20px;
+	margin-right: 5%;
+}
+
+/*About Paragraph Positioning -- (About)*/
+#About1 {
+	top: 20%;
+	padding-right: 0;
+	display: block;
+	text-align: left;
+	position: absolute;
+	left: 45%;
+	float: right;
+}
+
+	/*About Paragraph Bounces when Hovered*/
+	#About1:hover {
+		animation: hoverbody 1s;
+	}
+
+	#About1:focus {
+		animation: hoverbody 1s;
+	}
+
+/*About Paragraph 700 px Resizing -- (Half-Window)*/
+@media only screen and (max-width: 700px) {
+	#About1 {
+		top: 25%;
+		margin-top: 0;
+		margin-bottom: 5%;
+		left: 8%;
+		margin-left: 0 auto;
+		padding: 2%;
+		margin-right: 0 auto;
+		width: 90%;
+	}
+}
+
+/*First Paragraph Styling -- (About)*/
+#Ap3 {
+	background-color: white;
+	border-radius: 4%;
+	padding-left: 3%;
+	padding-right: 3%;
+	padding-bottom: 3%;
+	padding-top: 3%;
+	margin-left: auto;
+	margin-right: 5%;
+	margin-bottom: auto;
+	font-family: Calibri;
+	font-size: 20px;
+	display: block;
+	float: right;
+	width: 100%;
+	position: relative;
+	animation: About1 3s
+}
+
+/*About & Education 700 px Resize -- (Half-Window)*/
+@media only screen and (max-width: 700px) {
+	#Ap3 {
+		background-color: white;
+		border-radius: 4%;
+		padding-left: 5%;
+		padding-right: 5%;
+		padding-bottom: 5%;
+		padding-top: 3%;
+		margin-left: 0 auto;
+		margin-right: 0 auto;
+		margin-bottom: auto;
+		font-family: Calibri;
+		font-size: 20px;
+		display: block;
+		position: relative;
+		width: 90%;
+	}
+}
+
+/*Initial Paragraph after About 1 (WideScreen) -- (Education)*/
+#About2 {
+	margin-top: 75%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 1%;
+	padding: 2%;
+	text-align: left;
+	position: relative;
+	background-color: white;
+	border-radius: 4%;
+	width: 80%;
+}
+
+	/* About2 (Education) bounces when hovered*/
+	#About2:hover {
+		animation: hoverbody 1s;
+	}
+	/*About 2 (Education) bounces on cursor focus*/
+	#About2:focus {
+		animation: hoverbody 1s;
+	}
+
+
+/* About2 Spacing for Different Size Screen Widths -- (Education)*/
+/*-- 550 px Resize -- (iPhone)*/
+@media only screen and (max-width: 550px) {
+	#About2 {
+		margin-top: 600%;
+	}
+}
+
+/*-- 700 px Resize -- (Half-Window)*/
+@media only screen and (max-width: 700px) {
+	#About2 {
+		margin-top: 500%;
+	}
+}
+
+/*-- 1233 px Resize --- (Full-Screen) */
+@media only screen and (max-width: 1233px) {
+	#About2 {
+		margin-top: 350%;
+	}
+}
+
+/*Styling for Paragraphs following About 2 -- (IT Experience, Development Skills, Soft Skills, Invovlement)*/
+#About3 {
+	margin-top: 15%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 1%;
+	padding: 2%;
+	text-align: left;
+	position: relative;
+	background-color: white;
+	border-radius: 4%;
+	width: 80%;
+	left: 0;
+}
+
+	/*About3 bounce on hover --  (IT Experience, Development Skills, Soft Skills, Invovlement)*/
+	#About3:hover {
+		animation: hoverbody 1s;
+	}
+	/*About3 bounce on focus --  (IT Experience, Development Skills, Soft Skills, Invovlement)*/
+	#About3:focus {
+		animation: hoverbody 1s;
+	}
+
+/* Return Home Top Nav Visible only 1200px through 3000px*/
+.ReturnHomeTop {
+	transform: rotate(90deg);
+	color: white;
+	border-radius: 4%;
+	position: absolute;
+	left: -5%;
+	transition: 0.3s;
+	padding: 10px;
+	width: 115px;
+	height: 100px;
+	text-decoration: none;
+	font-size: 20px;
+	text-align: center;
+	font-family: Calibri;
+	top: 25%;
+	background-color: #333;
+	opacity: 0.7;
+	animation: ReturnTop 3s;
+}
+
+	/*Return Home Top Nav Link Text Styling*/
+	.ReturnHomeTop a {
+		color: white;
+		display: block;
+		background-color: #333;
+		opacity: 0.7;
+	}
+	/*Return Home Top Nav Hover Animation*/
+	.ReturnHomeTop:hover {
+		left: -4%;
+		color: white;
+		opacity: 1;
+	}
+
+/*Return Home Top Nav turn Invisible at < 1200 px*/
+@media only screen and (max-width: 1200px) {
+	.ReturnHomeTop {
+		animation: ReturnTop 0s;
+		opacity: 0;
+	}
+}
+/*Return Home Top Nav move left 4% at >= 1800 px*/
+@media only screen and (min-width: 1800px) {
+	.ReturnHomeTop {
+		left: -4%;
+		animation: ReturnTop 3s;
+	}
+}
+/*Return Home Top Nav move left 3% at >= 2300 px*/
+@media only screen and (min-width: 2300px) {
+	.ReturnHomeTop {
+		left: -3%;
+		animation: ReturnTop 3s;
+	}
+}
+/*Return Home Top Nav move left 2% at >= 3000 px*/
+@media only screen and (min-width: 3000px) {
+	.ReturnHomeTop {
+		left: -2%;
+		animation: ReturnTop 3s;
+	}
+}
+
+/*Return to home Button*/
+#AboutReturnBottom {
+	height: 25px;
+	width: 100px;
+	background-color: transparent;
+	border-radius: 4%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 15%;
+	left: 50%;
+	color: white;
+}
+
+/*Return to home - Inside Box / Text* -- (bottom of page)*/
+#Return {
+	background-color: grey;
+	border-radius: 10%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: 'Century Gothic';
+	font-size: 30px;
+	color: white;
+	transition: 0.3s;
+}
+
+/*Extra Link Text* Styling*/
+.returnlink {
+	color: white;
+}
+
+/*Return to home button hover Styling*/
+#Return:hover {
+	animation: Return 1s;
+}
+
+/*Return to home button click Styling*/
+#Return:active {
+	border-radius: 10%;
+	animation: Return 1s;
+}
+
+/*AboutNav at Top of Page*/
+#AboutNav {
+	display: inline-block;
+	left: 0;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	text-align: center;
+	position: fixed;
+	bottom: 95%;
+	width: 100%;
+	list-style: none;
+	overflow: hidden;
+	background-color: #333;
+	font-family: Calibri;
+	columns: 6;
+	-webkit-columns: 6;
+	-moz-columns: 8;
+	opacity: 0.7;
+	animation: AboutNav 3s;
+}
+
+/*Main About Nav Resize at 500 px -- 2 Columns 80% bottom*/
+@media only screen and (max-width: 500px) {
+	#AboutNav {
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+		align-content: center;
+		list-style: none;
+		bottom: 80%;
+		margin: 0 auto;
+		columns: 2;
+		-webkit-columns: 2;
+		-moz-columns: 2;
+		opacity: 0.7;
+		width: 100%;
+		animation: AboutNavMobile 3s;
+	}
+}
+
+/*Main About Nav Resize at 1200 px -- 2 Columns 85% bottom*/
+@media only screen and (max-width: 1200px) {
+	#AboutNav {
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		bottom: 85%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 5%;
+		columns: 2;
+		-webkit-columns: 2;
+		-moz-columns: 2;
+		opacity: 0.7;
+		width: 100%;
+		animation: AboutNavMobile2 3s;
+	}
+}
+
+/*About Nav Links Styling*/
+#AboutNav a {
+	width: 100%;
+	margin: 0;
+	padding: 10px 10px;
+	display: block;
+	color: white;
+	text-align: center;
+	opacity: 0.7;
+	text-decoration: none;
+	animation: AboutNavLetters 3s;
+	border: 3px;
+	border-color: black;
+}
+
+/*About Nav Links Resize at 500 px -- (iPhone)*/
+@media only screen and (max-width: 500px) {
+	#AboutNav a {
+		width: 100%;
+		margin: auto;
+		padding: 0;
+		display: inline-block;
+		color: white;
+		text-align: center;
+		opacity: 0.7;
+		text-decoration: none;
+		animation: AboutNavLetters 3s;
+	}
+}
+
+/*AboutNav Links Hover Animation*/
+#AboutNav a:hover {
+	color: white;
+	opacity: 1;
+}
+/*
+/*START FOOTER STYLING*/
+/*
+/*
+/*Main Footer Div*/
+.footer {
+	background-color: #333;
+	padding: 45px 0 20px;
+	font-size: 15px;
+	line-height: 24px;
+	color: #737373;
+	margin-top: 20%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 5%;
+}
+
+/*Adjust Sizing on -- (iPhone)*/
+@media (max-width:767px) {
+	.footer {
+		text-align: center;
+	}
+}
+
+/*footer link positioning*/
+.footer a {
+	color: lightslategray;
+	margin-left: auto;
+	margin-right: auto;
+}
+	/*Full Name in Copyright text hover animation*/
+	.footer a:hover {
+		color: #3366cc;
+		text-decoration: none;
+		color: white;
+	}
+
+/*Copyright text left align*/
+.copyright-text {
+	margin: auto;
+	text-align: left;
+}
+
+/*Adjust alignment on -- (iPhone) */
+@media (max-width:767px) {
+	.copyright-text {
+		text-align: center;
+	}
+}
+/*Adjust spacing on -- (iPhone) */
+@media (max-width:767px) {
+	.footer {
+		padding-bottom: 0
+	}
+		/*Align content center*/
+		.footer .copyright-text, .site-footer .social-icons {
+			text-align: center
+		}
+}
+/*Main footer bubble div and link styling*/
+.social-icons {
+	padding-left: 0;
+	margin-bottom: 0;
+	list-style: none;
+	border: black;
+	border-width: 2px;
+}
+	/*footer links spacing*/
+	.social-icons li {
+		display: inline-block;
+		margin-bottom: 4px
+	}
+		/*footer copyright information styling*/
+		.social-icons li.title {
+			margin-right: 15px;
+			text-transform: uppercase;
+			color: #96a2b2;
+			font-weight: 700;
+			font-size: 13px
+		}
+
+	/*footer bubble linking and ease transition*/
+	.social-icons a {
+		background-color: #eceeef;
+		color: #818a91;
+		font-size: 16px;
+		display: inline-block;
+		line-height: 44px;
+		width: 44px;
+		height: 44px;
+		text-align: center;
+		margin-right: 8px;
+		border-radius: 100%;
+		-webkit-transition: all .2s linear;
+		-o-transition: all .2s linear;
+		transition: all .2s linear;
+	}
+		/*footer bubble 1 color animation*/
+		.social-icons a.social1 {
+			animation: movesocial1 3s infinite;
+			animation-delay: 2s;
+			border: black;
+			border-width: 2px;
+		}
+		/*footer bubble 2 color animation*/
+		.social-icons a.social2 {
+			animation: movesocial2 3s infinite;
+			animation-delay: 3s;
+			border: black;
+			border-width: 2px;
+		}
+		/*footer bubble 3 color animation*/
+		.social-icons a.social3 {
+			animation: movesocial3 3s infinite;
+			animation-delay: 4s;
+			border: black;
+			border-width: 2px;
+		}
+		/*footer bubble 4 color animation*/
+		.social-icons a.social4 {
+			animation: movesocial4 3s infinite;
+			animation-delay: 5s;
+			border: black;
+			border-width: 2px;
+		}
+
+	/*footer bubble sizing*/
+	.social-icons.size-sm a {
+		line-height: 34px;
+		height: 34px;
+		width: 34px;
+		font-size: 14px
+	}
+	/*footer bubble 1*/
+	.social-icons a.social1:hover {
+		background-color: #383838
+	}
+	/*footer bubble 2*/
+	.social-icons a.social2:hover {
+		background-color: #282828
+	}
+	/*footer bubble 3*/
+	.social-icons a.social3:hover {
+		background-color: #181818
+	}
+	/*footer bubble 4*/
+	.social-icons a.social4:hover {
+		background-color: #000000
+	}
+
+@media (max-width:767px) {
+	.social-icons li.title {
+		display: block;
+		margin-right: 0;
+		font-weight: 600
+	}
+}
+/*END OF FOOTER*/
+
+/*
+/*END OF GENERAL BODY STYLING*/
+/*
+/*
+/*START ALL ANIMATIONS*/
+/*
+
+/*Full Name Animation*/
+@keyframes h1 {
+	0% {
+		-webkit-transform: translateY(30px);
+		transform: translateY(30px);
+		letter-spacing: normal;
+		opacity: 1;
+	}
+
+	25% {
+		-webkit-transform: translateY(-100px);
+		transform: translateY(-100px);
+		letter-spacing: 10px;
+		color: white;
+		opacity: 0.7;
+		padding-right: 25%;
+	}
+
+	50% {
+		-webkit-transform: translateY(30px);
+		transform: translateY(30px);
+		letter-spacing: -10px;
+		color: #303030;
+		opacity: 1;
+		padding-right: 40%;
+	}
+
+	75% {
+		-webkit-transform: translateY(-50px);
+		transform: translateY(-50px);
+		letter-spacing: 10px;
+		color: white;
+		opacity: 1;
+		padding-right: 25%;
+	}
+
+	100% {
+		-webkit-transform: translateY(30);
+		transform: translateY(30);
+		letter-spacing: normal;
+		opacity: 1;
+	}
+}
+
+/*Full Name Animation on Screens 500 px -- (iPhone)*/
+@keyframes h1mobile {
+	0% {
+		-webkit-transform: translateY(30px);
+		transform: translateY(30px);
+		letter-spacing: normal;
+		opacity: 1;
+	}
+
+	25% {
+		-webkit-transform: translateY(-115px);
+		transform: translateY(-115px);
+		letter-spacing: 5px;
+		color: white;
+		opacity: 0.5;
+	}
+
+	50% {
+		-webkit-transform: translateY(30px);
+		transform: translateY(30px);
+		letter-spacing: normal;
+		color: #303030;
+		opacity: 0.7;
+	}
+
+	75% {
+		-webkit-transform: translateY(-50px);
+		transform: translateY(-50px);
+		letter-spacing: 5px;
+		color: white;
+		opacity: 1;
+	}
+
+	100% {
+		-webkit-transform: translateY(30px);
+		transform: translateY(30px);
+		letter-spacing: normal;
+		opacity: 1;
+	}
+}
+
+/*About1 (About) -- Paragraph Entrance Animation*/
+@keyframes About1 {
+	0% {
+		margin-right: 200%
+	}
+
+	100% {
+		margin-right: 5%;
+	}
+}
+
+/*About Picture Entrance Animation*/
+@keyframes AboutPicture {
+	0% {
+		margin-left: -100%;
+		opacity: 0;
+		border-radius: 0;
+	}
+
+	90% {
+		opacity: 0.5;
+	}
+
+	100% {
+		opacity: 1;
+		margin-left: 10%;
+	}
+}
+
+/*About Picture Entrance Animation at 700 px -- (Half-Window)*/
+@keyframes AboutPictureMobile {
+	0% {
+		margin-left: -100%;
+		opacity: 0;
+		border-radius: 0;
+	}
+
+	90% {
+		opacity: 0.5;
+	}
+
+	100% {
+		opacity: 1;
+		margin-top: 15%;
+		margin-left: 15%;
+		margin-right: 0;
+	}
+}
+
+/*Animation for all general body to bounce on hover*/
+@keyframes hoverbody {
+	0%, 20% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	60% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	80% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+
+	100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+}
+
+/*Return Home Top Nav Intro Animation*/
+@keyframes ReturnTop {
+	0% {
+		opacity: 0;
+		margin-left: -15%;
+	}
+
+	25% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 0;
+		margin-left: -15%;
+	}
+
+	90% {
+		opacity: 0.7;
+	}
+
+	100% {
+		opacity: 0.7;
+		margin-left: 0;
+	}
+}
+
+/* Main Nav Intro Animation */
+@keyframes AboutNav {
+	0% {
+		background-color: black;
+		width: 100%;
+		height: 100%;
+		bottom: 0;
+		opacity: 1;
+	}
+
+	35% {
+		background-color: #333;
+		width: 100%;
+		height: 100%;
+		opacity: 1
+	}
+
+	50% {
+		background-color: #333;
+		width: 100%;
+		height: 100%;
+		opacity: 1;
+	}
+
+	90% {
+		background-color: #333;
+		width: 100%;
+		height: 100%;
+		bottom: 100%;
+		opacity: 0.7;
+	}
+
+	100% {
+		background-color: #333;
+		width: 100%;
+		height: 100%;
+		bottom: 95%;
+		opacity: 0.5;
+	}
+}
+
+/* Main Nav Intro at 1200px */
+@keyframes AboutNavMobile {
+	0% {
+		background-color: black;
+		width: 100%;
+		height: 100%;
+		bottom: 0;
+		opacity: 1;
+	}
+
+	35% {
+		background-color: #333;
+		width: 100%;
+		height: 100%;
+		opacity: 1
+	}
+
+	50% {
+		background-color: #333;
+		width: 100%;
+		height: 100%;
+		opacity: 1;
+	}
+
+	90% {
+		background-color: #333;
+		width: 100%;
+		height: 100%;
+		bottom: 100%;
+		opacity: 0.7;
+	}
+
+	100% {
+		background-color: #333;
+		width: 100%;
+		height: 100%;
+		bottom: 80%;
+		opacity: 0.5;
+	}
+}
+
+/* Main Nav Intro at 500px */
+@keyframes AboutNavMobile2 {
+	0% {
+		background-color: black;
+		width: 100%;
+		height: 100%;
+		bottom: 0;
+		opacity: 1;
+	}
+
+	35% {
+		background-color: #333;
+		width: 100%;
+		height: 100%;
+		opacity: 1
+	}
+
+	50% {
+		background-color: #333;
+		width: 100%;
+		height: 100%;
+		opacity: 1;
+	}
+
+	90% {
+		background-color: #333;
+		width: 100%;
+		height: 100%;
+		bottom: 100%;
+		opacity: 0.7;
+	}
+
+	100% {
+		background-color: #333;
+		width: 100%;
+		height: 100%;
+		bottom: 85%;
+		opacity: 0.5;
+	}
+}
+
+/*AboutNav Links - Intro Animation*/
+@keyframes AboutNavLetters {
+	0% {
+		background-color: #333;
+		opacity: 0;
+	}
+
+	100% {
+		background-color: #333;
+		opacity: 0.5;
+	}
+}
+
+/*Return button click (active) and hover Animation */
+@keyframes Return {
+	0%, 20% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	60% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	80% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+
+	100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+}
+
+@keyframes movesocial1 {
+	0% {
+		background-color: white;
+	}
+
+	50% {
+		background-color: #383838
+	}
+
+	90% {
+		background-color: white;
+	}
+
+	100% {
+		background-color: white;
+	}
+}
+
+@keyframes movesocial2 {
+	0% {
+		background-color: white;
+	}
+
+	50% {
+		background-color: #282828
+	}
+
+	90% {
+		background-color: white;
+	}
+
+	100% {
+		background-color: white;
+	}
+}
+
+@keyframes movesocial3 {
+	0% {
+		background-color: white;
+	}
+
+	50% {
+		background-color: #181818
+	}
+
+	90% {
+		background-color: white;
+	}
+
+	100% {
+		background-color: white;
+	}
+}
+
+@keyframes movesocial4 {
+	0% {
+		background-color: white;
+	}
+
+	50% {
+		background-color: #000000
+	}
+
+	90% {
+		background-color: white;
+	}
+
+	100% {
+		background-color: white;
+	}
+}
+
+/* END OF ANIMATIONS */
+

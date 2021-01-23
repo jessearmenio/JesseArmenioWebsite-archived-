@@ -1,0 +1,430 @@
+﻿@media only screen and (max-width : 320px) {
+	Container-Fluid {
+		width: 75%
+	}
+}
+
+html {
+	width: 100%;
+	background-color: black;
+}
+
+/*General Body Styling*/
+body {
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+	overflow: hidden;
+}
+
+/*General Container Styling*/
+.container-fluid {
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	align-content: center;
+	display: block;
+	width: 100%;
+}
+
+	.container-fluid span {
+		text-transform: uppercase;
+		display: block;
+	}
+
+/*About page temp. styling*/
+.AboutComing {
+	font-family: sans-serif;
+	margin-top: auto;
+	font-size: 35px;
+	margin-bottom: auto;
+	overflow: hidden;
+}
+
+
+
+/*About Tab (Top Right) Styling*/
+.AboutNav {
+	text-align: center;
+	background-color: transparent;
+	font-size: 30px;
+	font-family: sans-serif;
+	color: lightgrey;
+	font-weight: 400;
+	display: block;
+	float: right;
+	margin-top: 15px;
+	margin-right: 15px;
+	animation: Post 3.6s;
+	opacity: 0.6;
+}
+
+	/*About Tab Hover Animation*/
+	.AboutNav:hover {
+		color: darkgrey;
+		opacity: 1;
+	}
+
+.LinksAnimation {
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+span1 {
+	position: relative;
+	display: block;
+	cursor: pointer;
+	text-align: center;
+}
+
+	span1:before, span1:after {
+		content: '';
+		position: absolute;
+		width: 0%;
+		height: 1px;
+		top: 50%;
+		margin-top: -0.5px;
+		background: #FF7F34;
+		font-weight: 600;
+		overflow: hidden;
+	}
+
+	span1:before {
+		left: -2.5px;
+	}
+
+	span1:after {
+		right: 2.5px;
+		background: #FF7F34;
+		transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+		font-weight: 600;
+		overflow: hidden;
+	}
+
+	span1:hover:before {
+		background: #FF7F34;
+		width: 100%;
+		transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+	}
+
+	span1:hover:after {
+		background: transparent;
+		width: 100%;
+		transition: 0s;
+		font-weight: 600;
+		overflow: hidden;
+	}
+
+/*Line Through Text on All 3 Links (Span1 Divs) Animation*/
+
+/* Personal Name Styling and Animation Settings*/
+/*First Name*/
+.text1 {
+	font-size: 60px;
+	font-weight: 700;
+	letter-spacing: 6px;
+	margin-bottom: 0px;
+	position: relative;
+	animation: text 3s 1;
+	color: white;
+	font-family: sans-serif;
+	text-align: center;
+}
+
+/*Last Name*/
+.text2 {
+	font-size: 35px;
+	color: lightgrey;
+	position: relative;
+	animation: text 3s 1;
+	font-family: sans-serif;
+	text-align: center;
+}
+
+/*Resume Link Styling*/
+.link1 {
+	font-size: 25px;
+	color: lightgrey;
+	position: relative;
+	margin-top: 30px;
+	animation: link 3.5s 1;
+	display: block;
+	font-family: sans-serif;
+}
+	/*Resume Hover Animation*/
+	.link1:hover {
+		position: relative;
+		color: #FF7F34;
+		font-weight: 600;
+	}
+
+/*LinkedIn and GitHub Link Styling*/
+.link2,
+.link3 {
+	font-size: 20px;
+	color: lightgrey;
+	position: relative;
+	margin-top: 20px;
+	animation: Post 3.6s 1;
+	display: block;
+	font-family: Arial;
+}
+
+	/*LinkedIn Hover Animation*/
+	.link2:hover {
+		position: relative;
+		color: white;
+		font-weight: 600;
+	}
+
+	/*GitHub Hover Animation*/
+	.link3:hover {
+		position: relative;
+		color: white;
+		font-weight: 600;
+	}
+
+/*Full Name Animation*/
+@keyframes text {
+	0% {
+		color: black;
+		letter-spacing: 400px;
+		margin-bottom: -40px;
+		margin-top: 100px;
+		visibility: hidden;
+	}
+
+	33% {
+		letter-spacing: 25px;
+		margin-bottom: -40px;
+		color: black;
+	}
+
+	43% {
+		letter-spacing: 25px;
+		margin-bottom: -40px;
+		color: grey;
+	}
+
+	47% {
+		letter-spacing: 25px;
+		margin-bottom: -40px;
+		color: black;
+	}
+
+
+	66% {
+		letter-spacing: 25px;
+		margin-bottom: -40px;
+		color: grey;
+	}
+
+	85% {
+		letter-spacing: 8px;
+		margin-bottom: -40px;
+		color: darkgrey;
+	}
+}
+
+/*Resume Link Animation*/
+@keyframes link {
+	0% {
+		color: Black;
+		transform: translateX(500);
+		transform: translateY(500);
+		margin-top: 100px;
+		opacity: 0;
+	}
+
+
+	10% {
+		color: black;
+		transform: translateX(0);
+		transform: translateY(0);
+		margin-top: 100px;
+		opacity: 0;
+	}
+
+	33% {
+		transform: translateX(-78px);
+		transform: translateY(-78px);
+		margin-top: 50px;
+		color: black;
+	}
+
+	40% {
+		transform: translateX(-80px);
+		transform: translateY(-75px);
+		margin-top: 50px;
+		font-weight: 900;
+		letter-spacing: 100px;
+		color: grey;
+	}
+
+	47% {
+		transform: translateX(-80px);
+		transform: translateY(-75px);
+		margin-top: 50px;
+		letter-spacing: 25px;
+		color: grey;
+	}
+
+	66% {
+		transform: translateX(50px);
+		transform: translateY(50px);
+		margin-top: 0px;
+		color: grey;
+	}
+
+	75% {
+		transform: translateX(50px);
+		transform: translateY(50px);
+		margin-top: 0px;
+		color: grey;
+		font-weight: 400;
+	}
+}
+
+/*LinkedIn,GitHub, and About Link Animation*/
+@keyframes Post {
+
+	0% {
+		visibility: hidden;
+		opacity: 0;
+	}
+
+	90% {
+		visibility: visible;
+		opacity: 0;
+		color: black;
+		letter-spacing: 35px;
+	}
+
+	100% {
+		opacity: 100;
+		color: grey;
+		visibility: visible;
+		letter-spacing: 0;
+	}
+}
+
+/* Cloud Background Div Styling*/
+div.clouds {
+	position: relative;
+	height: 500px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*All Cloud Styling, Placement, and Animation Settings*/
+.firstCloud {
+	position: relative;
+	left: -200px;
+	top: 150px;
+	animation: move 25s linear 2s infinite;
+	width: 150px;
+	opacity: 0.73;
+}
+
+.secondCloud {
+	position: absolute;
+	left: -200px;
+	top: 200px;
+	animation: move 20s linear 0s infinite;
+	width: 200px;
+	opacity: 0.8;
+}
+
+.thirdCloud {
+	top: 250px;
+	left: -200px;
+	position: relative;
+	animation: move 23s linear 1s infinite;
+	width: 200px;
+	opacity: 0.8;
+}
+
+.fourthCloud {
+	top: 225px;
+	left: -200px;
+	position: relative;
+	animation: move 25s linear 2s infinite;
+	width: 200px;
+	opacity: 0.5;
+}
+
+.FifthCloud {
+	top: 350px;
+	left: -200px;
+	position: relative;
+	animation: move 27s linear 4s infinite;
+	width: 200px;
+	opacity: 0.8;
+}
+
+.SixthCloud {
+	top: 300px;
+	left: -200px;
+	position: absolute;
+	animation: move 30s linear 0s infinite;
+	width: 150px;
+	opacity: 0.7;
+}
+
+.SeventhCloud {
+	position: absolute;
+	left: -200px;
+	top: 350px;
+	animation: move 30s linear 3s infinite;
+	width: 200px;
+	opacity: 0.3;
+}
+
+.EighthCloud {
+	top: 400px;
+	left: -200px;
+	position: absolute;
+	animation: move 25s linear 1s infinite;
+	width: 200px;
+	opacity: 0.5;
+}
+
+.NinthCloud {
+	top: 500px;
+	left: -200px;
+	position: absolute;
+	animation: move 22s linear 2s infinite;
+	width: 200px;
+	opacity: 0.8;
+}
+
+.TenthCloud {
+	top: 600px;
+	left: -200px;
+	position: absolute;
+	animation: move 20s linear 0s infinite;
+	width: 200px;
+	opacity: 0.45;
+}
+
+/*Cloud Animation*/
+@-webkit-keyframes move {
+	from {
+		left: -200px;
+	}
+
+	to {
+		left: 100%;
+	}
+}
+
+/*Resize Soundcloud Embed if Width is <500px */
+@media only screen and (max-width: 500) {
+	.link2 {
+		width: 100px;
+		height: 100px;
+	}
+}
