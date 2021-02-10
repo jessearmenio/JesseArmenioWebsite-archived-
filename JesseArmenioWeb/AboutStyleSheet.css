@@ -408,10 +408,31 @@ SpanA {
 	font-family: Calibri;
 	columns: 6;
 	-webkit-columns: 6;
-	-moz-columns: 8;
+	-moz-columns: 6;
 	opacity: 0.7;
 	animation: AboutNav 3s;
 }
+
+	/*About Nav Links Styling*/
+	#AboutNav a {
+		width: 100%;
+		margin: 0;
+		padding: 10px 10px;
+		display: block;
+		color: white;
+		text-align: center;
+		opacity: 0.7;
+		text-decoration: none;
+		animation: AboutNavLetters 3s;
+		border: 3px;
+		border-color: black;
+	}
+
+		/*AboutNav Links Hover Animation*/
+		#AboutNav a:hover {
+			color: white;
+			opacity: 1;
+		}
 
 /*Main About Nav Resize at 500 px -- 2 Columns 80% bottom*/
 @media only screen and (max-width: 500px) {
@@ -452,21 +473,6 @@ SpanA {
 	}
 }
 
-/*About Nav Links Styling*/
-#AboutNav a {
-	width: 100%;
-	margin: 0;
-	padding: 10px 10px;
-	display: block;
-	color: white;
-	text-align: center;
-	opacity: 0.7;
-	text-decoration: none;
-	animation: AboutNavLetters 3s;
-	border: 3px;
-	border-color: black;
-}
-
 /*About Nav Links Resize at 500 px -- (iPhone)*/
 @media only screen and (max-width: 500px) {
 	#AboutNav a {
@@ -482,11 +488,6 @@ SpanA {
 	}
 }
 
-/*AboutNav Links Hover Animation*/
-#AboutNav a:hover {
-	color: white;
-	opacity: 1;
-}
 /*
 /*START FOOTER STYLING*/
 /*
