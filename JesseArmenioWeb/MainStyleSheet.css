@@ -40,7 +40,7 @@ body {
 	letter-spacing: 6px;
 	margin-bottom: 0px;
 	position: relative;
-	animation: text 3s 1;
+	animation: text 2s 1;
 	color: white;
 	font-family: sans-serif;
 	text-align: center;
@@ -51,7 +51,7 @@ body {
 	font-size: 35px;
 	color: #808080;
 	position: relative;
-	animation: text 3s 1;
+	animation: text 2s 1;
 	font-family: sans-serif;
 	text-align: center;
 }
@@ -62,7 +62,7 @@ body {
 	color: darkgrey;
 	position: relative;
 	margin-top: 30px;
-	animation: link 3.5s 1;
+	animation: link 2.5s 1;
 	display: block;
 	font-family: sans-serif;
 }
@@ -80,7 +80,7 @@ body {
 	color: lightgrey;
 	position: relative;
 	margin-top: 20px;
-	animation: Post 3.6s 1;
+	animation: Post 2.6s 1;
 	display: block;
 	font-weight: 500;
 	font-family: Arial;
@@ -119,7 +119,7 @@ body {
 	margin-right: 2%;
 	opacity: 0.5;
 	height: 100%;
-	animation: AboutPost 3.6s normal;
+	animation: AboutPost 2.6s normal;
 }
 
 	.AboutNav:hover {
@@ -165,7 +165,7 @@ div.clouds {
 	top: 8%;
 	left: -200px;
 	position: relative;
-	animation: move 32s linear 3.6s infinite;
+	animation: move 32s linear 2.6s infinite;
 	width: 200px;
 	opacity: 0.55;
 }
@@ -193,7 +193,7 @@ div.clouds {
 	top: 5%;
 	left: -200px;
 	position: absolute;
-	animation: move 30s linear 3.6s infinite;
+	animation: move 30s linear 2.6s infinite;
 	width: 150px;
 	opacity: 0.7;
 }
@@ -212,7 +212,7 @@ div.clouds {
 	top: 80%;
 	left: -200px;
 	position: absolute;
-	animation: move 32s linear 3.6s infinite;
+	animation: move 32s linear 2.6s infinite;
 	width: 200px;
 	opacity: 0.2;
 }
@@ -253,7 +253,7 @@ div.clouds {
 	margin-top: 5%;
 	-webkit-animation: Rotation 16s linear infinite;
 	animation: Rotation 16s linear infinite;
-	animation-delay: 3.2s;
+	animation-delay: 2.2s;
 	opacity: 0;
 }
 

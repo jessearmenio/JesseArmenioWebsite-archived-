@@ -84,7 +84,8 @@ h2 {
 	font-size: 30px;
 	margin-top: 0;
 	width: 100%;
-	background-color: transparent
+	background-color: transparent;
+	animation: header2 15s 1;
 }
 
 /*All Header Shadow Styling*/
@@ -509,6 +510,8 @@ SpanA {
 @media (max-width:767px) {
 	.footer {
 		text-align: center;
+		padding-left: 0%;
+		font-size: 10px;
 	}
 }
 
@@ -535,6 +538,7 @@ SpanA {
 @media (max-width:767px) {
 	.copyright-text {
 		text-align: center;
+		margin: auto;
 	}
 }
 /*Adjust spacing on -- (iPhone) */
@@ -1080,3 +1084,69 @@ SpanA {
 
 /* END OF ANIMATIONS */
 
+@keyframes header2 {
+	0% {
+		font-family: 'Century Gothic';
+		font-size: 30px;
+		margin-top: 0;
+		width: 100%;
+		background-color: transparent;
+		text-shadow: 0px 0px 6px rgba(50,25,55,0.5);
+		filter: hue-rotate(0deg) drop-shadow(10px 10px 6px rgba(0, 0, 0, 0))
+	}
+	15% {
+		font-family: 'Century Gothic';
+		font-size: 30px;
+		margin-top: 0;
+		width: 100%;
+		background-color: transparent;
+		text-shadow: 0px 6px 6px rgba(50,25,55,0.5);
+		filter: hue-rotate(0deg) drop-shadow(10px 10px 6px rgb(169,169,169))
+	}
+
+	25% {
+		font-family: 'Century Gothic';
+		font-size: 30px;
+		margin-top: 0;
+		width: 100%;
+		background-color: transparent;
+		text-shadow: 6px 6px 6px rgba(50,25,55,0.5);
+		filter: hue-rotate(90deg) drop-shadow(10px 10px 10px rgb(128,128,128))
+	}
+
+	50% {
+		font-family: 'Century Gothic';
+		font-size: 30px;
+		margin-top: 0;
+		width: 100%;
+		background-color: transparent;
+		text-shadow: 6px 0px 6px rgba(50,25,55,0.5);
+		filter: hue-rotate(180deg) drop-shadow(10px 10px 10px rgb(128,128,128))
+	}
+	65% {
+		font-family: 'Century Gothic';
+		font-size: 30px;
+		margin-top: 0;
+		width: 100%;
+		background-color: transparent;
+		text-shadow: 6px 6px 0px rgba(50,25,55,0.5);
+		filter: hue-rotate(0deg) drop-shadow(10px 10px 10px rgb(169,169,169))
+	}
+	75% {
+		font-family: 'Century Gothic';
+		font-size: 30px;
+		margin-top: 0;
+		width: 100%;
+		background-color: transparent;
+		text-shadow: 0px 0px 0px rgba(50,25,55,0.5);
+		filter: hue-rotate(0deg) drop-shadow(10px 10px 6px rgba(0, 0, 0, 0))
+	}
+	100% {
+		font-family: 'Century Gothic';
+		font-size: 30px;
+		margin-top: 0;
+		width: 100%;
+		background-color: transparent;
+		text-shadow: 0px 0px 6px rgba(50,25,55,0.5);
+	}
+}
