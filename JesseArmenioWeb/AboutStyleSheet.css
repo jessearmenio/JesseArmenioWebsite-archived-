@@ -1,4 +1,4 @@
-﻿html {
+﻿﻿html {
 	width: 100%;
 	margin: 0 auto;
 }
@@ -22,16 +22,18 @@ h1 {
 	background-color: transparent;
 	color: #333;
 	text-align: right;
-	font-size: 65px;
-	margin-top: 20%;
+	font-size: 38px;
+	margin-top: 25%;
 	margin-left: auto;
 	margin-right: auto;
-	margin-bottom: -5px;
-	padding-right: 30%;
+	margin-bottom: -1%;
+	display: inline-block;
+	padding-right: 10%;
+	padding-bottom: 1%;
 	float: right;
 	width: 100%;
 	left: 40%;
-	animation: h1 6s infinite;
+	animation: h1 7s infinite;
 	animation-delay: 3s;
 	-webkit-transform: translateY(30px);
 	transform: translateY(30px);
@@ -70,6 +72,7 @@ h1 {
 	h1 {
 		text-align: right;
 		padding-right: 1%;
+		padding-bottom: 3%;
 		animation: h1mobile 6s infinite;
 		animation-delay: 3s;
 		font-family: sans-serif;
@@ -108,7 +111,7 @@ h1, h2, spanT, #AboutNav a, .returnlink {
 /*About Picture Resize at 700 px -- (Half-Window)*/
 @media only screen and (max-width: 700px) {
 	#AboutPicture {
-		margin-top: 15%;
+		margin-top: 20%;
 		margin-left: 15%;
 		margin-right: 0;
 		animation: AboutPictureMobile 3s;
@@ -165,13 +168,13 @@ SpanA {
 @media only screen and (max-width: 700px) {
 	#About1 {
 		top: 25%;
-		margin-top: 0;
+		margin-top: 10%;
 		margin-bottom: 5%;
-		left: 8%;
+		left: 4%;
 		margin-left: 0 auto;
 		padding: 2%;
 		margin-right: 0 auto;
-		width: 90%;
+		width: 92%;
 	}
 }
 
@@ -186,6 +189,7 @@ SpanA {
 	margin-left: auto;
 	margin-right: 5%;
 	margin-bottom: auto;
+	margin-top: 3%;
 	font-family: Calibri;
 	font-size: 20px;
 	display: block;
@@ -352,7 +356,7 @@ SpanA {
 /*Return to home Button*/
 #AboutReturnBottom {
 	height: 25px;
-	width: 100px;
+	width: 150px;
 	background-color: transparent;
 	border-radius: 4%;
 	text-align: center;
@@ -371,9 +375,17 @@ SpanA {
 	margin-left: auto;
 	margin-right: auto;
 	font-family: 'Century Gothic';
+	text-decoration: none;
+	text-decoration-style: none;
 	font-size: 30px;
 	color: white;
 	transition: 0.3s;
+}
+
+@media only screen and (max-width: 700px) {
+	#AboutReturnBottom {
+		left: 0%;
+	}
 }
 
 /*Extra Link Text* Styling*/
@@ -384,6 +396,7 @@ SpanA {
 /*Return to home button hover Styling*/
 #Return:hover {
 	animation: Return 1s;
+	color: white;
 }
 
 /*Return to home button click Styling*/
@@ -657,7 +670,6 @@ SpanA {
 /*
 /*START ALL ANIMATIONS*/
 /*
-
 /*Full Name Animation*/
 @keyframes h1 {
 	0% {
@@ -668,8 +680,10 @@ SpanA {
 	}
 
 	25% {
-		-webkit-transform: translateY(-100px);
-		transform: translateY(-100px);
+		-webkit-transform: translateY(-40px);
+		transform: translateY(-40px);
+		-webkit-transform: translateX(15px);
+		transform: translateX(15px);
 		letter-spacing: 10px;
 		color: white;
 		opacity: 0.7;
@@ -686,8 +700,10 @@ SpanA {
 	}
 
 	75% {
-		-webkit-transform: translateY(-50px);
-		transform: translateY(-50px);
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+		-webkit-transform: translateX(20px);
+		transform: translateX(20px);
 		letter-spacing: 10px;
 		color: white;
 		opacity: 1;
@@ -786,7 +802,7 @@ SpanA {
 
 	100% {
 		opacity: 1;
-		margin-top: 15%;
+		margin-top: 20%;
 		margin-left: 15%;
 		margin-right: 0;
 	}
@@ -1010,77 +1026,135 @@ SpanA {
 	}
 }
 
+
 @keyframes movesocial1 {
 	0% {
-		background-color: white;
+		background-color: transparent;
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	25% {
+		background-color: transparent;
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
 	}
 
 	50% {
-		background-color: #383838
+		background-color: white;
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
 	}
 
-	90% {
-		background-color: white;
+	75% {
+		background-color: transparent;
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
 	}
 
 	100% {
-		background-color: white;
+		background-color: transparent;
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
 	}
 }
 
 @keyframes movesocial2 {
 	0% {
+		background-color: transparent;
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	25% {
 		background-color: white;
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
 	}
 
 	50% {
-		background-color: #282828
+		background-color: transparent;
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
 	}
 
-	90% {
+	75% {
 		background-color: white;
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
 	}
 
 	100% {
-		background-color: white;
+		background-color: transparent;
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
 	}
 }
 
 @keyframes movesocial3 {
 	0% {
-		background-color: white;
+		background-color: transparent;
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	25% {
+		background-color: transparent;
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
 	}
 
 	50% {
-		background-color: #181818
+		background-color: white;
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
 	}
 
-	90% {
-		background-color: white;
+	75% {
+		background-color: transparent;
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
 	}
 
 	100% {
-		background-color: white;
+		background-color: transparent;
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
 	}
 }
 
 @keyframes movesocial4 {
 	0% {
+		background-color: transparent;
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	25% {
 		background-color: white;
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
 	}
 
 	50% {
-		background-color: #000000
+		background-color: transparent;
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
 	}
 
-	90% {
+	75% {
 		background-color: white;
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
 	}
 
 	100% {
-		background-color: white;
+		background-color: transparent;
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
 	}
 }
+
 
 /* END OF ANIMATIONS */
 
@@ -1094,6 +1168,7 @@ SpanA {
 		text-shadow: 0px 0px 6px rgba(50,25,55,0.5);
 		filter: hue-rotate(0deg) drop-shadow(10px 10px 6px rgba(0, 0, 0, 0))
 	}
+
 	15% {
 		font-family: 'Century Gothic';
 		font-size: 30px;
@@ -1123,6 +1198,7 @@ SpanA {
 		text-shadow: 6px 0px 6px rgba(50,25,55,0.5);
 		filter: hue-rotate(180deg) drop-shadow(10px 10px 10px rgb(128,128,128))
 	}
+
 	65% {
 		font-family: 'Century Gothic';
 		font-size: 30px;
@@ -1132,6 +1208,7 @@ SpanA {
 		text-shadow: 6px 6px 0px rgba(50,25,55,0.5);
 		filter: hue-rotate(0deg) drop-shadow(10px 10px 10px rgb(169,169,169))
 	}
+
 	75% {
 		font-family: 'Century Gothic';
 		font-size: 30px;
@@ -1141,6 +1218,7 @@ SpanA {
 		text-shadow: 0px 0px 0px rgba(50,25,55,0.5);
 		filter: hue-rotate(0deg) drop-shadow(10px 10px 6px rgba(0, 0, 0, 0))
 	}
+
 	100% {
 		font-family: 'Century Gothic';
 		font-size: 30px;
