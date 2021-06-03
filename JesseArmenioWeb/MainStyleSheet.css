@@ -104,7 +104,7 @@ body {
 	text-shadow: 0px 0px 6px rgba(50,25,55,0.5);
 }
 
-/*Temporary About Tab (Top Right) Styling*/
+/*About Tab (Top Right) Styling*/
 .AboutNav {
 	text-decoration: none;
 	background-color: transparent;
@@ -122,11 +122,18 @@ body {
 	animation: AboutPost 3.6s normal;
 }
 
-	.AboutNav:hover {
-		opacity: 1;
-		text-decoration: none;
-		color: darkgrey;
+@media only screen and (max-width: 850px) {
+	.AboutNav {
+		font-size: 25px;
+		margin-right: 1%;
 	}
+}
+
+.AboutNav:hover {
+	opacity: 1;
+	text-decoration: none;
+	color: darkgrey;
+}
 
 /*
 /*START of Cloud Styling*/
@@ -665,3 +672,4 @@ span3:hover:after {
 		transform: rotate(360deg);
 	}
 }
+
