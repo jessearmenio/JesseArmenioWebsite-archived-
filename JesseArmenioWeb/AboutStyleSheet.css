@@ -10,6 +10,10 @@ body {
 	margin: 0 auto;
 }
 
+html, body {
+	overflow-x: hidden;
+}
+
 /*Row Styling*/
 .row {
 	font-size: 20px;
@@ -323,7 +327,7 @@ SpanA {
 
 @media only screen and (max-width: 400px) {
 	#About2 {
-		margin-top: 375%;
+		margin-top: 360%;
 	}
 }
 
@@ -592,8 +596,8 @@ a {
 		-moz-columns: 2;
 		opacity: 0.7;
 		width: 100%;
-		animation: AboutNavMobile2 3s;
-	}
+		animation: AboutNavMobile2 3s; /*85% Bottom*/
+	} 
 }
 
 /*Main About Nav Resize at 500 px -- 2 Columns 80% bottom*/
@@ -604,14 +608,14 @@ a {
 		padding: 0;
 		align-content: center;
 		list-style: none;
-		bottom: 75%;
+		bottom: 87%;
 		margin: 0 auto;
 		columns: 2;
 		-webkit-columns: 2;
 		-moz-columns: 2;
 		opacity: 0.7;
 		width: 100%;
-		animation: AboutNavMobile 3s;
+		animation: AboutNavMobile3 3s; /*87% Bottom*/
 	}
 }
 
@@ -628,8 +632,8 @@ a {
 		-webkit-columns: 2;
 		-moz-columns: 2;
 		opacity: 0.7;
-		width: 95%;
-		animation: AboutNavMobile 3s;
+		width: 100%;
+		animation: AboutNavMobile2 3s; /*85% Bottom*/
 	}
 }
 
@@ -646,8 +650,8 @@ a {
 		-webkit-columns: 2;
 		-moz-columns: 2;
 		opacity: 0.7;
-		width: 95%;
-		animation: AboutNavMobile 3s;
+		width: 100%;
+		animation: AboutNavMobile 3s; /*83% Bottom*/
 		font-size: 17px;
 	}
 }
@@ -666,7 +670,7 @@ a {
 		-moz-columns: 2;
 		opacity: 0.7;
 		width: 100%;
-		animation: AboutNavMobile 3s;
+		animation: AboutNavMobile 3s; /*83% Bottom*/
 		font-size: 14px;
 	}
 }
@@ -756,6 +760,16 @@ a {
 	list-style: none;
 	border: black;
 	border-width: 2px;
+}
+
+#balls{
+	padding-left: 0px;
+}
+
+#bouncingbubbles{
+	margin-left: 0 auto;
+	margin-right: 0 auto;
+	text-align: center;
 }
 
 @media only screen and (max-width: 400px) {
@@ -1029,7 +1043,7 @@ a {
 	}
 }
 
-/* Main Nav Intro at 1200px */
+/* Main Nav Intro at 83% from Bottom */
 @keyframes AboutNavMobile {
 	0% {
 		background-color: black;
@@ -1065,12 +1079,12 @@ a {
 		background-color: #333;
 		width: 100%;
 		height: 100%;
-		bottom: 80%;
+		bottom: 83%;
 		opacity: 0.5;
 	}
 }
 
-/* Main Nav Intro at 500px */
+/* Main Nav Intro at 85% from Bottom */
 @keyframes AboutNavMobile2 {
 	0% {
 		background-color: black;
@@ -1107,6 +1121,47 @@ a {
 		width: 100%;
 		height: 100%;
 		bottom: 85%;
+		opacity: 0.5;
+	}
+}
+
+/* Main Nav Intro at 87% from Bottom */
+@keyframes AboutNavMobile3 {
+	0% {
+		background-color: black;
+		width: 100%;
+		height: 100%;
+		bottom: 0;
+		opacity: 1;
+	}
+
+	35% {
+		background-color: #333;
+		width: 100%;
+		height: 100%;
+		opacity: 1
+	}
+
+	50% {
+		background-color: #333;
+		width: 100%;
+		height: 100%;
+		opacity: 1;
+	}
+
+	90% {
+		background-color: #333;
+		width: 100%;
+		height: 100%;
+		bottom: 100%;
+		opacity: 0.7;
+	}
+
+	100% {
+		background-color: #333;
+		width: 100%;
+		height: 100%;
+		bottom: 87%;
 		opacity: 0.5;
 	}
 }
