@@ -1,6 +1,7 @@
 ﻿html {
 	width: 100%;
 	margin: 0 auto;
+	scroll-behavior: smooth;
 }
 
 /* Background of page fill*/
@@ -8,6 +9,7 @@ body {
 	background-color: black;
 	width: 100%;
 	margin: 0 auto;
+	scroll-behavior: smooth;
 }
 
 html, body {
@@ -114,6 +116,15 @@ h1, h2, spanT, #AboutNav a, .returnlink {
 	text-shadow: 0px 0px 6px rgba(50,25,55,0.5);
 }
 
+#nesso {
+	color: #6dbe45;
+}
+
+	#nesso:hover {
+		color: #6dbe45;
+		text-shadow: 0px 0px 6px rgba(128,128,128, 0.6);
+	}
+
 /*AboutPicture Styling & Positioning*/
 #AboutPicture {
 	position: absolute;
@@ -173,6 +184,33 @@ SpanA {
 	font-family: 'Century Gothic';
 	font-size: 20px;
 	margin-right: 5%;
+}
+
+spanB {
+	color: black;
+}
+
+	spanB:hover {
+		color: #Fe5c00;
+		font-weight: 800;
+		transition: ease-in-out
+	}
+
+spanD {
+	font-size: 15px;
+	font-style: italic;
+	opacity: 0.8;
+}
+
+spanE {
+	font-size: 18px;
+	margin-left: 2%;
+}
+
+spanF {
+	font-size: 16px;
+	margin-top: -1%;
+	margin-left: 4%;
 }
 
 /*About Paragraph Positioning -- (About)*/
@@ -345,7 +383,7 @@ SpanA {
 
 @media only screen and (min-width: 1450px) {
 	#About2 {
-		margin-top: 80%;
+		margin-top: 75%;
 	}
 }
 
@@ -597,7 +635,7 @@ a {
 		opacity: 0.7;
 		width: 100%;
 		animation: AboutNavMobile2 3s; /*85% Bottom*/
-	} 
+	}
 }
 
 /*Main About Nav Resize at 500 px -- 2 Columns 80% bottom*/
@@ -762,11 +800,11 @@ a {
 	border-width: 2px;
 }
 
-#balls{
+#balls {
 	padding-left: 0px;
 }
 
-#bouncingbubbles{
+#bouncingbubbles {
 	margin-left: 0 auto;
 	margin-right: 0 auto;
 	text-align: center;
@@ -1480,6 +1518,7 @@ a {
 		letter-spacing: normal;
 	}
 }
+
 /*END ANIMATIONS*/
 /*Below are archived animations*/
 /*----h1 desktop animation----*/
