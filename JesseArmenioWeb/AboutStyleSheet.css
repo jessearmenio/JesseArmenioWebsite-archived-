@@ -371,7 +371,7 @@ spanF {
 
 @media only screen and (max-width: 280px) {
 	#About2 {
-		margin-top: 510%;
+		margin-top: 450%;
 	}
 }
 
@@ -456,26 +456,13 @@ spanF {
 	}
 }
 /*Return Home Top Nav move left 4% at >= 1800 px*/
-@media only screen and (min-width: 1800px) {
+@media only screen and (min-width: 2400px) {
 	.ReturnHomeTop {
-		left: -4%;
-		animation: ReturnTop 3s;
+		opacity: 0;
+		animation-play-state: paused;
 	}
 }
-/*Return Home Top Nav move left 3% at >= 2300 px*/
-@media only screen and (min-width: 2300px) {
-	.ReturnHomeTop {
-		left: -5%;
-		animation: ReturnTop 3s;
-	}
-}
-/*Return Home Top Nav move left 2% at >= 3000 px*/
-@media only screen and (min-width: 3000px) {
-	.ReturnHomeTop {
-		left: -8%;
-		animation: ReturnTop 3s;
-	}
-}
+
 
 /*Return to home Button*/
 @media only screen and (min-width: 800px) {
