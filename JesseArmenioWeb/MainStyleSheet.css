@@ -40,10 +40,11 @@ body {
 	letter-spacing: 6px;
 	margin-bottom: 0px;
 	position: relative;
-	animation: text 3s 1;
+	animation: text 3s 1, flicker 5s infinite alternate;
 	color: white;
 	font-family: sans-serif;
 	text-align: center;
+	text-shadow: 0 0 7px #000, 0 0 10px #000, 0 0 21px #f90, 0 0 42px #f90, 0 0 82px #000, 0 0 92px #fff, 0 0 102px #000, 0 0 151px #f90;
 }
 
 /*Last Name*/
@@ -112,7 +113,7 @@ body {
 	font-family: sans-serif;
 	text-align: right;
 	color: darkgrey;
-	font-weight: 400;
+	font-weight: 600;
 	display: block;
 	float: right;
 	margin-top: 2%;
@@ -673,3 +674,14 @@ span3:hover:after {
 	}
 }
 
+/* Flickering animation */
+@keyframes flicker {
+
+	0%, 18%, 22%, 25%, 53%, 57%, 100% {
+		text-shadow: 0 0 4px #f90, 0 0 11px #f90, 0 0 19px #f90, 0 0 40px #fff, 0 0 80px #f90, 0 0 90px #fff, 0 0 100px #f90, 0 0 150px #f90;
+	}
+
+	20%, 24%, 55% {
+		text-shadow: none;
+	}
+}

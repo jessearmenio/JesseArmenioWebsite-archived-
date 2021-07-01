@@ -1,0 +1,155 @@
+﻿html {
+	width: 100%
+}
+
+/*General Body Styling*/
+body {
+	padding: 0;
+	margin: 0;
+	font-family: sans-serif;
+	overflow: hidden;
+	background-color: black;
+}
+
+#camryn {
+	position: fixed;
+	top: -20px;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 103%;
+	object-fit: fill;
+	opacity: 1;
+}
+
+@media only screen and (max-width: 500px){
+	#camryn {
+		position: fixed;
+		top: 10%;
+		margin-left: 0 auto;
+		margin-right: 0 auto;
+		padding: 0;
+		height: auto;
+		width: 100%;
+	}
+}
+
+/*
+.HomeContainer {
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	align-content: center;
+	display: block;
+	width: 100%;
+}
+
+.text1 {
+	font-size: 60px;
+	font-weight: 700;
+	letter-spacing: 6px;
+	margin-bottom: 0px;
+	position: relative;
+	animation: camryn 6s infinite;
+	color: white;
+	font-family: sans-serif;
+	text-align: center;
+}
+
+.text2 {
+	font-size: 35px;
+	color: #808080;
+	position: relative;
+	animation: camryn2 6s infinite;
+	animation-direction: reverse;
+	font-family: sans-serif;
+	text-align: center;
+}
+
+.text3 {
+	margin-top: 70px;
+	font-size: 25px;
+	opacity: 0.7;
+	color: #808080;
+	position: relative;
+	font-family: sans-serif;
+	text-align: center;
+}
+
+	.text3:hover {
+		color: rebeccapurple;
+		opacity: 0.7;
+		animation: ease;
+	}
+
+.camrynreturn {
+	font-size: 15px;
+	opacity: 0.7;
+	color: #5e5c5e;
+	position: relative;
+	font-family: sans-serif;
+	text-align: center;
+}
+
+	.camrynreturn:hover {
+		color: rebeccapurple;
+		opacity: 0.7;
+		animation: ease;
+	}
+
+@keyframes camryn {
+	0%, 50%, 100% 
+		top: -55px;
+		color: #808080;
+		letter-spacing: normal;
+	}
+
+	25%, 75% {
+		top: 170px;
+		color: #89Cff0;
+		letter-spacing: 15px;
+	}
+}
+
+@keyframes camryn2 {
+	0% {
+		top: -75px;
+		color: #808080;
+		letter-spacing: normal;
+	}
+
+	20% {
+		top: 50px;
+		color: #808080;
+		letter-spacing: normal;
+	}
+
+	40% {
+		top: -100px;
+		color: #deae36;
+		letter-spacing: 15px;
+	}
+
+	60% {
+		top: 40px;
+		color: #808080;
+		letter-spacing: normal;
+	}
+
+	90% {
+		top: -10px;
+		color: #daa520;
+		letter-spacing: normal;
+	}
+
+	100% {
+		top: -75px;
+		color: #808080;
+		letter-spacing: normal;
+	}
+}
+
+*/

@@ -44,7 +44,8 @@ h1 {
 	font-family: sans-serif;
 	font-weight: 600;
 	overflow: visible;
-	animation: jesse 30s 1;
+	animation: jesse 30s 1, flicker 5s infinite alternate;
+	text-shadow: 0 0 5px #f90, 0 0 10px #f90, 0 0 15px #f90, 0 0 20px #fff, 0 0 25px #f90, 0 0 30px #fff, 0 0 35px #f90, 0 0 40px #f90;
 }
 
 /*Main Name Header Resize at 1700px -- (UltraWide-Window)*/
@@ -54,9 +55,9 @@ h1 {
 		padding-right: 15%;
 		font-family: sans-serif;
 		font-weight: 600;
-		overflow: hidden;
+		overflow: visible;
 		margin-top: 55%;
-		animation: jesse 20s 1;
+		animation: jesse 20s 1, altflicker 5s infinite alternate;
 	}
 }
 
@@ -68,9 +69,9 @@ h1 {
 		padding-right: 10%;
 		font-family: sans-serif;
 		font-weight: 600;
-		overflow: hidden;
+		overflow: visible;
 		margin-top: 50%;
-		animation: jesse 20s 1;
+		animation: jesse 20s 1, altflicker 5s infinite alternate;
 	}
 }
 
@@ -82,9 +83,9 @@ h1 {
 		padding-bottom: 3%;
 		font-family: sans-serif;
 		font-weight: 600;
-		overflow: hidden;
+		overflow: visible;
 		margin-top: 55%;
-		animation: jessemobile 20s 1;
+		animation: jessemobile 20s 1, altflicker 5s infinite alternate;
 	}
 }
 
@@ -96,9 +97,9 @@ h1 {
 		padding-bottom: 3%;
 		font-family: sans-serif;
 		font-weight: 600;
-		overflow: hidden;
+		overflow: visible;
 		margin-top: 50%;
-		animation: jessemobile 20s 1;
+		animation: jessemobile 20s 1, altflicker 5s infinite alternate;
 	}
 }
 
@@ -198,7 +199,6 @@ spanB {
 
 spanD {
 	font-size: 15px;
-	font-style: italic;
 	opacity: 0.8;
 }
 
@@ -212,6 +212,7 @@ spanF {
 	margin-top: -1%;
 	margin-left: 4%;
 }
+
 
 /*About Paragraph Positioning -- (About)*/
 #About1 {
@@ -528,13 +529,18 @@ spanF {
 
 /*Extra Link Text* Styling*/
 a.returnlink {
-	color: #81D4FA;
+	color: white;
 	text-decoration-style: none;
 	text-decoration: none;
+	animation: followsocial 3s infinite;
+	animation-delay: 5s;
+	-webkit-transition: all .2s linear;
+	-o-transition: all .2s linear;
+	transition: all .2s linear;
 }
 
 	a.returnlink:hover {
-		color: white;
+		color: #fff;
 		text-decoration-style: none;
 		text-decoration: none;
 	}
@@ -748,7 +754,7 @@ a {
 
 /*footer link positioning*/
 .footer a {
-	color: #81D4FA;
+	color: #f90;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -1273,7 +1279,7 @@ a {
 	}
 
 	25% {
-		background-color: #81D4FA;
+		background-color: #f90;
 		-webkit-transform: translateY(-20px);
 		transform: translateY(-20px);
 	}
@@ -1337,7 +1343,7 @@ a {
 	}
 
 	25% {
-		background-color: #81D4FA;
+		background-color: #f90;
 		-webkit-transform: translateY(-20px);
 		transform: translateY(-20px);
 	}
@@ -1358,6 +1364,28 @@ a {
 		background-color: transparent;
 		-webkit-transform: translateY(0);
 		transform: translateY(0);
+	}
+}
+
+@keyframes followsocial {
+	0% {
+		color: white
+	}
+
+	25% {
+		color: #f90;
+	}
+
+	50% {
+		color: white;
+	}
+
+	75% {
+		color: #f90;
+	}
+
+	100% {
+		color: white;
 	}
 }
 
@@ -1432,6 +1460,7 @@ a {
 	}
 }
 
+/*New page load name animation*/
 @keyframes jesse {
 	0% {
 		color: #333;
@@ -1503,6 +1532,29 @@ a {
 		color: #333;
 		font-family: sans-serif;
 		letter-spacing: normal;
+	}
+}
+
+/* Flickering animation */
+@keyframes flicker {
+
+	0%, 18%, 22%, 25%, 53%, 57%, 100% {
+		text-shadow: 0 0 4px #f90, 0 0 11px #f90, 0 0 19px #f90, 0 0 40px #fff, 0 0 80px #f90, 0 0 90px #fff, 0 0 100px #f90, 0 0 150px #f90;
+	}
+
+	20%, 24%, 55% {
+		text-shadow: none;
+	}
+}
+
+@keyframes altflicker {
+
+	0%, 18%, 22%, 25%, 53%, 57%, 100% {
+		text-shadow: 0 0 5px #f90, 0 0 10px #f90, 0 0 15px #f90, 0 0 20px #fff, 0 0 25px #f90, 0 0 30px #fff, 0 0 35px #f90, 0 0 40px #f90;
+	}
+
+	20%, 24%, 55% {
+		text-shadow: none;
 	}
 }
 
