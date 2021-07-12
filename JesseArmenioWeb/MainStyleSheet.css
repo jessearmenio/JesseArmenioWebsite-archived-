@@ -63,7 +63,7 @@ body {
 	color: darkgrey;
 	position: relative;
 	margin-top: 30px;
-	animation: link 3.5s 1, noflicker3 5s infinite alternate;
+	animation: link 3.5s 1;
 	display: block;
 	font-family: sans-serif;
 }
@@ -80,7 +80,7 @@ body {
 	color: lightgrey;
 	position: relative;
 	margin-top: 20px;
-	animation: Post 3.6s 1, noflicker1 5s infinite alternate;
+	animation: Post 3.6s 1, noflicker1 12s infinite alternate;
 	display: block;
 	font-weight: 500;
 	font-family: Arial;
@@ -100,7 +100,7 @@ body {
 	color: lightgrey;
 	position: relative;
 	margin-top: 20px;
-	animation: Post 3.6s 1, noflicker2 5s infinite alternate;
+	animation: Post 3.6s 1, noflicker2 10s infinite alternate;
 	display: block;
 	font-weight: 500;
 	font-family: Arial;
@@ -114,7 +114,7 @@ body {
 		font-weight: 600;
 	}
 
-	/*slight shadow for multiple texts*/
+/*slight shadow for multiple texts*/
 .text1, .text2, .link1, .link2, .link3 {
 	text-shadow: 0px 0px 6px rgba(50,25,55,0.5);
 }
@@ -702,21 +702,21 @@ span3:hover:after {
 }
 
 @keyframes noflicker1 {
-	0% {
+	0%, 50%, 76%, 78%, 100% {
 		text-shadow: 0 0 4px #008fdd, 0 0 11px #008fdd, 0 0 19px #008fdd, 0 0 40px #008fdd, 0 0 80px #008fdd, 0 0 90px #008fdd, 0 0 100px #008fdd, 0 0 150px #008fdd;
 	}
 
-	100% {
-		text-shadow: 0 0 4px #008fdd, 0 0 11px #008fdd, 0 0 19px #008fdd, 0 0 40px #008fdd, 0 0 80px #008fdd, 0 0 90px #008fdd, 0 0 100px #008fdd, 0 0 150px #008fdd;
+	77% {
+		text-shadow: none;
 	}
 }
 
 @keyframes noflicker2 {
-	0% {
+	0%, 51%, 53%, 75%, 78%, 100% {
 		text-shadow: 0 0 4px #b300b3, 0 0 11px #b300b3, 0 0 19px #b300b3, 0 0 40px #b300b3, 0 0 80px #b300b3, 0 0 90px #b300b3, 0 0 100px #b300b3, 0 0 150px #b300b3;
 	}
 
-	100% {
-		text-shadow: 0 0 4px #b300b3, 0 0 11px #b300b3, 0 0 19px #b300b3, 0 0 40px #b300b3, 0 0 80px #b300b3, 0 0 90px #b300b3, 0 0 100px #b300b3, 0 0 150px #b300b3;
+	52% {
+		text-shadow: none;
 	}
 }
