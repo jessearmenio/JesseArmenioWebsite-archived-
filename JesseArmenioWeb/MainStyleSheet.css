@@ -47,6 +47,11 @@ body {
 	text-shadow: 0 0 7px #000, 0 0 10px #000, 0 0 21px #f90, 0 0 42px #f90, 0 0 82px #000, 0 0 92px #fff, 0 0 102px #000, 0 0 151px #f90;
 }
 
+	/*First Name Hover Animation Pause*/
+	.text1:hover {
+		animation-play-state: paused;
+	}
+
 /*Last Name*/
 .text2 {
 	font-size: 35px;
@@ -59,11 +64,11 @@ body {
 
 /*Resume Link Styling*/
 .link1 {
-	font-size: 25px;
+	font-size: 28px;
 	color: darkgrey;
 	position: relative;
 	margin-top: 30px;
-	animation: link 3.5s 1;
+	animation: link 3.5s 1, noflicker3 5s infinite alternate;
 	display: block;
 	font-family: sans-serif;
 }
@@ -74,17 +79,17 @@ body {
 		font-weight: 600;
 	}
 
-/*LinkedIn and GitHub Link Styling*/
-.link2,
-.link3 {
+/*LinkedIn Link Styling*/
+.link2 {
 	font-size: 20px;
 	color: lightgrey;
 	position: relative;
 	margin-top: 20px;
-	animation: Post 3.6s 1;
+	animation: Post 3.6s 1, noflicker1 5s infinite alternate;
 	display: block;
 	font-weight: 500;
 	font-family: Arial;
+	text-shadow: 0 0 7px #008fdd, 0 0 10px #008fdd, 0 0 21px #008fdd, 0 0 42px #008fdd, 0 0 82px #008fdd, 0 0 92px #008fdd, 0 0 102px #008fdd, 0 0 151px #008fdd;
 }
 
 	/*LinkedIn Hover Animation*/
@@ -94,6 +99,19 @@ body {
 		font-weight: 600;
 	}
 
+/*GitHub Link Styling*/
+.link3 {
+	font-size: 20px;
+	color: lightgrey;
+	position: relative;
+	margin-top: 20px;
+	animation: Post 3.6s 1, noflicker2 5s infinite alternate;
+	display: block;
+	font-weight: 500;
+	font-family: Arial;
+	text-shadow: 0 0 7px #b300b3, 0 0 10px #b300b3, 0 0 21px #b300b3, 0 0 42px #b300b3, 0 0 82px #b300b3, 0 0 92px #b300b3, 0 0 102px #b300b3, 0 0 151px #b300b3;
+}
+
 	/*GitHub Hover Animation*/
 	.link3:hover {
 		position: relative;
@@ -101,6 +119,7 @@ body {
 		font-weight: 600;
 	}
 
+	/*slight shadow for multiple texts*/
 .text1, .text2, .link1, .link2, .link3 {
 	text-shadow: 0px 0px 6px rgba(50,25,55,0.5);
 }
@@ -130,6 +149,7 @@ body {
 	}
 }
 
+/*Full transparency on hover*/
 .AboutNav:hover {
 	opacity: 1;
 	text-decoration: none;
@@ -683,5 +703,25 @@ span3:hover:after {
 
 	20%, 24%, 55% {
 		text-shadow: none;
+	}
+}
+
+@keyframes noflicker1 {
+	0% {
+		text-shadow: 0 0 4px #008fdd, 0 0 11px #008fdd, 0 0 19px #008fdd, 0 0 40px #008fdd, 0 0 80px #008fdd, 0 0 90px #008fdd, 0 0 100px #008fdd, 0 0 150px #008fdd;
+	}
+
+	100% {
+		text-shadow: 0 0 4px #008fdd, 0 0 11px #008fdd, 0 0 19px #008fdd, 0 0 40px #008fdd, 0 0 80px #008fdd, 0 0 90px #008fdd, 0 0 100px #008fdd, 0 0 150px #008fdd;
+	}
+}
+
+@keyframes noflicker2 {
+	0% {
+		text-shadow: 0 0 4px #b300b3, 0 0 11px #b300b3, 0 0 19px #b300b3, 0 0 40px #b300b3, 0 0 80px #b300b3, 0 0 90px #b300b3, 0 0 100px #b300b3, 0 0 150px #b300b3;
+	}
+
+	100% {
+		text-shadow: 0 0 4px #b300b3, 0 0 11px #b300b3, 0 0 19px #b300b3, 0 0 40px #b300b3, 0 0 80px #b300b3, 0 0 90px #b300b3, 0 0 100px #b300b3, 0 0 150px #b300b3;
 	}
 }
