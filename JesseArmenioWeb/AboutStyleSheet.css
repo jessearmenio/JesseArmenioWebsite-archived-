@@ -117,12 +117,13 @@ h1, h2, spanT, #AboutNav a, .returnlink {
 	text-shadow: 0px 0px 6px rgba(50,25,55,0.5);
 }
 
-#nesso {
-	color: #6dbe45;
+#fullbio {
+	color: #333;
+	font-size: 16px;
 }
 
-	#nesso:hover {
-		color: #6dbe45;
+	#fullbio:hover {
+		color: #f90;
 		text-shadow: 0px 0px 6px rgba(128,128,128, 0.6);
 	}
 
