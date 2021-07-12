@@ -47,11 +47,6 @@ body {
 	text-shadow: 0 0 7px #000, 0 0 10px #000, 0 0 21px #f90, 0 0 42px #f90, 0 0 82px #000, 0 0 92px #fff, 0 0 102px #000, 0 0 151px #f90;
 }
 
-	/*First Name Hover Animation Pause*/
-	.text1:hover {
-		animation-play-state: paused;
-	}
-
 /*Last Name*/
 .text2 {
 	font-size: 35px;
