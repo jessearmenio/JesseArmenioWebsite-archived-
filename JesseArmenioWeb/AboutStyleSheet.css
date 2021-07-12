@@ -390,9 +390,9 @@ spanF {
 
 
 
-/*Styling for Paragraphs following About 2 -- (IT Experience, Development Skills, Soft Skills, Invovlement)*/
+/*Styling for Paragraphs following About 2 -- (Work Experience, Development Skills, Soft Skills, Invovlement)*/
 #About3 {
-	margin-top: 15%;
+	margin-top: 7%;
 	margin-right: auto;
 	margin-left: auto;
 	margin-bottom: 1%;
@@ -405,11 +405,11 @@ spanF {
 	left: 0;
 }
 
-	/*About3 bounce on hover --  (IT Experience, Development Skills, Soft Skills, Invovlement)*/
+	/*About3 bounce on hover --  (Work Experience, Development Skills, Soft Skills, Invovlement)*/
 	#About3:hover {
 		animation: hoverbody 1s;
 	}
-	/*About3 bounce on focus --  (IT Experience, Development Skills, Soft Skills, Invovlement)*/
+	/*About3 bounce on focus --  (Work Experience, Development Skills, Soft Skills, Invovlement)*/
 	#About3:focus {
 		animation: hoverbody 1s;
 	}
@@ -734,7 +734,7 @@ a {
 	font-size: 15px;
 	line-height: 24px;
 	color: #737373;
-	margin-top: 20%;
+	margin-top: 12%;
 	margin-left: auto;
 	margin-right: auto;
 	padding-left: 0;
@@ -745,6 +745,7 @@ a {
 	.footer {
 		padding: 0;
 		font-size: 10px;
+		margin-top: 20%;
 		margin-left: auto;
 		margin-right: auto;
 		width: 100%;
@@ -754,9 +755,14 @@ a {
 
 /*footer link positioning*/
 .footer a {
-	color: #f90;
+	color: white;
 	margin-left: auto;
 	margin-right: auto;
+	animation: followname 3s infinite;
+	animation-delay: 3s;
+	-webkit-transition: all .2s linear;
+	-o-transition: all .2s linear;
+	transition: all .2s linear;
 }
 	/*Full Name in Copyright text hover animation*/
 	.footer a:hover {
@@ -1343,7 +1349,7 @@ a {
 	}
 
 	25% {
-		background-color: #f90;
+		background-color: white;
 		-webkit-transform: translateY(-20px);
 		transform: translateY(-20px);
 	}
@@ -1373,7 +1379,7 @@ a {
 	}
 
 	25% {
-		color: #f90;
+		color: white;
 	}
 
 	50% {
@@ -1389,7 +1395,27 @@ a {
 	}
 }
 
-/* END OF ANIMATIONS */
+@keyframes followname {
+	0% {
+		color: white
+	}
+
+	25% {
+		color: #f90;
+	}
+
+	50% {
+		color: white;
+	}
+
+	75% {
+		color: white;
+	}
+
+	100% {
+		color: white;
+	}
+}
 
 @keyframes jessemobile {
 	0% {
@@ -1559,6 +1585,8 @@ a {
 }
 
 /*END ANIMATIONS*/
+
+
 /*Below are archived animations*/
 /*----h1 desktop animation----*/
 /*
