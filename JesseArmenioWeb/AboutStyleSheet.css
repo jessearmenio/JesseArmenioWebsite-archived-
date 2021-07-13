@@ -1,7 +1,6 @@
 ﻿html {
 	width: 100%;
 	margin: 0 auto;
-	scroll-behavior: smooth;
 }
 
 /* Background of page fill*/
@@ -9,7 +8,6 @@ body {
 	background-color: black;
 	width: 100%;
 	margin: 0 auto;
-	scroll-behavior: smooth;
 }
 
 html, body {

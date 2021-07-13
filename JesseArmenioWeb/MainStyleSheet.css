@@ -50,9 +50,9 @@ body {
 /*Last Name*/
 .text2 {
 	font-size: 35px;
-	color: #808080;
+	color: lightgrey;
 	position: relative;
-	animation: text 3s 1;
+	animation: text 3s 1, noflicker3 10s infinite alternate;
 	font-family: sans-serif;
 	text-align: center;
 }
@@ -60,18 +60,18 @@ body {
 /*Resume Link Styling*/
 .link1 {
 	font-size: 28px;
-	color: darkgrey;
+	color: white;
 	position: relative;
 	margin-top: 30px;
-	animation: link 3.5s 1;
+	animation: link 3.5s 1, flicker5 5s infinite alternate;
 	display: block;
 	font-family: sans-serif;
+	text-shadow: 0 0 7px #000, 0 0 10px #000, 0 0 11px #E58900, 0 0 32px #E58900, 0 0 62px #000, 0 0 72px #fff, 0 0 102px #000, 0 0 121px #E58900;
 }
 	/*Resume Hover Animation*/
 	.link1:hover {
 		position: relative;
-		color: darkgoldenrod;
-		font-weight: 600;
+		color: white;
 	}
 
 /*LinkedIn Link Styling*/
@@ -80,18 +80,17 @@ body {
 	color: lightgrey;
 	position: relative;
 	margin-top: 20px;
-	animation: Post 3.6s 1, noflicker1 12s infinite alternate;
+	animation: Post 3.6s 1, noflicker1 11s infinite alternate;
 	display: block;
 	font-weight: 500;
 	font-family: Arial;
-	text-shadow: 0 0 7px #008fdd, 0 0 10px #008fdd, 0 0 21px #008fdd, 0 0 42px #008fdd, 0 0 82px #008fdd, 0 0 92px #008fdd, 0 0 102px #008fdd, 0 0 151px #008fdd;
+	text-shadow: 0 0 7px #000, 0 0 10px #000, 0 0 21px #008fdd, 0 0 42px #008fdd, 0 0 82px #000, 0 0 92px #fff, 0 0 102px #000, 0 0 151px #008fdd;
 }
 
 	/*LinkedIn Hover Animation*/
 	.link2:hover {
 		position: relative;
-		color: #008fdd;
-		font-weight: 600;
+		color: white;
 	}
 
 /*GitHub Link Styling*/
@@ -100,18 +99,17 @@ body {
 	color: lightgrey;
 	position: relative;
 	margin-top: 20px;
-	animation: Post 3.6s 1, noflicker2 10s infinite alternate;
+	animation: Post 3.6s 1, noflicker2 9s infinite alternate;
 	display: block;
 	font-weight: 500;
 	font-family: Arial;
-	text-shadow: 0 0 7px #b300b3, 0 0 10px #b300b3, 0 0 21px #b300b3, 0 0 42px #b300b3, 0 0 82px #b300b3, 0 0 92px #b300b3, 0 0 102px #b300b3, 0 0 151px #b300b3;
+	text-shadow: 0 0 7px #000, 0 0 10px #000, 0 0 21px #b300b3, 0 0 42px #b300b3, 0 0 82px #000, 0 0 92px #fff, 0 0 102px #000, 0 0 151px #b300b3;
 }
 
 	/*GitHub Hover Animation*/
 	.link3:hover {
 		position: relative;
-		color: #b300b3;
-		font-weight: 600;
+		color: white;
 	}
 
 /*slight shadow for multiple texts*/
@@ -126,15 +124,16 @@ body {
 	font-size: 30px;
 	font-family: sans-serif;
 	text-align: right;
-	color: darkgrey;
-	font-weight: 600;
+	color: lightgrey;
+	font-weight: 500;
 	display: block;
 	float: right;
-	margin-top: 2%;
-	margin-right: 2%;
-	opacity: 0.5;
+	margin-top: 1%;
+	margin-right: 1%;
+	opacity: 0.75;
 	height: 100%;
-	animation: AboutPost 3.6s normal;
+	animation: AboutPost 3.6s 1, noflicker4 9s infinite alternate-reverse;
+	text-shadow: 0 0 7px #000, 0 0 10px #000, 0 0 21px #E58900, 0 0 42px #E58900, 0 0 82px #E58900, 0 0 92px #fff, 0 0 102px #000, 0 0 151px #000;
 }
 
 @media only screen and (max-width: 850px) {
@@ -148,7 +147,8 @@ body {
 .AboutNav:hover {
 	opacity: 1;
 	text-decoration: none;
-	color: darkgrey;
+	color: lightgrey;
+	animation-play-state: paused;
 }
 
 /*
@@ -689,7 +689,7 @@ span3:hover:after {
 	}
 }
 
-/* Flickering animation */
+/* first name flicker */
 @keyframes flicker {
 
 	0%, 18%, 22%, 25%, 53%, 57%, 100% {
@@ -701,6 +701,7 @@ span3:hover:after {
 	}
 }
 
+/*linkedin flicker*/
 @keyframes noflicker1 {
 	0%, 50%, 76%, 78%, 100% {
 		text-shadow: 0 0 4px #008fdd, 0 0 11px #008fdd, 0 0 19px #008fdd, 0 0 40px #008fdd, 0 0 80px #008fdd, 0 0 90px #008fdd, 0 0 100px #008fdd, 0 0 150px #008fdd;
@@ -711,6 +712,7 @@ span3:hover:after {
 	}
 }
 
+/*github flicker*/
 @keyframes noflicker2 {
 	0%, 51%, 53%, 75%, 78%, 100% {
 		text-shadow: 0 0 4px #b300b3, 0 0 11px #b300b3, 0 0 19px #b300b3, 0 0 40px #b300b3, 0 0 80px #b300b3, 0 0 90px #b300b3, 0 0 100px #b300b3, 0 0 150px #b300b3;
@@ -718,5 +720,35 @@ span3:hover:after {
 
 	52% {
 		text-shadow: none;
+	}
+}
+
+/*resume flicker*/
+@keyframes noflicker3 {
+	0%, 14%, 16%, 75%, 78%, 100% {
+		text-shadow: 0 0 7px #000, 0 0 10px #000, 0 0 11px #E58900, 0 0 32px #E58900, 0 0 62px #000, 0 0 72px #fff, 0 0 102px #000, 0 0 121px #E58900;
+	}
+
+	15% {
+		text-shadow: none;
+	}
+}
+
+/*resume flicker*/
+@keyframes noflicker4 {
+	
+	0%, 26%, 28%, 75%, 78%, 100% {
+		text-shadow: 0 0 7px #000, 0 0 10px #000, 0 0 11px #E58900, 0 0 32px #E58900, 0 0 62px #000, 0 0 72px #fff, 0 0 102px #000, 0 0 121px #E58900;
+	}
+
+	27% {
+		text-shadow: none;
+	}
+}
+
+@keyframes flicker5 {
+
+	0%, 18%, 22%, 25%, 53%, 57%, 100% {
+		text-shadow: 0 0 4px #E58900, 0 0 20px #E58900, 0 0 30px #E58900, 0 0 40px #fff, 0 0 50px #E58900, 0 0 60px #fff, 0 0 70px #E58900, 0 0 80px #E58900;
 	}
 }
