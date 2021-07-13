@@ -42,7 +42,7 @@ h1 {
 	font-family: sans-serif;
 	font-weight: 600;
 	overflow: visible;
-	animation: jesse 30s 1, flicker 5s infinite alternate;
+	animation: jesse 15s 1, flicker 7s infinite;
 	text-shadow: 0 0 5px #f90, 0 0 10px #f90, 0 0 15px #f90, 0 0 20px #fff, 0 0 25px #f90, 0 0 30px #fff, 0 0 35px #f90, 0 0 40px #f90;
 }
 

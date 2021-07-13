@@ -40,19 +40,23 @@ body {
 	letter-spacing: 6px;
 	margin-bottom: 0px;
 	position: relative;
-	animation: text 3s 1, flicker 5s infinite alternate;
+	animation: text 3s 1;
 	color: white;
 	font-family: sans-serif;
 	text-align: center;
 	text-shadow: 0 0 7px #000, 0 0 10px #000, 0 0 21px #f90, 0 0 42px #f90, 0 0 82px #000, 0 0 92px #fff, 0 0 102px #000, 0 0 151px #f90;
 }
 
+	.text1 spanf {
+		animation: first 7.5s linear infinite;
+	}
+
 /*Last Name*/
 .text2 {
 	font-size: 35px;
 	color: lightgrey;
 	position: relative;
-	animation: text 3s 1, noflicker3 10s infinite alternate;
+	animation: text 3s 1;
 	font-family: sans-serif;
 	text-align: center;
 }
@@ -60,10 +64,10 @@ body {
 /*Resume Link Styling*/
 .link1 {
 	font-size: 28px;
-	color: white;
+	color: lightgrey;
 	position: relative;
 	margin-top: 30px;
-	animation: link 3.5s 1, flicker5 5s infinite alternate;
+	animation: link 3.5s 1, noflicker 5s infinite alternate;
 	display: block;
 	font-family: sans-serif;
 	text-shadow: 0 0 7px #000, 0 0 10px #000, 0 0 11px #E58900, 0 0 32px #E58900, 0 0 62px #000, 0 0 72px #fff, 0 0 102px #000, 0 0 121px #E58900;
@@ -80,7 +84,7 @@ body {
 	color: lightgrey;
 	position: relative;
 	margin-top: 20px;
-	animation: Post 3.6s 1, noflicker1 11s infinite alternate;
+	animation: Post 3.6s 1;
 	display: block;
 	font-weight: 500;
 	font-family: Arial;
@@ -88,7 +92,9 @@ body {
 }
 
 	/*LinkedIn Hover Animation*/
+
 	.link2:hover {
+		text-shadow: 0 0 80px #008fdd,0 0 30px #008fdd,0 0 6px #008fdd;
 		position: relative;
 		color: white;
 	}
@@ -99,7 +105,7 @@ body {
 	color: lightgrey;
 	position: relative;
 	margin-top: 20px;
-	animation: Post 3.6s 1, noflicker2 9s infinite alternate;
+	animation: Post 3.6s 1;
 	display: block;
 	font-weight: 500;
 	font-family: Arial;
@@ -108,14 +114,10 @@ body {
 
 	/*GitHub Hover Animation*/
 	.link3:hover {
+		text-shadow: 0 0 200px #b300b3,0 0 80px #b300b3,0 0 6px #b300b3;
 		position: relative;
 		color: white;
 	}
-
-/*slight shadow for multiple texts*/
-.text1, .text2, .link1, .link2, .link3 {
-	text-shadow: 0px 0px 6px rgba(50,25,55,0.5);
-}
 
 /*About Tab (Top Right) Styling*/
 .AboutNav {
@@ -132,7 +134,7 @@ body {
 	margin-right: 1%;
 	opacity: 0.75;
 	height: 100%;
-	animation: AboutPost 3.6s 1, noflicker4 9s infinite alternate-reverse;
+	animation: AboutPost 3.6s 1;
 	text-shadow: 0 0 7px #000, 0 0 10px #000, 0 0 21px #E58900, 0 0 42px #E58900, 0 0 82px #E58900, 0 0 92px #fff, 0 0 102px #000, 0 0 151px #000;
 }
 
@@ -689,66 +691,42 @@ span3:hover:after {
 	}
 }
 
-/* first name flicker */
-@keyframes flicker {
 
-	0%, 18%, 22%, 25%, 53%, 57%, 100% {
-		text-shadow: 0 0 4px #f90, 0 0 11px #f90, 0 0 19px #f90, 0 0 40px #fff, 0 0 80px #f90, 0 0 90px #fff, 0 0 100px #f90, 0 0 150px #f90;
+/*Resume link no-flicker*/
+@keyframes noflicker {
+
+	0%, 100% {
+		text-shadow: 0 0 4px #E58900, 0 0 20px #E58900, 0 0 30px #E58900;
+	}
+}
+
+/*first name flicker*/
+@keyframes first {
+	0%,12%,18.999%,23%,31.999%,37%,44.999%,46%,49.999%,51%,58.999%,61%,68.999%,71%,85.999%,96%,100% {
+		opacity: 0.99;
+		text-shadow: 0 0 80px #f90, 0 0 30px #f90, 0 0 6px #f90;
 	}
 
-	20%, 24%, 55% {
+	19%,22.99%,32%,36.999%,45%,45.999%,50%,50.99%,59%,60.999%,69%,70.999%,86%,95.999% {
+		opacity: 0.4;
 		text-shadow: none;
 	}
 }
 
-/*linkedin flicker*/
-@keyframes noflicker1 {
-	0%, 50%, 76%, 78%, 100% {
-		text-shadow: 0 0 4px #008fdd, 0 0 11px #008fdd, 0 0 19px #008fdd, 0 0 40px #008fdd, 0 0 80px #008fdd, 0 0 90px #008fdd, 0 0 100px #008fdd, 0 0 150px #008fdd;
+/*linkedin*/
+@keyframes linked {
+	0%,19.999%,22%,62.999%,64%, 64.999%,70%,100% {
+		opacity: .99;
+		text-shadow: 0 0 80px #008fdd,0 0 30px #008fdd,0 0 6px #008fdd;
 	}
 
-	77% {
+	20%,21.999%,63%,63.999%,65%,69.999% {
+		opacity: 0.4;
 		text-shadow: none;
 	}
 }
 
-/*github flicker*/
-@keyframes noflicker2 {
-	0%, 51%, 53%, 75%, 78%, 100% {
-		text-shadow: 0 0 4px #b300b3, 0 0 11px #b300b3, 0 0 19px #b300b3, 0 0 40px #b300b3, 0 0 80px #b300b3, 0 0 90px #b300b3, 0 0 100px #b300b3, 0 0 150px #b300b3;
-	}
-
-	52% {
-		text-shadow: none;
-	}
-}
-
-/*resume flicker*/
-@keyframes noflicker3 {
-	0%, 14%, 16%, 75%, 78%, 100% {
-		text-shadow: 0 0 7px #000, 0 0 10px #000, 0 0 11px #E58900, 0 0 32px #E58900, 0 0 62px #000, 0 0 72px #fff, 0 0 102px #000, 0 0 121px #E58900;
-	}
-
-	15% {
-		text-shadow: none;
-	}
-}
-
-/*resume flicker*/
-@keyframes noflicker4 {
-	
-	0%, 26%, 28%, 75%, 78%, 100% {
-		text-shadow: 0 0 7px #000, 0 0 10px #000, 0 0 11px #E58900, 0 0 32px #E58900, 0 0 62px #000, 0 0 72px #fff, 0 0 102px #000, 0 0 121px #E58900;
-	}
-
-	27% {
-		text-shadow: none;
-	}
-}
-
-@keyframes flicker5 {
-
-	0%, 18%, 22%, 25%, 53%, 57%, 100% {
-		text-shadow: 0 0 4px #E58900, 0 0 20px #E58900, 0 0 30px #E58900, 0 0 40px #fff, 0 0 50px #E58900, 0 0 60px #fff, 0 0 70px #E58900, 0 0 80px #E58900;
-	}
+/*linked in "n" letter flicker */
+.link2 spanl {
+	animation: linked 9s linear infinite;
 }
