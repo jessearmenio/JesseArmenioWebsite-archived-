@@ -1,4 +1,15 @@
-﻿html {
+﻿
+@font-face {
+	font-family: 'subspace-webfont';
+	src: url('subspace-webfont.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Aller_Std_Bd';
+	src: url('Aller_Std_Bd.ttf') format('truetype');
+}
+
+html {
 	width: 100%;
 	margin: 0 auto;
 }
@@ -212,6 +223,16 @@ spanF {
 	margin-left: 4%;
 }
 
+/*BSBA font and size increase*/
+spanM {
+	font-size: 30px;
+	font-family: Aller_Std_Bd;
+}
+
+/*MSIS font span*/
+spanI {
+	font-family: Aller_Std_Bd;
+}
 
 /*About Paragraph Positioning -- (About)*/
 #About1 {
@@ -719,7 +740,6 @@ a {
 		animation: AboutNavLetters 3s;
 	}
 }
-
 
 /*
 /*START FOOTER STYLING*/

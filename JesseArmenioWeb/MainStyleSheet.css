@@ -5,6 +5,15 @@ html {
 	width: 100%
 }
 
+/*increase clickable area for links*/
+a {
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	padding: 1.25em;
+	margin: -2em;
+}
+
 /*General Body Styling*/
 body {
 	padding: 0;
@@ -41,6 +50,7 @@ body {
 	margin-bottom: 0px;
 	position: relative;
 	animation: text 3s 1;
+	z-index: 2;
 	color: white;
 	font-family: sans-serif;
 	text-align: center;
@@ -49,6 +59,8 @@ body {
 
 	.text1 spanf {
 		animation: first 7.5s linear infinite;
+		animation-delay: 3s;
+		z-index: 1;
 	}
 
 /*Last Name*/
@@ -64,37 +76,39 @@ body {
 /*Resume Link Styling*/
 .link1 {
 	font-size: 28px;
-	color: lightgrey;
+	color: white;
 	position: relative;
 	margin-top: 30px;
-	animation: link 3.5s 1, noflicker 5s infinite alternate;
+	animation: link 3.5s 1;
 	display: block;
 	font-family: sans-serif;
-	text-shadow: 0 0 7px #000, 0 0 10px #000, 0 0 11px #E58900, 0 0 32px #E58900, 0 0 62px #000, 0 0 72px #fff, 0 0 102px #000, 0 0 121px #E58900;
+	text-shadow: 0 0 7px #f90, 0 0 10px #000, 0 0 21px #f90, 0 0 42px #f90, 0 0 82px #000, 0 0 92px #fff, 0 0 102px #000, 0 0 151px #f90;
 }
 	/*Resume Hover Animation*/
 	.link1:hover {
 		position: relative;
 		color: white;
+		text-shadow: 0 0 20px #000, 0 0 40px #000, 0 0 61px #f90, 0 0 82px #f90, 0 0 102px #000, 0 0 122px #fff, 0 0 142px #000, 0 0 165px #f90;
 	}
 
 /*LinkedIn Link Styling*/
 .link2 {
 	font-size: 20px;
-	color: lightgrey;
+	color: white;
 	position: relative;
 	margin-top: 20px;
 	animation: Post 3.6s 1;
 	display: block;
 	font-weight: 500;
 	font-family: Arial;
-	text-shadow: 0 0 7px #000, 0 0 10px #000, 0 0 21px #008fdd, 0 0 42px #008fdd, 0 0 82px #000, 0 0 92px #fff, 0 0 102px #000, 0 0 151px #008fdd;
+	text-shadow: 0 0 7px #008fdd, 0 0 10px #000, 0 0 21px #008fdd, 0 0 42px #008fdd, 0 0 82px #000, 0 0 92px #fff, 0 0 102px #000, 0 0 151px #008fdd;
+	z-index: 2;
 }
 
 	/*LinkedIn Hover Animation*/
 
 	.link2:hover {
-		text-shadow: 0 0 80px #008fdd,0 0 30px #008fdd,0 0 6px #008fdd;
+		text-shadow: 0 0 20px #000, 0 0 40px #000, 0 0 61px #008fdd, 0 0 82px #008fdd, 0 0 102px #000, 0 0 122px #fff, 0 0 142px #000, 0 0 165px #008fdd;
 		position: relative;
 		color: white;
 	}
@@ -102,19 +116,19 @@ body {
 /*GitHub Link Styling*/
 .link3 {
 	font-size: 20px;
-	color: lightgrey;
+	color: white;
 	position: relative;
 	margin-top: 20px;
 	animation: Post 3.6s 1;
 	display: block;
 	font-weight: 500;
 	font-family: Arial;
-	text-shadow: 0 0 7px #000, 0 0 10px #000, 0 0 21px #b300b3, 0 0 42px #b300b3, 0 0 82px #000, 0 0 92px #fff, 0 0 102px #000, 0 0 151px #b300b3;
+	text-shadow: 0 0 7px #b300b3, 0 0 10px #000, 0 0 21px #b300b3, 0 0 42px #b300b3, 0 0 82px #000, 0 0 92px #fff, 0 0 102px #000, 0 0 151px #b300b3;
 }
 
 	/*GitHub Hover Animation*/
 	.link3:hover {
-		text-shadow: 0 0 200px #b300b3,0 0 80px #b300b3,0 0 6px #b300b3;
+		text-shadow: 0 0 20px #000, 0 0 40px #000, 0 0 61px #b300b3, 0 0 82px #b300b3, 0 0 102px #000, 0 0 122px #fff, 0 0 142px #000, 0 0 165px #b300b3;
 		position: relative;
 		color: white;
 	}
@@ -123,19 +137,19 @@ body {
 .AboutNav {
 	text-decoration: none;
 	background-color: transparent;
-	font-size: 30px;
+	font-size: 28px;
 	font-family: sans-serif;
 	text-align: right;
 	color: lightgrey;
 	font-weight: 500;
 	display: block;
 	float: right;
-	margin-top: 1%;
-	margin-right: 1%;
-	opacity: 0.75;
+	margin-top: auto;
+	margin-right: auto;
+	opacity: 0.9;
 	height: 100%;
 	animation: AboutPost 3.6s 1;
-	text-shadow: 0 0 7px #000, 0 0 10px #000, 0 0 21px #E58900, 0 0 42px #E58900, 0 0 82px #E58900, 0 0 92px #fff, 0 0 102px #000, 0 0 151px #000;
+	text-shadow: 0 0 7px #E58900, 0 0 10px #000, 0 0 21px #E58900, 0 0 42px #E58900, 0 0 82px #E58900, 0 0 92px #fff, 0 0 102px #000, 0 0 151px #000;
 }
 
 @media only screen and (max-width: 850px) {
@@ -149,8 +163,8 @@ body {
 .AboutNav:hover {
 	opacity: 1;
 	text-decoration: none;
-	color: lightgrey;
-	animation-play-state: paused;
+	color: white;
+	text-shadow: 0 0 20px #000, 0 0 40px #000, 0 0 61px #E58900, 0 0 82px #E58900, 0 0 102px #000, 0 0 122px #fff, 0 0 142px #000, 0 0 165px #E58900;
 }
 
 /*
@@ -704,7 +718,7 @@ span3:hover:after {
 @keyframes first {
 	0%,12%,18.999%,23%,31.999%,37%,44.999%,46%,49.999%,51%,58.999%,61%,68.999%,71%,85.999%,96%,100% {
 		opacity: 0.99;
-		text-shadow: 0 0 80px #f90, 0 0 30px #f90, 0 0 6px #f90;
+		text-shadow: 0 0 7px #000, 0 0 10px #000, 0 0 21px #f90, 0 0 42px #f90, 0 0 82px #000, 0 0 92px #fff, 0 0 102px #000, 0 0 151px #f90;
 	}
 
 	19%,22.99%,32%,36.999%,45%,45.999%,50%,50.99%,59%,60.999%,69%,70.999%,86%,95.999% {
@@ -728,5 +742,6 @@ span3:hover:after {
 
 /*linked in "n" letter flicker */
 .link2 spanl {
-	animation: linked 9s linear infinite;
+	animation: linked 7s linear infinite;
+	z-index: 1;
 }

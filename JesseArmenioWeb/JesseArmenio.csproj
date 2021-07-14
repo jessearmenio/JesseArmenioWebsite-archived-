@@ -173,6 +173,7 @@
     <Content Include="HomeTest.html" />
     <Content Include="JesseArmenio.jpg" />
     <Content Include="Facetune_14-04-2020-01-18-16 2.jpg" />
+    <Content Include="jessiologoblackhearttransparent.png" />
     <Content Include="music.html" />
     <Content Include="MusicStyleSheet.css" />
     <Content Include="NewSkillGraphic.png" />
@@ -266,6 +267,8 @@
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
     <Content Include="JesseArmenioMarch2021.pdf" />
+    <Content Include="aller.zip" />
+    <Content Include="Aller_Std_Bd.ttf" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Properties\PublishProfiles\_PersonalWebsite_.ghcr.io.pubxml" />
     <Content Include="Scripts\index.js.flow" />

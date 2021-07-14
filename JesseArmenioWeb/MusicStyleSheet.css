@@ -13,6 +13,14 @@ html {
 }
 
 
+/*increase clickable area for links*/
+a {
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	padding: 2em;
+	margin: -2em;
+}
 
 /*General Body Styling*/
 body {
@@ -112,34 +120,51 @@ span1 {
 }
 
 #paint {
-	position: relative;
-	width: 50%;
-	height: 50%;
+	position: fixed;
+	width: 70%;
+	top: 50%;
+	left: 51%;
+	transform: translate(-50%, -50%);
 	margin-left: auto;
 	margin-right: auto;
-	text-align: center;
-	align-content: center;
-	margin-top: 0;
-	-webkit-animation: Rotation 16s linear infinite;
-	animation: Rotation 16s linear infinite;
-	animation-delay: 3.2s;
-	opacity: 0;
+	margin-top: -10%;
+	-webkit-animation: appear 2s forwards;
+	animation-delay: 5s;
+	animation: appear 2s forwards;
+	opacity: 1;
+	z-index: 1;
+}
+
+@media only screen and (max-width: 500px) {
+	#paint {
+		transform: scale(0.7,0.7);
+	}
 }
 
 /* This enables the Skills Graphic Animation scale to Width -- (iPhone)*/
-@media only screen and (max-width: 500) {
+@media only screen and (max-width: 1400px) {
 	#paint {
-		margin-top: 200px;
-		width: 75%;
-		height: 75%;
+		width: 50%;
 	}
 }
 /* This enables the Skills Graphic Animation scale to Height -- (iPhone)*/
-@media only screen and (max-height: 850px) {
+@media only screen and (max-height: 1000px) {
 	#paint {
-		margin-top: 200px;
-		width: 75%;
-		height: 75%;
+		width: 25%;
+	}
+}
+
+@media only screen and (min-width: 2250px) {
+	#paint {
+		width: 45%;
+		left: 50%;
+	}
+}
+
+@media only screen and (min-width: 3200px) {
+	#paint {
+		width: 40%;
+		left: 50%;
 	}
 }
 
@@ -152,7 +177,7 @@ span1 {
 	text-decoration-style: none;
 }
 
-/*About Tab (Top Right) Styling*/
+/*About Tab (Top Right) Styling
 .AboutNav {
 	text-align: center;
 	background-color: transparent;
@@ -165,20 +190,21 @@ span1 {
 	margin-top: 15px;
 	margin-right: 15px;
 	opacity: 1;
+	text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #000, 0 0 42px #fff, 0 0 82px #000, 0 0 92px #000, 0 0 102px #fff, 0 0 151px #000;
 	color: #fff;
-	text-shadow: 0 0 7px #fff, 0 0 10px #000, 0 0 21px #fff, 0 0 42px #000, 0 0 82px #fff, 0 0 92px #000, 0 0 102px #fff, 0 0 151px #000;
-	animation: flicker 1.5s infinite alternate;
-	animation-delay: 4s
+	animation: flicker 1s infinite;
+	animation-delay: 4s;
 }
-
-	/*About Tab Hover Animation*/
+*/
+/*About Tab Hover Animation
 	.AboutNav:hover {
-		text-shadow: 0 0 7px #fff, 0 0 10px #000, 0 0 21px #fff, 0 0 42px #000, 0 0 82px #fff, 0 0 92px #000, 0 0 102px #fff, 0 0 151px #000;
+		text-shadow: 0 0 7px #f90, 0 0 10px #f90, 0 0 21px #f90, 0 0 42px #f90, 0 0 82px #f90, 0 0 92px #f90, 0 0 102px #f90, 0 0 151px #f90;
 		animation-play-state: paused;
 		color: white;
 		text-decoration-style: none;
 		text-decoration: none;
 	}
+*/
 
 /* Flickering animation */
 @keyframes flicker {
@@ -204,74 +230,72 @@ span1 {
 }
 
 /* Personal Name Styling and Animation Settings*/
-/*Jessio*/
+/*SWITCHED - Music*/
 .text1 {
-	font-size: 120px;
-	font-weight: 700;
-	margin-top: -30%;
-	letter-spacing: 6px;
-	margin-bottom: -30%;
-	position: relative;
-	animation: text 3s 1, flicker 10s infinite alternate;
-	font-family: subspace, subspace-webfont;
-	text-align: center;
-	color: #0e0f0f;
-	text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #fff, 0 0 82px #fff, 0 0 92px #fff, 0 0 102px #fff, 0 0 151px #fff;
-}
-
-@media only screen and (max-width: 500px) {
-	.text1 {
-		font-size: 50px;
-		font-weight: 500;
-		position: relative;
-		left: 50%;
-		top: 15%;
-		transform: translate(-50%, -50%);
-	}
-}
-
-/*Music*/
-.text2 {
-	font-size: 80px;
-	color: #0e0f0f;
-	animation: text 3s 1;
-	margin-top: 0%;
-	font-family: subspace, subspace-webfont;
-	text-align: center;
-	position: relative;
+	font-size: 60px;
+	letter-spacing: 8px;
+	margin: 0 auto;
+	position: fixed;
+	top: 50%;
 	left: 50%;
-	top: 60%;
-	transform: translate(-50%, -500%);
-}
-
-@media only screen and (min-width: 1250px){
- text1 {
-	 position: fixed;
-	 top: 60%;
-	}
-}
-
-@media only screen and (min-width: 1250px) {
-	text3 {
-		position: fixed;
-		top: 60%;
-	}
-}
-
-
-/*Returning Music*/
-.text3 {
-	font-size: 100px;
-	color: #0e0f0f;
-	animation: comeback 4.2s 1;
+	transform: translate(-50%, -50%);
+	animation: text 2.9s 1;
 	font-family: subspace, subspace-webfont;
 	text-align: center;
-	position: relative;
-	margin-top: 400px;
-	margin-left: 0 auto;
-	margin-right: 0 auto;
-	top: 60%;
-	text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #fff, 0 0 82px #fff, 0 0 92px #fff, 0 0 102px #fff, 0 0 151px #fff;
+	color: white;
+	text-shadow: 0 0 7px #000, 0 0 10px #000, 0 0 21px #ff7700, 0 0 42px #ff7700, 0 0 82px #000, 0 0 92px #fff, 0 0 102px #000, 0 0 151px #ff7700;
+	z-index: 2;
+}
+
+@media only screen and (max-width: 800px) {
+	.text1 {
+		margin-top: 15%;
+		font-size: 35px;
+	}
+}
+
+.text1:hover {
+	text-shadow: 0 0 7px #000, 0 0 10px #000, 0 0 21px #ff7700, 0 0 42px #ff7700, 0 0 82px #000, 0 0 92px #fff, 0 0 102px #000, 0 0 151px #ff7700;
+	animation-play-state: paused;
+	color: white;
+}
+
+@keyframes soundcloud {
+	0%,12%,18.999%,23%,31.999%,37%,44.999%,46%,49.999%,51%,58.999%,61%,68.999%,71%,85.999%,96%,100% {
+		opacity: 0.99;
+		color: white;
+		text-shadow: 0 0 7px #000, 0 0 10px #000, 0 0 21px #ff7700, 0 0 42px #ff7700, 0 0 82px #000, 0 0 92px #fff, 0 0 102px #000, 0 0 151px #ff7700;
+	}
+
+	19%,22.99%,32%,36.999%,45%,45.999%,50%,50.99%,59%,60.999%,69%,70.999%,86%,95.999% {
+		opacity: 0.4;
+		color: white;
+		text-shadow: none;
+	}
+}
+
+@keyframes soundcloud2 {
+	0%,19.999%,22%,62.999%,64%, 64.999%,70%,100% {
+		opacity: .99;
+		color: white;
+		text-shadow: 0 0 7px #000, 0 0 10px #000, 0 0 21px #ff7700, 0 0 42px #ff7700, 0 0 82px #000, 0 0 92px #fff, 0 0 102px #000, 0 0 151px #ff7700;
+	}
+
+	20%,21.999%,63%,63.999%,65%,69.999% {
+		opacity: 0.4;
+		color: white;
+		text-shadow: none;
+	}
+}
+
+.text1 spans {
+	animation: soundcloud 10s linear infinite;
+	animation-delay: 2.2s;
+}
+
+.text1 spant {
+	animation: soundcloud2 10s linear infinite;
+	animation-delay: 2.2s;
 }
 
 .text1, .text2:hover {
@@ -283,19 +307,22 @@ span1 {
 	background-color: transparent;
 	font-size: 30px;
 	font-family: subspace, subspace-webfont;
-	position: relative;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 	display: block;
 	opacity: 1;
+	animation: altflicker 1.5s infinite alternate;
+	animation-delay: 3s;
 	color: #fff;
-	text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #fff, 0 0 82px #fff, 0 0 92px #fff, 0 0 102px #fff, 0 0 151px #fff;
+	text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #000, 0 0 82px #fff, 0 0 92px #000, 0 0 102px #fff, 0 0 151px #fff;
 }
 
-	.link1::after hover {
-		position: relative;
+	.link1:hover {
 		color: white;
-		font-weight: 600;
-		text-decoration: none;
-		text-decoration-style: none;
+		animation-play-state: paused;
+		text-shadow: 0 0 7px #f90, 0 0 10px #f90, 0 0 21px #f90, 0 0 42px #f90, 0 0 82px #f90, 0 0 92px #f90, 0 0 102px #f90, 0 0 151px #f90;
 	}
 
 
@@ -312,32 +339,38 @@ span1 {
 	33% {
 		letter-spacing: 25px;
 		margin-bottom: -40px;
-		color: white;
+		color: black;
 	}
 
 	43% {
 		letter-spacing: 25px;
-		margin-bottom: -40px;
-		color: grey;
+		margin-bottom: -50px;
+		color: gray;
 	}
 
 	47% {
 		letter-spacing: 25px;
-		margin-bottom: -40px;
+		margin-bottom: -60px;
 		color: white;
 	}
 
 
 	66% {
 		letter-spacing: 25px;
-		margin-bottom: -40px;
-		color: grey;
+		margin-bottom: -75px;
+		color: dimgray;
 	}
 
 	85% {
 		letter-spacing: 8px;
-		margin-bottom: -40px;
-		color: dimgray;
+		margin-bottom: -90px;
+		color: grey;
+	}
+
+	100% {
+		letter-spacing: 8px;
+		margin-bottom: -100%;
+		color: #0e0f0f;
 	}
 }
 
@@ -463,10 +496,11 @@ div.clouds {
 	opacity: 0.45;
 }
 
-/*Cloud Moving Animation*/
+
+/*Cloud Animation*/
 @keyframes move {
 	from {
-		left: -250px;
+		left: -200px;
 	}
 
 	to {
@@ -477,12 +511,15 @@ div.clouds {
 /*Compatability Cloud Animation*/
 @-webkit-keyframes move {
 	from {
-		left: -250px;
+		left: -200px;
 	}
 
 	to {
 		left: 100%;
 	}
+}
+
+}
 }
 
 /* Flickering animation */
@@ -497,72 +534,57 @@ div.clouds {
 	}
 }
 
-/*Text 3 (Returning Music Text) animation */
-@keyframes comeback {
+@keyframes altflicker {
 
-	0%, 25%, 70% {
-		margin-top: 500px;
-		opacity: 0;
+	0%, 18%, 22%, 25%, 53%, 57%, 100% {
+		text-shadow: 0 0 5px #f90, 0 0 10px #f90, 0 0 15px #f90, 0 0 20px #fff, 0 0 25px #f90, 0 0 30px #fff, 0 0 35px #f90, 0 0 40px #f90;
 	}
 
-	80% {
-		margin-top: 100px;
-		opacity: 1;
-	}
-
-	100% {
-		margin-top: 400px;
-		opacity: 1;
+	20%, 24%, 55% {
+		text-shadow: none;
 	}
 }
 
-/*Rotation Animation for heart paint Graphic*/
-@keyframes Rotation {
-	0% {
-		transform: rotate(0deg);
-		opacity: 0;
-	}
+/*Text 3 (Returning Music Text) animation */
+@keyframes comeback {
 
-	5% {
-		opacity: 0.5;
-		transform: rotate(200deg)
-	}
-
-	10% {
-		opacity: 0.7
-	}
-
-	30% {
+	0%, 25% {
+		margin: 0 auto;
+		position: relative;
+		margin-top: 30px;
 		opacity: 1;
 	}
 
-	40% {
-		opacity: 0.7
-	}
-
-	50% {
-		opacity: 0.3;
-		transform: rotate(270deg)
-	}
-
-	60% {
-		opacity: 0.5;
-	}
-
-	75% {
+	70% {
+		margin: 0 auto;
+		position: relative;
+		margin-top: 30px;
 		opacity: 1;
-	}
-
-	80% {
-		opacity: 1;
-	}
-
-	90% {
-		opacity: 0.5;
 	}
 
 	100% {
-		opacity: 0;
-		transform: rotate(360deg);
+		opacity: 1;
+		position: relative;
+		margin-top: 0;
+		top: 15%;
+		font-size: 80px;
+	}
+}
+
+/*apear Animation for heart paint Graphic*/
+@keyframes appear {
+	0% {
+		transform: scale(0.7,0.7) translate(-50%, -50%);
+		transform-origin: left top;
+	}
+
+	50% {
+		transform: scale(1.5,1.5) translate(-50%, -50%);
+		transform-origin: left top;
+	}
+
+	100% {
+		transform: scale(1,1) translate(-50%, -50%);
+		transform-origin: left top;
 	}
 }
