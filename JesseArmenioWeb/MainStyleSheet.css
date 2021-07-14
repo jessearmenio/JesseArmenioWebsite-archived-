@@ -108,7 +108,7 @@ body {
 	/*LinkedIn Hover Animation*/
 
 	.link2:hover {
-		text-shadow: 0 0 20px #000, 0 0 40px #000, 0 0 61px #008fdd, 0 0 82px #008fdd, 0 0 102px #000, 0 0 122px #fff, 0 0 142px #000, 0 0 165px #008fdd;
+		text-shadow: 0 0 20px #000, 0 0 40px #000, 0 0 61px #008fdd, 0 0 82px #008fdd, 0 0 102px #000, 0 0 122px #fff, 0 0 142px #008fdd, 0 0 170px #008fdd;
 		position: relative;
 		color: white;
 	}
@@ -128,7 +128,7 @@ body {
 
 	/*GitHub Hover Animation*/
 	.link3:hover {
-		text-shadow: 0 0 20px #000, 0 0 40px #000, 0 0 61px #b300b3, 0 0 82px #b300b3, 0 0 102px #000, 0 0 122px #fff, 0 0 142px #000, 0 0 165px #b300b3;
+		text-shadow: 0 0 20px #000, 0 0 40px #000, 0 0 61px #b300b3, 0 0 82px #b300b3, 0 0 102px #000, 0 0 122px #fff, 0 0 142px #b300b3, 0 0 170px #b300b3;
 		position: relative;
 		color: white;
 	}
