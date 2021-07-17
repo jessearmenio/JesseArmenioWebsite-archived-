@@ -49,19 +49,13 @@ body {
 	letter-spacing: 6px;
 	margin-bottom: 0px;
 	position: relative;
-	animation: text 3s 1;
+	animation: text 3s ease-in-out;
 	z-index: 2;
 	color: white;
 	font-family: sans-serif;
 	text-align: center;
 	text-shadow: 0 0 7px #000, 0 0 10px #000, 0 0 21px #f90, 0 0 42px #f90, 0 0 82px #000, 0 0 92px #fff, 0 0 102px #000, 0 0 151px #f90;
 }
-
-	.text1 spanf {
-		animation: first 7.5s linear infinite;
-		animation-delay: 3s;
-		z-index: 1;
-	}
 
 /*Last Name*/
 .text2 {
@@ -79,13 +73,13 @@ body {
 	color: white;
 	position: relative;
 	margin-top: 30px;
-	animation: link 3.5s 1;
+	animation: link 3.2s ease;
 	display: block;
 	font-family: sans-serif;
 	text-shadow: 0 0 7px #f90, 0 0 10px #000, 0 0 21px #f90, 0 0 42px #f90, 0 0 82px #000, 0 0 92px #fff, 0 0 102px #000, 0 0 151px #f90;
 }
 	/*Resume Hover Animation*/
-	.link1:hover {
+	.link1:hover, .link1:focus, .link1:active {
 		position: relative;
 		color: white;
 		text-shadow: 0 0 20px #000, 0 0 40px #000, 0 0 61px #f90, 0 0 82px #f90, 0 0 102px #000, 0 0 122px #fff, 0 0 142px #000, 0 0 165px #f90;
@@ -97,7 +91,7 @@ body {
 	color: white;
 	position: relative;
 	margin-top: 20px;
-	animation: Post 3.6s 1;
+	animation: Post 3.4s ease;
 	display: block;
 	font-weight: 500;
 	font-family: Arial;
@@ -106,11 +100,17 @@ body {
 }
 
 	/*LinkedIn Hover Animation*/
-
-	.link2:hover {
-		text-shadow: 0 0 20px #000, 0 0 40px #000, 0 0 61px #008fdd, 0 0 82px #008fdd, 0 0 102px #000, 0 0 122px #fff, 0 0 142px #008fdd, 0 0 170px #008fdd;
+	.link2:hover, .link2:focus, .link2:active {
 		position: relative;
 		color: white;
+		text-shadow: 0 0 20px #000, 0 0 40px #000, 0 0 61px #008fdd, 0 0 82px #008fdd, 0 0 102px #000, 0 0 122px #fff, 0 0 142px #008fdd, 0 0 170px #008fdd;
+	}
+
+	/*linked in "n" letter flicker */
+	.link2 spanl {
+		animation: linked 7.5s linear infinite;
+		animation-delay: 3s;
+		z-index: 1;
 	}
 
 /*GitHub Link Styling*/
@@ -119,18 +119,23 @@ body {
 	color: white;
 	position: relative;
 	margin-top: 20px;
-	animation: Post 3.6s 1;
+	animation: Post 3.5s 1;
 	display: block;
 	font-weight: 500;
 	font-family: Arial;
-	text-shadow: 0 0 7px #b300b3, 0 0 10px #000, 0 0 21px #b300b3, 0 0 42px #b300b3, 0 0 82px #000, 0 0 92px #fff, 0 0 102px #000, 0 0 151px #b300b3;
+	text-shadow: 0 0 7px #b300b3, 0 0 10px #b300b3, 0 0 21px #b300b3, 0 0 42px #b300b3, 0 0 82px #000, 0 0 92px #fff, 0 0 102px #b300b3, 0 0 151px #b300b3;
 }
 
 	/*GitHub Hover Animation*/
-	.link3:hover {
-		text-shadow: 0 0 20px #000, 0 0 40px #000, 0 0 61px #b300b3, 0 0 82px #b300b3, 0 0 102px #000, 0 0 122px #fff, 0 0 142px #b300b3, 0 0 170px #b300b3;
+	.link3:hover, .link3:focus, .link3:active {
+		text-shadow: 0 0 20px #000, 0 0 40px #000, 0 0 61px #fff, 0 0 82px #b300b3, 0 0 102px #000, 0 0 122px #fff, 0 0 142px #b300b3, 0 0 170px #b300b3;
 		position: relative;
 		color: white;
+	}
+
+	.link3 spang {
+		animation: git 9s linear infinite;
+		z-index: 1;
 	}
 
 /*About Tab (Top Right) Styling*/
@@ -148,7 +153,7 @@ body {
 	margin-right: auto;
 	opacity: 0.9;
 	height: 100%;
-	animation: AboutPost 3.6s 1;
+	animation: AboutPost 3.6s ease;
 	text-shadow: 0 0 7px #E58900, 0 0 10px #000, 0 0 21px #E58900, 0 0 42px #E58900, 0 0 82px #E58900, 0 0 92px #fff, 0 0 102px #000, 0 0 151px #000;
 }
 
@@ -186,7 +191,7 @@ div.clouds {
 	position: relative;
 	left: -200px;
 	top: 65%;
-	animation: move 28s linear 6s infinite;
+	animation: move 28s ease-out 6s infinite;
 	width: 150px;
 	opacity: 0.25;
 }
@@ -204,7 +209,7 @@ div.clouds {
 	top: 8%;
 	left: -200px;
 	position: relative;
-	animation: move 32s linear 3.6s infinite;
+	animation: move 32s ease-out 3.6s infinite;
 	width: 200px;
 	opacity: 0.55;
 }
@@ -222,7 +227,7 @@ div.clouds {
 	top: 42%;
 	left: -200px;
 	position: relative;
-	animation: move 27s linear 4.5s infinite;
+	animation: move 27s ease-out 4.5s infinite;
 	animation-delay: 4.5s;
 	width: 200px;
 	opacity: 0.6;
@@ -241,8 +246,7 @@ div.clouds {
 	position: absolute;
 	left: -200px;
 	top: 35%;
-	animation: move 30s linear 5.5s infinite;
-	animation-delay: 5.5s;
+	animation: move 30s ease-out 5.5s infinite;
 	width: 200px;
 	opacity: 0.3;
 }
@@ -252,6 +256,7 @@ div.clouds {
 	left: -200px;
 	position: absolute;
 	animation: move 32s linear 3.6s infinite;
+	animation-delay: 5.5s;
 	width: 200px;
 	opacity: 0.2;
 }
@@ -260,7 +265,7 @@ div.clouds {
 	top: 62%;
 	left: -200px;
 	position: absolute;
-	animation: move 28s linear 7s infinite;
+	animation: move 28s ease-out 7s infinite;
 	animation-delay: 7s;
 	width: 200px;
 	opacity: 0.4;
@@ -313,147 +318,6 @@ div.clouds {
 	}
 }
 
-/*
-/*
-START of Span Area Stylings
-/*
-/*
-/*Span 1, 2, 3 Hover Animation Styling*/
-span1, span2, span3 {
-	position: relative;
-	display: block;
-	cursor: pointer;
-	text-align: center;
-}
-
-span4 {
-	font-family: sans-serif;
-	font-size: 25px;
-}
-
-/*Resume Line-Through Hover Animation Settings*/
-span1:before, span1:after {
-	content: '';
-	position: absolute;
-	width: 0%;
-	height: 1px;
-	top: 50%;
-	margin-top: -0.5px;
-	background: #b8860b;
-	font-weight: 600;
-	overflow: hidden;
-}
-
-span1:before {
-	left: -2.5px;
-}
-
-span1:after {
-	right: 2.5px;
-	background: #b8860b;
-	transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
-	font-weight: 600;
-	overflow: hidden;
-}
-
-span1:hover:before {
-	background: #b8860b;
-	width: 100%;
-	transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
-}
-
-span1:hover:after {
-	background: transparent;
-	width: 100%;
-	transition: 0s;
-	font-weight: 600;
-	overflow: hidden;
-}
-
-/*LinkedIn Line-Through Hover Animation Settings*/
-span2:before, span2:after {
-	content: '';
-	position: absolute;
-	width: 0%;
-	height: 1px;
-	top: 50%;
-	margin-top: -0.5px;
-	background: #008fdd;
-	font-weight: 600;
-	overflow: hidden;
-}
-
-span2:before {
-	left: -2.5px;
-}
-
-span2:after {
-	right: 2.5px;
-	background: #008fdd;
-	transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
-	font-weight: 600;
-	overflow: hidden;
-}
-
-span2:hover:before {
-	background: #008fdd;
-	width: 100%;
-	transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
-}
-
-span2:hover:after {
-	background: transparent;
-	width: 100%;
-	transition: 0s;
-	font-weight: 600;
-	overflow: hidden;
-}
-
-/*GitHub Line-Through Animation Hover Settings*/
-span3:before, span3:after {
-	content: '';
-	position: absolute;
-	width: 0%;
-	height: 1px;
-	top: 50%;
-	margin-top: -0.5px;
-	background: #b300b3;
-	font-weight: 600;
-	overflow: hidden;
-}
-
-span3:before {
-	left: -2.5px;
-}
-
-span3:after {
-	right: 2.5px;
-	background: #b300b3;
-	transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
-	font-weight: 600;
-	overflow: hidden;
-}
-
-span3:hover:before {
-	background: #b300b3;
-	width: 100%;
-	transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
-}
-
-span3:hover:after {
-	background: transparent;
-	width: 100%;
-	transition: 0s;
-	font-weight: 600;
-	overflow: hidden;
-}
-/*
-/*END of Span Stylings
-/*
-/*
-
-/*
-/*
 /* START ALL ANIMATIONS */
 /*
 
@@ -714,11 +578,11 @@ span3:hover:after {
 	}
 }
 
-/*first name flicker*/
-@keyframes first {
+/*linkedin*/
+@keyframes linked {
 	0%,12%,18.999%,23%,31.999%,37%,44.999%,46%,49.999%,51%,58.999%,61%,68.999%,71%,85.999%,96%,100% {
 		opacity: 0.99;
-		text-shadow: 0 0 7px #000, 0 0 10px #000, 0 0 21px #f90, 0 0 42px #f90, 0 0 82px #000, 0 0 92px #fff, 0 0 102px #000, 0 0 151px #f90;
+		text-shadow: 0 0 7px #000, 0 0 10px #000, 0 0 21px #008fdd, 0 0 42px #008fdd, 0 0 82px #000, 0 0 92px #fff, 0 0 102px #000, 0 0 151px #008fdd;
 	}
 
 	19%,22.99%,32%,36.999%,45%,45.999%,50%,50.99%,59%,60.999%,69%,70.999%,86%,95.999% {
@@ -727,21 +591,171 @@ span3:hover:after {
 	}
 }
 
-/*linkedin*/
-@keyframes linked {
-	0%,19.999%,22%,62.999%,64%, 64.999%,70%,100% {
-		opacity: .99;
-		text-shadow: 0 0 80px #008fdd,0 0 30px #008fdd,0 0 6px #008fdd;
+@keyframes git {
+	0%,12%,18.999%,23%,31.999%,37%,44.999%,46%,49.999%,51%,58.999%,61%,68.999%,71%,85.999%,96%,100% {
+		opacity: 0.99;
+		text-shadow: 0 0 7px #000, 0 0 10px #000, 0 0 21px #b300b3, 0 0 42px #b300b3, 0 0 82px #000, 0 0 92px #fff, 0 0 102px #000, 0 0 151px #b300b3;
 	}
 
-	20%,21.999%,63%,63.999%,65%,69.999% {
+	19%,22.99%,32%,36.999%,45%,45.999%,50%,50.99%,59%,60.999%,69%,70.999%,86%,95.999% {
 		opacity: 0.4;
 		text-shadow: none;
 	}
 }
 
-/*linked in "n" letter flicker */
-.link2 spanl {
-	animation: linked 7s linear infinite;
-	z-index: 1;
+@-webkit-keyframes hvr-wobble-top {
+	16.65% {
+		-webkit-transform: skew(-12deg);
+		transform: skew(-12deg);
+	}
+
+	33.3% {
+		-webkit-transform: skew(10deg);
+		transform: skew(10deg);
+	}
+
+	49.95% {
+		-webkit-transform: skew(-6deg);
+		transform: skew(-6deg);
+	}
+
+	66.6% {
+		-webkit-transform: skew(4deg);
+		transform: skew(4deg);
+	}
+
+	83.25% {
+		-webkit-transform: skew(-2deg);
+		transform: skew(-2deg);
+	}
+
+	100% {
+		-webkit-transform: skew(0);
+		transform: skew(0);
+	}
 }
+
+@keyframes hvr-wobble-top {
+	16.65% {
+		-webkit-transform: skew(-12deg);
+		transform: skew(-12deg);
+	}
+
+	33.3% {
+		-webkit-transform: skew(10deg);
+		transform: skew(10deg);
+	}
+
+	49.95% {
+		-webkit-transform: skew(-6deg);
+		transform: skew(-6deg);
+	}
+
+	66.6% {
+		-webkit-transform: skew(4deg);
+		transform: skew(4deg);
+	}
+
+	83.25% {
+		-webkit-transform: skew(-2deg);
+		transform: skew(-2deg);
+	}
+
+	100% {
+		-webkit-transform: skew(0);
+		transform: skew(0);
+	}
+}
+
+@-webkit-keyframes hvr-wobble-bottom {
+	16.65% {
+		-webkit-transform: skew(-12deg);
+		transform: skew(-12deg);
+	}
+
+	33.3% {
+		-webkit-transform: skew(10deg);
+		transform: skew(10deg);
+	}
+
+	49.95% {
+		-webkit-transform: skew(-6deg);
+		transform: skew(-6deg);
+	}
+
+	66.6% {
+		-webkit-transform: skew(4deg);
+		transform: skew(4deg);
+	}
+
+	83.25% {
+		-webkit-transform: skew(-2deg);
+		transform: skew(-2deg);
+	}
+
+	100% {
+		-webkit-transform: skew(0);
+		transform: skew(0);
+	}
+}
+
+@keyframes hvr-wobble-bottom {
+	16.65% {
+		-webkit-transform: skew(-12deg);
+		transform: skew(-12deg);
+	}
+
+	33.3% {
+		-webkit-transform: skew(10deg);
+		transform: skew(10deg);
+	}
+
+	49.95% {
+		-webkit-transform: skew(-6deg);
+		transform: skew(-6deg);
+	}
+
+	66.6% {
+		-webkit-transform: skew(4deg);
+		transform: skew(4deg);
+	}
+
+	83.25% {
+		-webkit-transform: skew(-2deg);
+		transform: skew(-2deg);
+	}
+
+	100% {
+		-webkit-transform: skew(0);
+		transform: skew(0);
+	}
+}
+
+/*Animation for all general body to bounce on hover
+@keyframes hoverbody {
+	0%, 20% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	60% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	80% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+
+	100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+}
+	*/

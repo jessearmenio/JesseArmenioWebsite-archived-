@@ -16,7 +16,7 @@ html {
 
 /* Background of page fill*/
 body {
-	background-color: black;
+	background: black;
 	width: 100%;
 	margin: 0 auto;
 }
@@ -31,6 +31,7 @@ html, body {
 	font-family: sans-serif;
 	margin: 0 auto;
 }
+
 
 /*Main Name Header Title Styling*/
 h1 {
@@ -53,7 +54,7 @@ h1 {
 	font-family: sans-serif;
 	font-weight: 600;
 	overflow: visible;
-	animation: jesse 15s 1, flicker 7s infinite;
+	animation: jesse 15s ease-in-out, flicker 7s ease infinite;
 	text-shadow: 0 0 5px #f90, 0 0 10px #f90, 0 0 15px #f90, 0 0 20px #fff, 0 0 25px #f90, 0 0 30px #fff, 0 0 35px #f90, 0 0 40px #f90;
 }
 
@@ -66,7 +67,7 @@ h1 {
 		font-weight: 600;
 		overflow: visible;
 		margin-top: 55%;
-		animation: jesse 20s 1, altflicker 5s infinite alternate;
+		animation: jesse 20s ease-in-out, altflicker 5s infinite alternate;
 	}
 }
 
@@ -80,7 +81,7 @@ h1 {
 		font-weight: 600;
 		overflow: visible;
 		margin-top: 50%;
-		animation: jesse 20s 1, altflicker 5s infinite alternate;
+		animation: jesse 20s ease-in-out, altflicker 5s infinite alternate;
 	}
 }
 
@@ -94,7 +95,7 @@ h1 {
 		font-weight: 600;
 		overflow: visible;
 		margin-top: 55%;
-		animation: jessemobile 20s 1, altflicker 5s infinite alternate;
+		animation: jessemobile 20s ease-in-out, altflicker 5s infinite alternate;
 	}
 }
 
@@ -108,7 +109,7 @@ h1 {
 		font-weight: 600;
 		overflow: visible;
 		margin-top: 50%;
-		animation: jessemobile 20s 1, altflicker 5s infinite alternate;
+		animation: jessemobile 20s ease-in-out, altflicker 5s infinite alternate;
 	}
 }
 
@@ -145,7 +146,7 @@ h1, h2, spanT, #AboutNav a, .returnlink {
 	display: block;
 	top: 5%;
 	float: left;
-	animation: AboutPicture 3s;
+	animation: AboutPicture 3s ease-in-out;
 }
 
 /*About Picture Resize at 700 px -- (Half-Window)*/
@@ -181,13 +182,20 @@ img {
 	width: 40%;
 	border-radius: 4%;
 }
+
 	/*AboutPicture Bounces when Hovered*/
 	img:hover {
-		animation: hoverbody 1s;
+		animation: avihover 0.5s linear;
+		animation-iteration-count: infinite;
+		-webkit-filter: saturate(3); /* compatability with Safari */
+		filter: saturate(3);
 	}
 
 	img:focus {
-		animation: hoverbody 1s;
+		animation: avihover 0.5s linear;
+		animation-iteration-count: infinite;
+		-webkit-filter: saturate(3); /* compatability with Safari */
+		filter: saturate(3);
 	}
 
 /*Body Paragraph Styling*/
@@ -236,22 +244,36 @@ spanI {
 
 /*About Paragraph Positioning -- (About)*/
 #About1 {
-	top: 20%;
 	padding-right: 0;
 	display: block;
 	text-align: left;
 	position: absolute;
+	top: 35%;
 	left: 45%;
-	float: right;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-transform: translateY(-70px);
+	transform: translateY(-70px);
 }
 
-	/*About Paragraph Bounces when Hovered*/
-	#About1:hover {
-		animation: hoverbody 1s;
-	}
-
-	#About1:focus {
-		animation: hoverbody 1s;
+	#About1:hover,
+	#About1:focus,
+	#About1:active {
+		-webkit-animation-name: hvr-bob-float2, hvr-bob2;
+		animation-name: hvr-bob-float2, hvr-bob2;
+		-webkit-animation-duration: .3s, 1.5s;
+		animation-duration: .3s, 1.5s;
+		-webkit-animation-delay: 0s, .3s;
+		animation-delay: 0s, .3s;
+		-webkit-animation-timing-function: ease-out, ease-in-out;
+		animation-timing-function: ease-out, ease-in-out;
+		-webkit-animation-iteration-count: 1, infinite;
+		animation-iteration-count: 1, infinite;
+		-webkit-animation-fill-mode: forwards;
+		animation-fill-mode: forwards;
+		-webkit-animation-direction: normal, alternate;
+		animation-direction: normal, alternate;
 	}
 
 /*About Paragraph 700 px Resizing -- (mobile)*/
@@ -266,6 +288,32 @@ spanI {
 		padding: 2%;
 		margin-right: 0 auto;
 		width: 92%;
+		-webkit-transform: perspective(1px) translateZ(0);
+		transform: perspective(1px) translateZ(0);
+		box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+		-webkit-transform: translateY(-8px);
+		transform: translateY(-8px);
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	#About1:hover,
+	#About1:focus,
+	#About1:active {
+		-webkit-animation-name: hvr-bob-float, hvr-bob;
+		animation-name: hvr-bob-float, hvr-bob;
+		-webkit-animation-duration: .3s, 1.5s;
+		animation-duration: .3s, 1.5s;
+		-webkit-animation-delay: 0s, .3s;
+		animation-delay: 0s, .3s;
+		-webkit-animation-timing-function: ease-out, ease-in-out;
+		animation-timing-function: ease-out, ease-in-out;
+		-webkit-animation-iteration-count: 1, infinite;
+		animation-iteration-count: 1, infinite;
+		-webkit-animation-fill-mode: forwards;
+		animation-fill-mode: forwards;
+		-webkit-animation-direction: normal, alternate;
+		animation-direction: normal, alternate;
 	}
 }
 
@@ -364,15 +412,27 @@ spanI {
 	background-color: white;
 	border-radius: 4%;
 	width: 80%;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
-	/* About2 (Education) bounces when hovered*/
-	#About2:hover {
-		animation: hoverbody 1s;
-	}
-	/*About 2 (Education) bounces on cursor focus*/
-	#About2:focus {
-		animation: hoverbody 1s;
+	/* About2 (Education) animation when hovered*/
+	#About2:hover, #About2:focus, #About2:active {
+		-webkit-animation-name: hvr-bob-float, hvr-bob;
+		animation-name: hvr-bob-float, hvr-bob;
+		-webkit-animation-duration: .3s, 1.5s;
+		animation-duration: .3s, 1.5s;
+		-webkit-animation-delay: 0s, .3s;
+		animation-delay: 0s, .3s;
+		-webkit-animation-timing-function: ease-out, ease-in-out;
+		animation-timing-function: ease-out, ease-in-out;
+		-webkit-animation-iteration-count: 1, infinite;
+		animation-iteration-count: 1, infinite;
+		-webkit-animation-fill-mode: forwards;
+		animation-fill-mode: forwards;
+		-webkit-animation-direction: normal, alternate;
+		animation-direction: normal, alternate;
 	}
 
 
@@ -423,16 +483,29 @@ spanI {
 	border-radius: 4%;
 	width: 80%;
 	left: 0;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 }
 
-	/*About3 bounce on hover --  (Work Experience, Development Skills, Soft Skills, Invovlement)*/
-	#About3:hover {
-		animation: hoverbody 1s;
+	/*About3 animation on hover --  (Work Experience, Development Skills, Soft Skills, Invovlement)*/
+	#About3:hover, #About3:focus, #About3:active {
+		-webkit-animation-name: hvr-bob-float, hvr-bob;
+		animation-name: hvr-bob-float, hvr-bob;
+		-webkit-animation-duration: .3s, 1.5s;
+		animation-duration: .3s, 1.5s;
+		-webkit-animation-delay: 0s, .3s;
+		animation-delay: 0s, .3s;
+		-webkit-animation-timing-function: ease-out, ease-in-out;
+		animation-timing-function: ease-out, ease-in-out;
+		-webkit-animation-iteration-count: 1, infinite;
+		animation-iteration-count: 1, infinite;
+		-webkit-animation-fill-mode: forwards;
+		animation-fill-mode: forwards;
+		-webkit-animation-direction: normal, alternate;
+		animation-direction: normal, alternate;
 	}
-	/*About3 bounce on focus --  (Work Experience, Development Skills, Soft Skills, Invovlement)*/
-	#About3:focus {
-		animation: hoverbody 1s;
-	}
+
 
 /* Return Home Top Nav Visible only 1200px through 3000px*/
 .ReturnHomeTop {
@@ -545,6 +618,13 @@ spanI {
 	color: white;
 	transition: 0.3s;
 	width: 100px;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
 }
 
 /*Extra Link Text* Styling*/
@@ -552,7 +632,7 @@ a.returnlink {
 	color: white;
 	text-decoration-style: none;
 	text-decoration: none;
-	animation: followsocial 3s infinite;
+	animation: followsocial 3s ease-in-out;
 	animation-delay: 5s;
 	-webkit-transition: all .2s linear;
 	-o-transition: all .2s linear;
@@ -567,10 +647,16 @@ a.returnlink {
 
 /*Return to home button hover Styling*/
 #Return:hover {
-	animation: Return 1s;
+	-webkit-transform: scale(1.2) rotate(4deg);
+	transform: scale(1.2) rotate(4deg);
 	text-decoration-style: none;
 	text-decoration: none;
 	color: white;
+}
+
+#Return:active, Return:focus {
+	-webkit-transform: translateY(8px);
+	transform: translateY(8px);
 }
 
 a {
@@ -607,7 +693,7 @@ a {
 	-webkit-columns: 6;
 	-moz-columns: 6;
 	opacity: 0.7;
-	animation: AboutNav 3s;
+	animation: AboutNav ease 3s;
 }
 
 	/*About Nav Links Styling*/
@@ -620,7 +706,7 @@ a {
 		text-align: center;
 		opacity: 0.7;
 		text-decoration: none;
-		animation: AboutNavLetters 3s;
+		animation: AboutNavLetters ease 3s;
 		border: 3px;
 		border-color: black;
 	}
@@ -630,6 +716,27 @@ a {
 			color: white;
 			opacity: 1;
 		}
+
+
+/*Main About Nav Resize at 1200 px -- 2 Columns 85% bottom*/
+@media only screen and (max-width: 1200px) {
+	#AboutNav {
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		bottom: 80%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 5%;
+		columns: 2;
+		-webkit-columns: 2;
+		-moz-columns: 2;
+		opacity: 0.7;
+		width: 100%;
+		animation: AboutNavMobile2 ease 3s; /*85% Bottom*/
+	}
+}
 
 /*Main About Nav Resize at 1200 px -- 2 Columns 85% bottom*/
 @media only screen and (max-width: 1200px) {
@@ -647,7 +754,7 @@ a {
 		-moz-columns: 2;
 		opacity: 0.7;
 		width: 100%;
-		animation: AboutNavMobile2 3s; /*85% Bottom*/
+		animation: AboutNavMobile2 ease 3s; /*85% Bottom*/
 	}
 }
 
@@ -659,14 +766,14 @@ a {
 		padding: 0;
 		align-content: center;
 		list-style: none;
-		bottom: 87%;
+		bottom: 80%;
 		margin: 0 auto;
 		columns: 2;
 		-webkit-columns: 2;
 		-moz-columns: 2;
 		opacity: 0.7;
 		width: 100%;
-		animation: AboutNavMobile3 3s; /*87% Bottom*/
+		animation: AboutNavMobile3 ease 3s; /*87% Bottom*/
 	}
 }
 
@@ -677,14 +784,14 @@ a {
 		padding: 0;
 		align-content: center;
 		list-style: none;
-		bottom: 85%;
+		bottom: 80%;
 		margin: 0 auto;
 		columns: 2;
 		-webkit-columns: 2;
 		-moz-columns: 2;
 		opacity: 0.7;
 		width: 100%;
-		animation: AboutNavMobile2 3s; /*85% Bottom*/
+		animation: AboutNavMobile2 ease 3s; /*85% Bottom*/
 	}
 }
 
@@ -702,7 +809,7 @@ a {
 		-moz-columns: 2;
 		opacity: 0.7;
 		width: 100%;
-		animation: AboutNavMobile 3s; /*83% Bottom*/
+		animation: AboutNavMobile ease 3s; /*83% Bottom*/
 		font-size: 17px;
 	}
 }
@@ -721,7 +828,7 @@ a {
 		-moz-columns: 2;
 		opacity: 0.7;
 		width: 100%;
-		animation: AboutNavMobile 3s; /*83% Bottom*/
+		animation: AboutNavMobile ease 3s; /*83% Bottom*/
 		font-size: 14px;
 	}
 }
@@ -737,7 +844,7 @@ a {
 		text-align: center;
 		opacity: 0.7;
 		text-decoration: none;
-		animation: AboutNavLetters 3s;
+		animation: AboutNavLetters ease 3s;
 	}
 }
 
@@ -1004,34 +1111,6 @@ a {
 	}
 }
 
-/*Animation for all general body to bounce on hover*/
-@keyframes hoverbody {
-	0%, 20% {
-		-webkit-transform: translateY(0);
-		transform: translateY(0);
-	}
-
-	40% {
-		-webkit-transform: translateY(-20px);
-		transform: translateY(-20px);
-	}
-
-	60% {
-		-webkit-transform: translateY(0);
-		transform: translateY(0);
-	}
-
-	80% {
-		-webkit-transform: translateY(-10px);
-		transform: translateY(-10px);
-	}
-
-	100% {
-		-webkit-transform: translateY(0);
-		transform: translateY(0);
-	}
-}
-
 /*Return Home Top Nav Intro Animation*/
 @keyframes ReturnTop {
 	0% {
@@ -1234,35 +1313,6 @@ a {
 		opacity: 0.5;
 	}
 }
-
-/*Return button click (active) and hover Animation */
-@keyframes Return {
-	0%, 20% {
-		-webkit-transform: translateY(0);
-		transform: translateY(0);
-	}
-
-	40% {
-		-webkit-transform: translateY(-20px);
-		transform: translateY(-20px);
-	}
-
-	60% {
-		-webkit-transform: translateY(0);
-		transform: translateY(0);
-	}
-
-	80% {
-		-webkit-transform: translateY(-10px);
-		transform: translateY(-10px);
-	}
-
-	100% {
-		-webkit-transform: translateY(0);
-		transform: translateY(0);
-	}
-}
-
 
 @keyframes movesocial1 {
 	0% {
@@ -1603,6 +1653,149 @@ a {
 	}
 }
 
+/*about picture vibrate animation*/
+@keyframes avihover {
+	0% {
+		transform: translate(1px, 1px) rotate(0deg);
+	}
+
+	10% {
+		transform: translate(-1px, -2px) rotate(-1deg);
+	}
+
+	20% {
+		transform: translate(-3px, 0px) rotate(1deg);
+	}
+
+	30% {
+		transform: translate(3px, 2px) rotate(0deg);
+	}
+
+	40% {
+		transform: translate(1px, -1px) rotate(1deg);
+	}
+
+	50% {
+		transform: translate(-1px, 2px) rotate(-1deg);
+	}
+
+	60% {
+		transform: translate(-3px, 1px) rotate(0deg);
+	}
+
+	70% {
+		transform: translate(3px, 1px) rotate(-1deg);
+	}
+
+	80% {
+		transform: translate(-1px, -1px) rotate(1deg);
+	}
+
+	90% {
+		transform: translate(1px, 2px) rotate(0deg);
+	}
+
+	100% {
+		transform: translate(1px, -2px) rotate(-1deg);
+	}
+}
+
+@-webkit-keyframes hvr-bob {
+	0% {
+		-webkit-transform: translateY(-8px);
+		transform: translateY(-8px);
+	}
+
+	50% {
+		-webkit-transform: translateY(-4px);
+		transform: translateY(-4px);
+	}
+
+	100% {
+		-webkit-transform: translateY(-8px);
+		transform: translateY(-8px);
+	}
+}
+
+@keyframes hvr-bob {
+	0% {
+		-webkit-transform: translateY(-8px);
+		transform: translateY(-8px);
+	}
+
+	50% {
+		-webkit-transform: translateY(-4px);
+		transform: translateY(-4px);
+	}
+
+	100% {
+		-webkit-transform: translateY(-8px);
+		transform: translateY(-8px);
+	}
+}
+
+@-webkit-keyframes hvr-bob-float {
+	100% {
+		-webkit-transform: translateY(-8px);
+		transform: translateY(-8px);
+	}
+}
+
+@keyframes hvr-bob-float {
+	100% {
+		-webkit-transform: translateY(-8px);
+		transform: translateY(-8px);
+	}
+}
+
+@-webkit-keyframes hvr-bob2 {
+	0% {
+		-webkit-transform: translateY(-70px);
+		transform: translateY(-70px);
+	}
+
+	50% {
+		-webkit-transform: translateY(-62px);
+		transform: translateY(-62px);
+	}
+
+	100% {
+		-webkit-transform: translateY(-70px);
+		transform: translateY(-70px);
+	}
+}
+
+@keyframes hvr-bob2 {
+	0% {
+		-webkit-transform: translateY(-70px);
+		transform: translateY(-70px);
+	}
+
+	50% {
+		-webkit-transform: translateY(-62px);
+		transform: translateY(-62px);
+	}
+
+	100% {
+		-webkit-transform: translateY(-70px);
+		transform: translateY(-70px);
+	}
+}
+
+@-webkit-keyframes hvr-bob-float2 {
+	100% {
+		-webkit-transform: translateY(-70px);
+		transform: translateY(-70px);
+	}
+}
+
+@keyframes hvr-bob-float2 {
+	100% {
+		-webkit-transform: translateY(-70px);
+		transform: translateY(-70px);
+	}
+}
+
 /*END ANIMATIONS*/
 
 
@@ -1696,4 +1889,4 @@ a {
 		letter-spacing: normal;
 		opacity: 1;
     }
-    */
+	*/
