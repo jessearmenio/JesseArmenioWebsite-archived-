@@ -49,7 +49,7 @@ body {
 	letter-spacing: 6px;
 	margin-bottom: 0px;
 	position: relative;
-	animation: text 3s ease-in-out;
+	animation: text 3s linear;
 	z-index: 2;
 	color: white;
 	font-family: sans-serif;
@@ -62,7 +62,7 @@ body {
 	font-size: 35px;
 	color: lightgrey;
 	position: relative;
-	animation: text 3s 1;
+	animation: text 3s 1 linear;
 	font-family: sans-serif;
 	text-align: center;
 }
@@ -73,16 +73,15 @@ body {
 	color: white;
 	position: relative;
 	margin-top: 30px;
-	animation: link 3.2s ease;
+	animation: link 3.2s linear;
 	display: block;
 	font-family: sans-serif;
 	text-shadow: 0 0 7px #f90, 0 0 10px #000, 0 0 21px #f90, 0 0 42px #f90, 0 0 82px #000, 0 0 92px #fff, 0 0 102px #000, 0 0 151px #f90;
 }
 	/*Resume Hover Animation*/
 	.link1:hover, .link1:focus, .link1:active {
-		position: relative;
-		color: white;
-		text-shadow: 0 0 20px #000, 0 0 40px #000, 0 0 61px #f90, 0 0 82px #f90, 0 0 102px #000, 0 0 122px #fff, 0 0 142px #000, 0 0 165px #f90;
+		color: #f90;
+		text-shadow: 0 0 7px #f90, 0 0 10px #000, 0 0 21px #f90, 0 0 42px #FFFFFF, 0 0 82px #000, 0 0 92px #fff, 0 0 102px #FFFFFF, 0 0 151px #FFFFFF;
 	}
 
 /*LinkedIn Link Styling*/
@@ -91,7 +90,7 @@ body {
 	color: white;
 	position: relative;
 	margin-top: 20px;
-	animation: Post 3.4s ease;
+	animation: Post 3.4s 1 linear;
 	display: block;
 	font-weight: 500;
 	font-family: Arial;
@@ -101,14 +100,13 @@ body {
 
 	/*LinkedIn Hover Animation*/
 	.link2:hover, .link2:focus, .link2:active {
-		position: relative;
-		color: white;
-		text-shadow: 0 0 20px #000, 0 0 40px #000, 0 0 61px #008fdd, 0 0 82px #008fdd, 0 0 102px #000, 0 0 122px #fff, 0 0 142px #008fdd, 0 0 170px #008fdd;
+		color: #008fdd;
+		text-shadow: 0 0 7px #008fdd, 0 0 10px #000, 0 0 21px #008fdd, 0 0 42px #FFFFFF, 0 0 82px #000, 0 0 92px #fff, 0 0 102px #FFFFFF, 0 0 151px #FFFFFF;
 	}
 
 	/*linked in "n" letter flicker */
 	.link2 spanl {
-		animation: linked 7.5s linear infinite;
+		animation: linked 9s linear infinite;
 		animation-delay: 3s;
 		z-index: 1;
 	}
@@ -119,7 +117,7 @@ body {
 	color: white;
 	position: relative;
 	margin-top: 20px;
-	animation: Post 3.5s 1;
+	animation: Post 3.5s 1 linear;
 	display: block;
 	font-weight: 500;
 	font-family: Arial;
@@ -128,13 +126,12 @@ body {
 
 	/*GitHub Hover Animation*/
 	.link3:hover, .link3:focus, .link3:active {
-		text-shadow: 0 0 20px #000, 0 0 40px #000, 0 0 61px #fff, 0 0 82px #b300b3, 0 0 102px #000, 0 0 122px #fff, 0 0 142px #b300b3, 0 0 170px #b300b3;
-		position: relative;
-		color: white;
+		color: #b300b3;
+		text-shadow: 0 0 7px #b300b3, 0 0 10px #000, 0 0 21px #b300b3, 0 0 42px #FFFFFF, 0 0 82px #000, 0 0 92px #fff, 0 0 102px #FFFFFF, 0 0 151px #FFFFFF;
 	}
 
 	.link3 spang {
-		animation: git 9s linear infinite;
+		animation: git 13s linear infinite;
 		z-index: 1;
 	}
 
@@ -317,6 +314,142 @@ div.clouds {
 		height: 75%;
 	}
 }
+
+/*
+/*
+/*Span 1, 2, 3 Hover Animation Styling*/
+span1, span2, span3 {
+	position: relative;
+	display: block;
+	cursor: pointer;
+	text-align: center;
+}
+
+span4 {
+	font-family: sans-serif;
+	font-size: 25px;
+}
+
+/*Resume Line-Through Hover Animation Settings*/
+span1:before, span1:after {
+	content: '';
+	position: absolute;
+	width: 0%;
+	height: 1px;
+	top: 50%;
+	margin-top: -0.5px;
+	background: #b8860b;
+	font-weight: 600;
+	overflow: hidden;
+}
+
+span1:before {
+	left: -2.5px;
+}
+
+span1:after {
+	right: 2.5px;
+	background: #b8860b;
+	transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+	font-weight: 600;
+	overflow: hidden;
+}
+
+span1:hover:before {
+	background: #b8860b;
+	width: 100%;
+	transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+span1:hover:after {
+	background: transparent;
+	width: 100%;
+	transition: 0s;
+	font-weight: 600;
+	overflow: hidden;
+}
+
+/*LinkedIn Line-Through Hover Animation Settings*/
+span2:before, span2:after {
+	content: '';
+	position: absolute;
+	width: 0%;
+	height: 1px;
+	top: 50%;
+	margin-top: -0.5px;
+	background: #008fdd;
+	font-weight: 600;
+	overflow: hidden;
+}
+
+span2:before {
+	left: -2.5px;
+}
+
+span2:after {
+	right: 2.5px;
+	background: #008fdd;
+	transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+	font-weight: 600;
+	overflow: hidden;
+}
+
+span2:hover:before {
+	background: #008fdd;
+	width: 100%;
+	transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+span2:hover:after {
+	background: transparent;
+	width: 100%;
+	transition: 0s;
+	font-weight: 600;
+	overflow: hidden;
+}
+
+/*GitHub Line-Through Animation Hover Settings*/
+span3:before, span3:after {
+	content: '';
+	position: absolute;
+	width: 0%;
+	height: 1px;
+	top: 50%;
+	margin-top: -0.5px;
+	background: #b300b3;
+	font-weight: 600;
+	overflow: hidden;
+}
+
+span3:before {
+	left: -2.5px;
+}
+
+span3:after {
+	right: 2.5px;
+	background: #b300b3;
+	transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+	font-weight: 600;
+	overflow: hidden;
+}
+
+span3:hover:before {
+	background: #b300b3;
+	width: 100%;
+	transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+span3:hover:after {
+	background: transparent;
+	width: 100%;
+	transition: 0s;
+	font-weight: 600;
+	overflow: hidden;
+}
+/*
+/*END of Span Stylings
+/*
+/*
 
 /* START ALL ANIMATIONS */
 /*
