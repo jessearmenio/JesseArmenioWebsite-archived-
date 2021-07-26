@@ -9,7 +9,6 @@
 	src: url('Aller_Std_Bd.ttf') format('truetype');
 }
 
-/*width 100%*/
 html {
 	width: 100%;
 	margin: 0 auto;
@@ -26,19 +25,6 @@ html, body {
 	overflow-x: hidden;
 }
 
-/*Soft Skills List*/
-ol {
-	list-style-type: disc;
-	list-style-position: inside
-}
-
-	/*Soft Skills columns*/
-	ol li {
-		float: left;
-		width: 50%;
-	}
-
-/*Links*/
 a {
 	color: white;
 	background-color: transparent;
@@ -51,6 +37,7 @@ a {
 	font-family: sans-serif;
 	margin: 0 auto;
 }
+
 
 /*Main Name Header Title Styling*/
 h1 {
@@ -90,6 +77,7 @@ h1 {
 	}
 }
 
+
 /*Main Name Header Resize at 1200px -- (Full-Window)*/
 @media only screen and (max-width: 1200px) {
 	h1 {
@@ -103,7 +91,6 @@ h1 {
 	}
 }
 
-/*Main Name Header Resize at 960px -- (iPhone - Mobile)*/
 @media only screen and (max-width: 960px) {
 	h1 {
 		text-align: center;
@@ -118,7 +105,6 @@ h1 {
 	}
 }
 
-/*Main Name Header Resize at 280px -- (Helps fluidity if window is made extremely narrow)*/
 @media only screen and (max-width: 280px) {
 	h1 {
 		text-align: center;
@@ -139,27 +125,20 @@ h2 {
 	font-size: 30px;
 	margin-top: 0;
 	width: 100%;
-	-webkit-transform: perspective(1px) translateZ(0);
-	transform: perspective(1px) translateZ(0);
-	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-	-webkit-transform-origin: 100% 0;
-	transform-origin: 100% 0;
-	transition: 1s ease-in-out
+	background-color: transparent;
 }
 
-/*read full bio link styling*/
 #fullbio {
 	color: #E58900;
 	font-size: 16px;
 }
 
-	/*read full bio hover styling*/
 	#fullbio:hover {
 		color: #f90;
 		text-shadow: 0px 0px 6px rgba(128,128,128, 0.6);
 	}
 
-/*AboutPicture Styling & Intro Positioning*/
+/*AboutPicture Styling & Positioning*/
 #AboutPicture {
 	position: absolute;
 	margin-right: 10%;
@@ -171,7 +150,7 @@ h2 {
 	animation: AboutPicture 3s ease-in-out;
 }
 
-/*About Picture Resize at 1250px -- (Half-Window)*/
+/*About Picture Resize at 700 px -- (Half-Window)*/
 @media only screen and (max-width: 1250px) {
 	#AboutPicture {
 		margin-top: 20%;
@@ -185,8 +164,7 @@ h2 {
 	}
 }
 
-/*About Picture Resize at 800px -- (iPhone - mobile)*/
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 750px) {
 	#AboutPicture {
 		margin-top: 30%;
 		margin-left: 5%;
@@ -204,16 +182,14 @@ img {
 	height: 35%;
 	width: 40%;
 	border-radius: 4%;
-	transition: 1s ease
 }
 
-	/*AboutPicture Animation when Hovered*/
+	/*AboutPicture Bounces when Hovered*/
 	img:hover {
 		animation: avihover 0.5s linear;
 		animation-iteration-count: infinite;
 		-webkit-filter: saturate(3); /* compatability with Safari */
 		filter: saturate(3);
-		transition: 1s ease
 	}
 
 	img:focus {
@@ -230,27 +206,36 @@ SpanA {
 	margin-right: 5%;
 }
 
-/*Oklahoma State University font color*/
 spanB {
-	color: #Fe5c00;
+	color: black;
 }
 
+	spanB:hover {
+		color: #Fe5c00;
+		font-weight: 800;
+		transition: ease-in-out
+	}
 
-/*Indented bullet points*/
+spanD {
+	font-size: 15px;
+	opacity: 0.8;
+}
+
 spanE {
 	font-size: 18px;
 	margin-left: 2%;
 }
 
-/*BSBA font and size increase*/
-spanM {
-	font-size: 25px;
-	font-family: Aller_Std_Bd;
+spanF {
+	font-size: 16px;
+	margin-top: -1%;
+	margin-left: 4%;
 }
 
-spanR{
-right: 2%;
-position: absolute;
+/*BSBA font and size increase*/
+spanM {
+	font-size: 30px;
+	font-family: Aller_Std_Bd;
 }
 
 /*About Paragraph Positioning -- (About)*/
@@ -266,7 +251,6 @@ position: absolute;
 	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 	-webkit-transform: translateY(-70px);
 	transform: translateY(-70px);
-	transition: 2s ease-in-out;
 }
 
 	#About1:hover,
@@ -286,11 +270,10 @@ position: absolute;
 		animation-fill-mode: forwards;
 		-webkit-animation-direction: normal, alternate;
 		animation-direction: normal, alternate;
-		transition: 2s ease-in-out;
 	}
 
 /*About Paragraph 700 px Resizing -- (mobile)*/
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
 	#About1 {
 		top: 75%;
 		position: absolute;
@@ -309,7 +292,7 @@ position: absolute;
 	}
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 600px) {
 	#About1:hover,
 	#About1:focus,
 	#About1:active {
@@ -327,7 +310,6 @@ position: absolute;
 		animation-fill-mode: forwards;
 		-webkit-animation-direction: normal, alternate;
 		animation-direction: normal, alternate;
-		transition: 2s ease-in-out;
 	}
 }
 
@@ -423,34 +405,27 @@ position: absolute;
 	text-align: left;
 	position: relative;
 	background-color: white;
+	border-radius: 4%;
 	width: 80%;
-	color: black;
-	transition: 1s ease-in-out;
 	-webkit-transform: perspective(1px) translateZ(0);
 	transform: perspective(1px) translateZ(0);
 	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-transform-origin: 0 100%;
+	transform-origin: 0 100%;
 }
 
 	/* About2 (Education) animation when hovered*/
 	#About2:hover, #About2:focus, #About2:active {
-		background-color: black;
-		color: white;
-		transition: 1s ease-in-out;
-		outline-offset: -20px;
-		outline: 1px solid white;
-		animation-fill-mode: forwards;
+		-webkit-animation-name: hvr-wobble-top;
+		animation-name: hvr-wobble-top;
+		-webkit-animation-duration: 1s;
+		animation-duration: 1s;
+		-webkit-animation-timing-function: ease-in-out;
+		animation-timing-function: ease-in-out;
+		-webkit-animation-iteration-count: 1;
+		animation-iteration-count: 1;
 	}
 
-@media only screen and (max-width: 800px) {
-	#About2:hover, #About2:focus, #About2:active {
-		background-color: black;
-		color: white;
-		transition: 1s ease-in-out;
-		outline-offset: 5px;
-		outline: 1px solid white;
-		animation-fill-mode: forwards;
-	}
-}
 
 /* About2 Spacing for Different Size Screen Widths -- (Education)*/
 /*-- 550 px Resize -- (iPhone)*/
@@ -484,24 +459,7 @@ position: absolute;
 	}
 }
 
-#About2:before {
-	content: '';
-	position: absolute;
-	border: #737373 solid 6px;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	-webkit-animation-duration: 1s;
-	animation-duration: 1s;
-}
 
-#About2:hover:before, #About2:focus:before, #About2:active:before {
-	-webkit-animation-name: hvr-ripple-out;
-	animation-name: hvr-ripple-out;
-	border: none;
-	transition: 2s ease-in-out;
-}
 
 /*Styling for Paragraphs following About 2 -- (Work Experience, Development Skills, Soft Skills, Invovlement)*/
 #About3 {
@@ -513,89 +471,82 @@ position: absolute;
 	text-align: left;
 	position: relative;
 	background-color: white;
+	border-radius: 4%;
 	width: 80%;
 	left: 0;
-	color: black;
-	transition: 1s ease-in-out;
 	-webkit-transform: perspective(1px) translateZ(0);
 	transform: perspective(1px) translateZ(0);
 	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-transform-origin: 0 100%;
+	transform-origin: 0 100%;
 }
 
 	/*About3 animation on hover --  (Work Experience, Development Skills, Soft Skills, Invovlement)*/
 	#About3:hover, #About3:focus, #About3:active {
-		background-color: black;
-		color: white;
-		transition: 1s ease-in-out;
-		outline-offset: -20px;
-		outline: 1px solid white;
-		animation-fill-mode: forwards;
+		-webkit-animation-name: hvr-wobble-top;
+		animation-name: hvr-wobble-top;
+		-webkit-animation-duration: 1s;
+		animation-duration: 1s;
+		-webkit-animation-timing-function: ease-in-out;
+		animation-timing-function: ease-in-out;
+		-webkit-animation-iteration-count: 1;
+		animation-iteration-count: 1;
 	}
 
-@media only screen and (max-width: 800px) {
-	#About3:hover, #About3:focus, #About3:active {
-		background-color: black;
-		color: white;
-		transition: 1s ease-in-out;
-		outline-offset: 5px;
-		outline: 1px solid white;
-		animation-fill-mode: forwards;
-	}
-}
 
-#About3:before {
-	content: '';
+/* Return Home Top Nav Visible only 1200px through 3000px*/
+.ReturnHomeTop {
+	transform: rotate(90deg);
+	color: white;
+	border-radius: 4%;
 	position: absolute;
-	border: #737373 solid 6px;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	-webkit-animation-duration: 1s;
-	animation-duration: 1s;
-}
-
-#About3:hover:before, #About3:focus:before, #About3:active:before {
-	-webkit-animation-name: hvr-ripple-out;
-	animation-name: hvr-ripple-out;
-	border: none;
-	transition: 2s ease-in-out;
-}
-
-
-/*side nav - return home button*/
-#aboutsidenav a {
-	position: absolute;
-	left: -80px;
+	left: -3%;
 	transition: 0.3s;
-	padding: 20px;
-	width: 120px;
+	padding: 10px;
+	width: 115px;
+	height: 100px;
 	text-decoration: none;
 	font-size: 20px;
-	color: white;
-	border-radius: 0 5px 15px 0;
-	opacity: 0.7
+	text-align: center;
+	font-family: Calibri;
+	top: 25%;
+	background-color: #333;
+	opacity: 0;
+	animation: none;
 }
 
-	/*hover return full visibility*/
-	#aboutsidenav a:hover {
-		left: 0;
+	/*Return Home Top Nav Link Text Styling*/
+	.ReturnHomeTop a {
+		color: white;
+		display: block;
+		background-color: #333;
+		opacity: 0.7;
+	}
+	/*Return Home Top Nav Hover Animation*/
+	.ReturnHomeTop:hover {
+		left: -4%;
+		color: white;
 		opacity: 1;
 	}
 
-/*coloring and position for button*/
-#home {
-	top: 200px;
-	background-color: #333;
-	opacity: 0.7;
-}
-
-@media only screen and (max-width: 800px) {
-	#home {
-		opacity: 0;
-		top: -100px;
+/*Return Home Top Nav turn Invisible at < 1200 px*/
+@media only screen and (min-width: 1200px) {
+	.ReturnHomeTop {
+		animation: ReturnTop 3s;
+		opacity: 1;
 	}
 }
+/*Return Home Top Nav move left 4% at >= 1800 px*/
+@media only screen and (min-width: 2400px) {
+	.ReturnHomeTop {
+		opacity: 0;
+		animation-play-state: paused;
+	}
+}
+
 
 /*Return to home Button*/
 @media only screen and (min-width: 800px) {
@@ -645,7 +596,7 @@ position: absolute;
 
 /*Return to home - Inside Box / Text* -- (bottom of page)*/
 #Return {
-	background-color: #737373;
+	background-color: grey;
 	border-radius: 10%;
 	text-align: center;
 	margin-left: auto;
@@ -653,53 +604,18 @@ position: absolute;
 	font-family: 'Century Gothic';
 	text-decoration: none;
 	text-decoration-style: none;
-	font-size: 25px;
+	font-size: 30px;
 	color: white;
 	transition: 0.3s;
 	width: 100px;
 	-webkit-transform: perspective(1px) translateZ(0);
 	transform: perspective(1px) translateZ(0);
 	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-	position: relative;
-	-webkit-transition-property: color;
-	transition-property: color;
-	-webkit-transition-duration: 0.5s;
-	transition-duration: 0.5s;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: transform;
+	transition-property: transform;
 }
-
-	#Return:before {
-		content: "";
-		position: absolute;
-		z-index: -1;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		background: #000000;
-		border: 1px solid white;
-		-webkit-transform: scaleX(0);
-		transform: scaleX(0);
-		-webkit-transform-origin: 100% 50%;
-		transform-origin: 100% 50%;
-		-webkit-transition-property: transform;
-		transition-property: transform;
-		-webkit-transition-duration: 0.5s;
-		transition-duration: 0.5s;
-		-webkit-transition-timing-function: ease-out;
-		transition-timing-function: ease-out;
-	}
-
-#Return:hover, #Return:focus, #Return:active {
-	color: white;
-}
-
-	#Return:hover:before, #Return:focus:before, #Return:active:before {
-		-webkit-transform: scaleX(1);
-		transform: scaleX(1);
-		-webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-		transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-	}
-
 
 /*Extra Link Text* Styling*/
 a.returnlink {
@@ -720,9 +636,27 @@ a.returnlink {
 	}
 
 /*Return to home button hover Styling*/
+#Return:hover {
+	-webkit-transform: scale(1.2) rotate(4deg);
+	transform: scale(1.2) rotate(4deg);
+	text-decoration-style: none;
+	text-decoration: none;
+	color: white;
+}
 
-/* About2 (Education) animation when hovered*/
+#Return:active, Return:focus {
+	-webkit-transform: translateY(8px);
+	transform: translateY(8px);
+}
 
+/*Return to home button click Styling*/
+#Return:active {
+	border-radius: 10%;
+	animation: Return 1s;
+	text-decoration-style: none;
+	text-decoration: none;
+	color: white;
+}
 
 /*AboutNav at Top of Page*/
 #AboutNav {
@@ -733,7 +667,7 @@ a.returnlink {
 	overflow: hidden;
 	text-align: center;
 	position: fixed;
-	bottom: 90%;
+	bottom: 92%;
 	width: 100%;
 	list-style: none;
 	overflow: hidden;
@@ -767,7 +701,6 @@ a.returnlink {
 			opacity: 1;
 		}
 
-
 /*Main About Nav Resize at 1200 px -- 2 Columns 85% bottom*/
 @media only screen and (max-width: 1200px) {
 	#AboutNav {
@@ -775,13 +708,13 @@ a.returnlink {
 		margin: 0;
 		padding: 0;
 		list-style: none;
-		bottom: 90%;
+		bottom: 83%;
 		margin-left: auto;
 		margin-right: auto;
 		margin-top: 5%;
-		columns: 3;
-		-webkit-columns: 3;
-		-moz-columns: 3;
+		columns: 2;
+		-webkit-columns: 2;
+		-moz-columns: 2;
 		opacity: 0.7;
 		width: 100%;
 		animation: AboutNavMobile2 ease 3s; /*85% Bottom*/
@@ -796,7 +729,7 @@ a.returnlink {
 		padding: 0;
 		align-content: center;
 		list-style: none;
-		bottom: 87%;
+		bottom: 80%;
 		margin: 0 auto;
 		columns: 2;
 		-webkit-columns: 2;
@@ -901,7 +834,6 @@ a.returnlink {
 /*START FOOTER STYLING*/
 /*
 /*
-/*
 /*Main Footer Div*/
 .footer {
 	width: 100%;
@@ -946,54 +878,6 @@ a.returnlink {
 		color: white;
 	}
 
-#social_icon_footer {
-margin-left: 0 auto;
-margin-right: 0 auto;
-background-color: transparent;
-width: 100%;
-}
-
-	#social_icon_footer a {
-		color: #333;
-		animation: none;
-		animation-delay: 0;
-	}
-
-	#social_icon_footer .social:hover {
-		-webkit-transform: scale(1.1);
-		-moz-transform: scale(1.1);
-		-o-transform: scale(1.1);
-	}
-
-	#social_icon_footer .social {
-		-webkit-transform: scale(0.8);
-		/* Browser Variations: */
-		-moz-transform: scale(0.8);
-		-o-transform: scale(0.8);
-		-webkit-transition-duration: 0.5s;
-		-moz-transition-duration: 0.5s;
-		-o-transition-duration: 0.5s;
-	}
-	/*
-    Multicoloured Hover Variations
-*/
-
-	#social_icon_footer #social-fb:hover {
-		color: #3B5998;
-	}
-
-	#social_icon_footer #social-gh:hover {
-		color: #b300b3;
-	}
-
-	#social_icon_footer #social-sc:hover {
-		color: #FFFC00;
-	}
-
-	#social_icon_footer #social-ln:hover {
-		color: #008fdd;
-	}
-
 /*Copyright text left align*/
 .copyright-text {
 	margin: auto;
@@ -1031,7 +915,7 @@ width: 100%;
 	padding-left: 0px;
 }
 
-#footercontainer {
+#bouncingbubbles {
 	margin-left: 0 auto;
 	margin-right: 0 auto;
 	text-align: center;
@@ -1136,6 +1020,7 @@ width: 100%;
 	}
 }
 /*END OF FOOTER*/
+
 /*
 /*END OF GENERAL BODY STYLING*/
 /*
@@ -1145,7 +1030,7 @@ width: 100%;
 /*
 /*
 /*
-*/
+/*Full Name Animation*/
 
 /*About1 (About) -- Paragraph Entrance Animation*/
 @keyframes About1 {
@@ -1277,7 +1162,7 @@ width: 100%;
 		background-color: #333;
 		width: 100%;
 		height: 100%;
-		bottom: 90%;
+		bottom: 93%;
 		opacity: 0.5;
 	}
 }
@@ -1424,167 +1309,138 @@ width: 100%;
 		-webkit-transform: translateY(0);
 		transform: translateY(0);
 	}
-
 	25% {
-		background-color: white;
+		background-color: transparent;
 		-webkit-transform: translateY(-20px);
 		transform: translateY(-20px);
 	}
-
 	50% {
-		background-color: transparent;
+		background-color: white;
 		-webkit-transform: translateY(0);
 		transform: translateY(0);
 	}
-
 	75% {
-		background-color: white;
+		background-color: transparent;
 		-webkit-transform: translateY(-10px);
 		transform: translateY(-10px);
 	}
-
 	100% {
 		background-color: transparent;
 		-webkit-transform: translateY(0);
 		transform: translateY(0);
 	}
 }
-
 @keyframes movesocial2 {
 	0% {
 		background-color: transparent;
 		-webkit-transform: translateY(0);
 		transform: translateY(0);
 	}
-
 	25% {
 		background-color: #f90;
 		-webkit-transform: translateY(-20px);
 		transform: translateY(-20px);
 	}
-
 	50% {
 		background-color: transparent;
 		-webkit-transform: translateY(0);
 		transform: translateY(0);
 	}
-
 	75% {
 		background-color: white;
 		-webkit-transform: translateY(-10px);
 		transform: translateY(-10px);
 	}
-
 	100% {
 		background-color: transparent;
 		-webkit-transform: translateY(0);
 		transform: translateY(0);
 	}
 }
-
 @keyframes movesocial3 {
 	0% {
 		background-color: transparent;
 		-webkit-transform: translateY(0);
 		transform: translateY(0);
 	}
-
 	25% {
-		background-color: white;
+		background-color: transparent;
 		-webkit-transform: translateY(-20px);
 		transform: translateY(-20px);
 	}
-
 	50% {
-		background-color: transparent;
+		background-color: white;
 		-webkit-transform: translateY(0);
 		transform: translateY(0);
 	}
-
 	75% {
-		background-color: white;
+		background-color: transparent;
 		-webkit-transform: translateY(-10px);
 		transform: translateY(-10px);
 	}
-
 	100% {
 		background-color: transparent;
 		-webkit-transform: translateY(0);
 		transform: translateY(0);
 	}
 }
-
 @keyframes movesocial4 {
 	0% {
 		background-color: transparent;
 		-webkit-transform: translateY(0);
 		transform: translateY(0);
 	}
-
 	25% {
 		background-color: white;
 		-webkit-transform: translateY(-20px);
 		transform: translateY(-20px);
 	}
-
 	50% {
 		background-color: transparent;
 		-webkit-transform: translateY(0);
 		transform: translateY(0);
 	}
-
 	75% {
 		background-color: white;
 		-webkit-transform: translateY(-10px);
 		transform: translateY(-10px);
 	}
-
 	100% {
 		background-color: transparent;
 		-webkit-transform: translateY(0);
 		transform: translateY(0);
 	}
 }
-
 @keyframes followsocial {
 	0% {
 		color: white
 	}
-
 	25% {
 		color: white;
 	}
-
 	50% {
 		color: white;
 	}
-
 	75% {
 		color: #f90;
 	}
-
 	100% {
 		color: white;
 	}
 }
-
 @keyframes followname {
 	0% {
 		color: white
 	}
-
 	25% {
 		color: #f90;
 	}
-
 	50% {
 		color: white;
 	}
-
 	75% {
 		color: white;
 	}
-
 	100% {
 		color: white;
 	}
@@ -1900,27 +1756,7 @@ width: 100%;
 	}
 }
 
-@-webkit-keyframes hvr-ripple-out {
-	100% {
-		top: -12px;
-		right: -12px;
-		bottom: -12px;
-		left: -12px;
-		opacity: 0;
-	}
-}
-
-@keyframes hvr-ripple-out {
-	100% {
-		top: -12px;
-		right: -12px;
-		bottom: -12px;
-		left: -12px;
-		opacity: 0;
-	}
-}
-
-@-webkit-keyframes hvr-wobble-bottom {
+@-webkit-keyframes hvr-wobble-top {
 	16.65% {
 		-webkit-transform: skew(-12deg);
 		transform: skew(-12deg);
@@ -1952,7 +1788,7 @@ width: 100%;
 	}
 }
 
-@keyframes hvr-wobble-bottom {
+@keyframes hvr-wobble-top {
 	16.65% {
 		-webkit-transform: skew(-12deg);
 		transform: skew(-12deg);

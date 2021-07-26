@@ -151,11 +151,15 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="about %283%29.html" />
+    <Content Include="AboutStyleSheet %281%29.css" />
     <Content Include="AboutTest.js" />
     <Content Include="about.html" />
     <Content Include="AboutStyleSheet.css" />
     <Content Include="AboutTest.css" />
     <Content Include="AboutTest.html" />
+    <Content Include="camryn1.html" />
+    <Content Include="CamStyleSheet.css" />
     <Content Include="heartpaint.png" />
     <Content Include="camryn.html" />
     <Content Include="camryn.mov" />
@@ -269,6 +273,7 @@
     <Content Include="JesseArmenioMarch2021.pdf" />
     <Content Include="aller.zip" />
     <Content Include="Aller_Std_Bd.ttf" />
+    <Content Include="jesse-armenio-july21-resume.pdf" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Properties\PublishProfiles\_PersonalWebsite_.ghcr.io.pubxml" />
     <Content Include="Scripts\index.js.flow" />
@@ -280,6 +285,8 @@
     <Content Include="Scripts\bootstrap.js.map" />
     <Content Include="Scripts\bootstrap.bundle.min.js.map" />
     <Content Include="Scripts\bootstrap.bundle.js.map" />
+    <Content Include="Sansation_Bold.ttf" />
+    <Content Include="Sansation_Regular.ttf" />
     <None Include="Scripts\jquery-3.5.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.5.1.js" />
     <Content Include="Scripts\jquery-3.5.1.min.js" />
