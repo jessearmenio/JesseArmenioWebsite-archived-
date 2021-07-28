@@ -1,6 +1,20 @@
-﻿﻿﻿ /*This website is under development and changes daily.*/
-/*The goal is to achieve a short but sweet browsing experience with fun animations.*/
-/*HTML div Sizing*/
+﻿/*
+/*
+/*
+/*
+/*
+/*
+/*
+	Home Page Style Sheet - www.jessearmenio.com
+	Written and Maintained by Jesse Armenio
+	please email jesse.armenio@gmail.com with any questions.
+/*
+/*
+/*
+-----General Page Styling
+/*
+/*
+*/
 html {
 	width: 100%
 }
@@ -16,11 +30,13 @@ a {
 
 /*General Body Styling*/
 body {
+	height: 100%;
 	padding: 0;
 	margin: 0;
 	font-family: sans-serif;
 	overflow: hidden;
 	background-color: black;
+	width: 100%;
 }
 
 /*Container-fluid Sizing, Alignment and Responsivenss*/
@@ -41,6 +57,14 @@ body {
 	display: block;
 }
 
+/*
+/*
+/*
+/*
+----- Text/Link Stylings
+/*
+/*
+/*
 /* Personal Name Styling and Animation Settings*/
 /*First Name*/
 .text1 {
@@ -49,8 +73,7 @@ body {
 	letter-spacing: 6px;
 	margin-bottom: 0px;
 	position: relative;
-	animation: text 3s linear;
-	z-index: 2;
+	animation: text 3s ease;
 	color: white;
 	font-family: sans-serif;
 	text-align: center;
@@ -62,7 +85,7 @@ body {
 	font-size: 35px;
 	color: lightgrey;
 	position: relative;
-	animation: text 3s 1 linear;
+	animation: text 3s 1 ease;
 	font-family: sans-serif;
 	text-align: center;
 }
@@ -73,7 +96,7 @@ body {
 	color: white;
 	position: relative;
 	margin-top: 30px;
-	animation: link 3.2s linear;
+	animation: link 3.2s ease;
 	display: block;
 	font-family: sans-serif;
 	text-shadow: 0 0 7px #f90, 0 0 10px #000, 0 0 21px #f90, 0 0 42px #f90, 0 0 82px #000, 0 0 92px #fff, 0 0 102px #000, 0 0 151px #f90;
@@ -90,12 +113,11 @@ body {
 	color: white;
 	position: relative;
 	margin-top: 20px;
-	animation: Post 3.4s 1 linear;
+	animation: Post 3.4s 1 ease;
 	display: block;
 	font-weight: 500;
 	font-family: Arial;
 	text-shadow: 0 0 7px #008fdd, 0 0 10px #000, 0 0 21px #008fdd, 0 0 42px #008fdd, 0 0 82px #000, 0 0 92px #fff, 0 0 102px #000, 0 0 151px #008fdd;
-	z-index: 2;
 }
 
 	/*LinkedIn Hover Animation*/
@@ -108,7 +130,7 @@ body {
 	.link2 spanl {
 		animation: linked 9s linear infinite;
 		animation-delay: 3s;
-		z-index: 1;
+		z-index: -1;
 	}
 
 /*GitHub Link Styling*/
@@ -117,7 +139,7 @@ body {
 	color: white;
 	position: relative;
 	margin-top: 20px;
-	animation: Post 3.5s 1 linear;
+	animation: Post 3.5s 1 ease;
 	display: block;
 	font-weight: 500;
 	font-family: Arial;
@@ -132,9 +154,17 @@ body {
 
 	.link3 spang {
 		animation: git 13s linear infinite;
-		z-index: 1;
+		z-index: -1;
 	}
 
+/*
+/*
+/*
+/*
+----- Nav button top right to About Page
+/*
+/*
+/*
 /*About Tab (Top Right) Styling*/
 .AboutNav {
 	text-decoration: none;
@@ -170,7 +200,11 @@ body {
 }
 
 /*
-/*START of Cloud Styling*/
+/*
+/*
+/*
+----- Cloud Animation background
+/*
 /*
 /*
 /* Main Cloud Div */
@@ -277,11 +311,18 @@ div.clouds {
 	width: 200px;
 	opacity: 0.45;
 }
+
 /*
 /*END of Cloud Styling*/
 /*
 /*
-
+/*
+/*
+/*
+----- Spinning Skill Graphic Circle Styling
+/*
+/*
+/*
 /*Circling Skills Graphic Styling / Positiong*/
 #SkillGraphic {
 	position: relative;
@@ -299,22 +340,29 @@ div.clouds {
 }
 
 /* This enables the Skills Graphic Animation scale to Width -- (iPhone)*/
-@media only screen and (max-width: 500) {
+@media only screen and (min-width: 2000px) {
 	#SkillGraphic {
-		margin-top: 200px;
-		width: 75%;
-		height: 75%;
+		margin-top: 100px;
+		width: 750px;
+		height: 750px;
 	}
 }
+
 /* This enables the Skills Graphic Animation scale to Height -- (iPhone)*/
 @media only screen and (max-height: 850px) {
 	#SkillGraphic {
-		margin-top: 200px;
+		margin-top: 225px;
 		width: 75%;
 		height: 75%;
 	}
 }
 
+/*
+/*
+/*
+/*
+----- spans across links on hover (laser highlighting)
+/*
 /*
 /*
 /*Span 1, 2, 3 Hover Animation Styling*/
@@ -330,6 +378,9 @@ span4 {
 	font-size: 25px;
 }
 
+/*
+/*
+*/
 /*Resume Line-Through Hover Animation Settings*/
 span1:before, span1:after {
 	content: '';
@@ -369,6 +420,8 @@ span1:hover:after {
 	overflow: hidden;
 }
 
+/*
+*/
 /*LinkedIn Line-Through Hover Animation Settings*/
 span2:before, span2:after {
 	content: '';
@@ -408,6 +461,8 @@ span2:hover:after {
 	overflow: hidden;
 }
 
+/*
+*/
 /*GitHub Line-Through Animation Hover Settings*/
 span3:before, span3:after {
 	content: '';
@@ -446,14 +501,45 @@ span3:hover:after {
 	font-weight: 600;
 	overflow: hidden;
 }
+
 /*
 /*END of Span Stylings
 /*
 /*
-
-/* START ALL ANIMATIONS */
 /*
+/*START FOOTER STYLING*/
+/*
+/*
+/*Main Footer Div*/
+.footer {
+	z-index: -1;
+	width: 100%;
+	background: linear-gradient(transparent, #737373);
+	padding: 45px 0 20px;
+	font-size: 15px;
+	line-height: 24px;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+}
 
+/*Adjust Sizing on -- (iPhone)*/
+@media (max-width:840px) {
+	.footer {
+		z-index: -1;
+	}
+}
+
+/*
+/*
+/*
+/*
+----- Start Animations
+/*
+/*
+/*
 /*Full Name Animation*/
 @keyframes text {
 	0% {
@@ -864,31 +950,12 @@ span3:hover:after {
 	}
 }
 
-/*Animation for all general body to bounce on hover
-@keyframes hoverbody {
-	0%, 20% {
-		-webkit-transform: translateY(0);
-		transform: translateY(0);
-	}
-
-	40% {
-		-webkit-transform: translateY(-20px);
-		transform: translateY(-20px);
-	}
-
-	60% {
-		-webkit-transform: translateY(0);
-		transform: translateY(0);
-	}
-
-	80% {
-		-webkit-transform: translateY(-10px);
-		transform: translateY(-10px);
-	}
-
-	100% {
-		-webkit-transform: translateY(0);
-		transform: translateY(0);
-	}
-}
-	*/
+/*
+/*
+/*
+/*
+-----End all code
+/*
+/*
+/*
+*/

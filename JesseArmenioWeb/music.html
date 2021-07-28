@@ -11,6 +11,8 @@
 	<link href="Content/CustomStyles.css" rel="stylesheet" />
 	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<link rel="stylesheet" href="MusicStyleSheet.css" />
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="google-site-verification" content="13nq-fV7vr39pExKkAWFrIXRE4HeUDFJSUWgGdYEZYM" />
 	<style type="text/css"></style>
@@ -23,19 +25,9 @@
 	<!-- Title on Tab -->
 	<title>Jessio Music</title>
 </head>
-
 <body>
-	<!-- Top Right Navbar to About page
-	<div class="header">
-		<span> <a class="AboutNav" href="https://www.jessearmenio.com">Professional</a> </span>
-	</div> -->
-	<div class="container-fluid">
-		<!-- Heart logo Graphic -->
-		<div class="paintclass">
-			<a href="https://soundcloud.com/jessiomusic">
-				<img src="jessiologoblackhearttransparent.png" id="paint" style="width:700px;height:700px;" />
-			</a>
-		</div>
+	<div class="paint">
+		<img class="splatter" src="jessiologoblackhearttransparent.png" id="jessio" width="500" height="500" />
 	</div>
 	<div class="container-fluid">
 		<div class="clouds">
@@ -191,13 +183,33 @@
 			</div>
 		</div>
 	</div>
-	<section>
+	<footer class="footer">
 		<div class="container-fluid">
-			<div class="HomeContainer">
-				<a class="text1" href="https://soundcloud.com/jessiomusic" style="text-decoration: none"><span><spans>S</spans>oundCl<spant>oud</spant></span> </a>
+			<div class="row">
+				<div class="col-md-12 col-sm-12 col-xs-12" id="bouncingbubbles">
+					<a class="text1" href="https://soundcloud.com/jessiomusic" style="text-decoration: none"><span><spans>S</spans>oundCl<spant>oud</spant></span> </a> <br />
+					<!-- Link back home via Copyright Info -->
+					<a id="text2" href="mailto:jesse.armenio@gmail.com" style="text-decoration: none"><span>Inquiries Here</span></a> <br />
+					<!-- Copyright Information -->
+					<p class="copyright-text">
+						Made with <spanF class="heart">♥</spanF> <a class="dev" href="https://www.jessearmenio.com"><spanM>by Jesse Armenio</spanM></a> <br />
+						Copyright &copy; Jessio Music 2021 – All Rights Reserved
+						<section id="social_icon_footer">
+							<!-- Include Font Awesome Stylesheet in Header -->
+							<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+							<div class="container">
+								<div class="text-center center-block">
+									<a href="https://www.facebook.com/JesseArmenio"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
+									<a href="https://github.com/jessearmenio"><i id="social-gh" class="fa fa-github-square fa-3x social"></i></a>
+									<a href="https://www.snapchat.com/add/jessearmenii?share_id=QkI3RjNF&locale=en_US"><i id="social-sc" class="fa fa-snapchat fa-3x social"></i></a>
+									<a href="https://linkedin.com/in/jessearmenio"><i id="social-ln" class="fa fa-linkedin-square fa-3x social"></i></a>
+								</div>
+							</div>
+						</section>
+					</p>
+				</div>
 			</div>
 		</div>
-	</section>
+	</footer>
 </body>
-
 </html>
