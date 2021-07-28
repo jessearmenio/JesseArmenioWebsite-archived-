@@ -39,6 +39,10 @@ html, body {
 	overflow-x: hidden;
 }
 
+container-fluid {
+	width: 100%;
+	margin: auto;
+}
 
 /*Row Styling*/
 .row {
@@ -118,24 +122,32 @@ spanB {
 
 #errormessage {
 	width: 400px;
+	height: 75%;
 	font-size: 20px;
 	font-family: 'Arial Rounded MT';
 	text-align: center;
-	margin-top: 20%;
+	margin-top: 10%;
 	margin-left: auto;
 	margin-right: auto;
-	color: black;
-	background-color: white;
-	-webkit-transform: perspective(1px) translateZ(0);
-	transform: perspective(1px) translateZ(0);
-	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-	-webkit-transition-property: color;
-	transition-property: color;
-	-webkit-transition-duration: 0.5s;
-	transition-duration: 0.5s;
-	position: relative;
+	color: white;
+	background-color: black;
 }
 
+@media only screen and (max-width: 800px) {
+	#errormessage {
+		font-size: 14px;
+	}
+}
+
+
+#confused {
+	text-align: center;
+	align-self: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/*
 	#errormessage:before {
 		content: "";
 		position: absolute;
@@ -166,7 +178,7 @@ spanB {
 		color: #f90
 	}
 
-/* About2 (Education) animation when hovered*/
+About2 (Education) animation when hovered
 #errormessage:hover spanZ{
 	color: #f90;
 }
@@ -178,6 +190,13 @@ spanB {
 	#errormessage:hover spanJ {
 		color: white;
 	}
+
+	*/
+@media only screen and (max-width: 800px) {
+	spanR {
+		margin-top: -10%;
+	}
+}
 
 spanW {
 	font-size: 45px;
@@ -200,9 +219,20 @@ spanM {
 }
 
 	spanM:hover {
-		color: orangered;
+		color: #333;
 	}
 
+/*smaller texts for error solution*/
+spanI {
+	font-size: 18px;
+}
+
+@media only screen and (max-width: 800px) {
+	spanI {
+		font-size: 14px;
+	}
+}
+/*
 /*
 /*
 /*Styling for Top left side appear tab to return home
@@ -243,131 +273,10 @@ spanM {
 		top: -100px;
 	}
 }
-/*
-/*
-/*Styling for Bottom Nav Button to return home
-/*
-/*
-/*
-*/
-/*Return to home Button*/
-#AboutReturnBottom {
-	height: 25px;
-	width: 100%;
-	background-color: transparent;
-	border-radius: 4%;
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 5%;
-	color: white;
-	text-decoration: none;
-}
 
-/*Return to home Button*/
-@media only screen and (min-width: 800px) {
-	#AboutReturnBottom {
-		height: 25px;
-		width: 100px;
-		background-color: transparent;
-		border-radius: 4%;
-		text-align: center;
-		margin-left: auto;
-		margin-right: auto;
-		margin-top: 15%;
-		color: white;
-		text-decoration: none;
-	}
-}
 
-@media only screen and (max-width: 400px) {
-	#AboutReturnBottom {
-		height: 25px;
-		width: 100%;
-		background-color: transparent;
-		border-radius: 4%;
-		text-align: center;
-		margin-left: auto;
-		margin-right: auto;
-		margin-top: 5%;
-		color: white;
-		text-decoration: none;
-		margin-bottom: 10px;
-	}
-}
-
-/*Return to home - Inside Box / Text* -- (bottom of page)*/
-#Return {
-	background-color: #737373;
-	border-radius: 10%;
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
-	font-family: 'Century Gothic';
-	text-decoration: none;
-	text-decoration-style: none;
-	font-size: 25px;
-	color: white;
-	transition: 0.3s;
-	width: 100px;
-	-webkit-transform: perspective(1px) translateZ(0);
-	transform: perspective(1px) translateZ(0);
-	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-	position: relative;
-	-webkit-transition-property: color;
-	transition-property: color;
-	-webkit-transition-duration: 0.5s;
-	transition-duration: 0.5s;
-}
-
-	#Return:before {
-		content: "";
-		position: absolute;
-		z-index: -1;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		background: #000000;
-		border: 1px solid white;
-		-webkit-transform: scaleX(0);
-		transform: scaleX(0);
-		-webkit-transform-origin: 100% 50%;
-		transform-origin: 100% 50%;
-		-webkit-transition-property: transform;
-		transition-property: transform;
-		-webkit-transition-duration: 0.5s;
-		transition-duration: 0.5s;
-		-webkit-transition-timing-function: ease-out;
-		transition-timing-function: ease-out;
-	}
-
-	#Return:hover, #Return:focus, #Return:active {
-		color: white;
-	}
-
-		#Return:hover:before, #Return:focus:before, #Return:active:before {
-			-webkit-transform: scaleX(1);
-			transform: scaleX(1);
-			-webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-			transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-			color: #f90
-		}
-
-/*Extra Link Text* Styling*/
-a.returnlink {
-	color: white;
-	text-decoration-style: none;
-	text-decoration: none;
-	animation: followsocial 3s ease-in-out;
-	animation-delay: 5s;
-	-webkit-transition: all .2s linear;
-	-o-transition: all .2s linear;
-	transition: all .2s linear;
-}
 /*
-/*
-/*Styling for About Navbar at top of page // fixed
+/*Styling for Redirect to home page at top of page // fixed
 /*
 /*
 /*
@@ -376,20 +285,19 @@ a.returnlink {
 #AboutNav {
 	display: inline-block;
 	left: 0;
-	padding: 0;
+	padding: 0px 0px 0px 40px;
 	margin: 0;
 	overflow: hidden;
 	text-align: center;
 	position: fixed;
-	bottom: 90%;
+	bottom: 95%;
 	width: 100%;
 	list-style: none;
-	overflow: hidden;
 	background-color: #333;
 	font-family: Calibri;
-	columns: 6;
-	-webkit-columns: 6;
-	-moz-columns: 6;
+	columns: 1;
+	-webkit-columns: 1;
+	-moz-columns: 1;
 	opacity: 0.7;
 	animation: AboutNav ease 3s;
 }
@@ -416,119 +324,43 @@ a.returnlink {
 		}
 
 
-/*Main About Nav Resize at 1200 px -- 2 Columns 85% bottom*/
-@media only screen and (max-width: 1200px) {
-	#AboutNav {
-		display: inline-block;
-		margin: 0;
-		padding: 0;
-		list-style: none;
-		bottom: 90%;
-		margin-left: auto;
-		margin-right: auto;
-		margin-top: 5%;
-		columns: 3;
-		-webkit-columns: 3;
-		-moz-columns: 3;
-		opacity: 0.7;
-		width: 100%;
-		animation: AboutNavMobile2 ease 3s; /*85% Bottom*/
-	}
-}
-
 /*Main About Nav Resize at 500 px -- 2 Columns 80% bottom*/
 @media only screen and (max-width: 800px) {
 	#AboutNav {
 		display: inline-block;
 		margin: 0;
-		padding: 0;
+		padding: 0px 0px 0px 60px;
 		align-content: center;
 		list-style: none;
-		bottom: 87%;
+		bottom: 95%;
 		margin: 0 auto;
-		columns: 2;
-		-webkit-columns: 2;
-		-moz-columns: 2;
+		columns: 1;
+		-webkit-columns: 1;
+		-moz-columns: 1;
 		opacity: 0.7;
 		width: 100%;
 		animation: AboutNavMobile3 ease 3s; /*87% Bottom*/
 	}
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 540px) {
 	#AboutNav {
 		display: inline-block;
 		margin: 0;
-		padding: 0;
+		padding: 0px 0px 0px 80px;
 		align-content: center;
 		list-style: none;
-		bottom: 80%;
+		bottom: 95%;
 		margin: 0 auto;
-		columns: 2;
-		-webkit-columns: 2;
-		-moz-columns: 2;
+		columns: 1;
+		-webkit-columns: 1;
+		-moz-columns: 1;
 		opacity: 0.7;
 		width: 100%;
-		animation: AboutNavMobile2 ease 3s; /*85% Bottom*/
+		animation: AboutNavMobile3 ease 3s; /*87% Bottom*/
 	}
 }
 
-@media only screen and (max-width: 340px) {
-	#AboutNav {
-		display: inline-block;
-		margin: 0;
-		padding: 0;
-		align-content: center;
-		list-style: none;
-		bottom: 83%;
-		margin: 0 auto;
-		columns: 2;
-		-webkit-columns: 2;
-		-moz-columns: 2;
-		opacity: 0.7;
-		width: 100%;
-		animation: AboutNavMobile ease 3s; /*83% Bottom*/
-		font-size: 17px;
-	}
-}
-
-@media only screen and (max-width: 280px) {
-	#AboutNav {
-		display: inline-block;
-		margin: 0;
-		padding: 0;
-		align-content: center;
-		list-style: none;
-		bottom: 83%;
-		margin: 0 auto;
-		columns: 2;
-		-webkit-columns: 2;
-		-moz-columns: 2;
-		opacity: 0.7;
-		width: 100%;
-		animation: AboutNavMobile ease 3s; /*83% Bottom*/
-		font-size: 14px;
-	}
-}
-
-@media only screen and (max-height: 913px) {
-	#AboutNav {
-		display: inline-block;
-		margin: 0;
-		padding: 0;
-		align-content: center;
-		list-style: none;
-		bottom: 83%;
-		margin: 0 auto;
-		columns: 2;
-		-webkit-columns: 2;
-		-moz-columns: 2;
-		opacity: 0.7;
-		width: 100%;
-		animation: AboutNavMobile ease 3s; /*83% Bottom*/
-		font-size: 14px;
-	}
-}
 
 /*About Nav Links Resize at 500 px -- (iPhone)*/
 @media only screen and (max-width: 500px) {
@@ -561,7 +393,6 @@ a.returnlink {
 	margin-top: 12%;
 	margin-left: auto;
 	margin-right: auto;
-	padding-left: 0;
 	bottom: 0;
 	position: absolute;
 }
@@ -931,7 +762,7 @@ Floating Bubbles Animation
 		background-color: #333;
 		width: 100%;
 		height: 100%;
-		bottom: 90%;
+		bottom: 95%;
 		opacity: 0.5;
 	}
 }
@@ -972,7 +803,7 @@ Floating Bubbles Animation
 		background-color: #333;
 		width: 100%;
 		height: 100%;
-		bottom: 83%;
+		bottom: 95%;
 		opacity: 0.5;
 	}
 }
@@ -1013,7 +844,7 @@ Floating Bubbles Animation
 		background-color: #333;
 		width: 100%;
 		height: 100%;
-		bottom: 85%;
+		bottom: 95%;
 		opacity: 0.5;
 	}
 }
@@ -1054,7 +885,7 @@ Floating Bubbles Animation
 		background-color: #333;
 		width: 100%;
 		height: 100%;
-		bottom: 87%;
+		bottom: 95%;
 		opacity: 0.5;
 	}
 }

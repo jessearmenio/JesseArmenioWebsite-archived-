@@ -151,13 +151,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="about %283%29.html" />
-    <Content Include="AboutStyleSheet %281%29.css" />
-    <Content Include="AboutTest.js" />
+    <Content Include="500error.html" />
+    <Content Include="502error.html" />
+    <Content Include="404error.html" />
+    <Content Include="403error.html" />
     <Content Include="about.html" />
+    <Content Include="error.css" />
     <Content Include="AboutStyleSheet.css" />
-    <Content Include="AboutTest.css" />
-    <Content Include="AboutTest.html" />
     <Content Include="camryn1.html" />
     <Content Include="CamStyleSheet.css" />
     <Content Include="heartpaint.png" />
@@ -175,9 +175,11 @@
     <Content Include="generator_config.txt" />
     <Content Include="HelloGorgeousPreview.jpg" />
     <Content Include="HomeTest.html" />
+    <Content Include="java.html" />
     <Content Include="JesseArmenio.jpg" />
     <Content Include="Facetune_14-04-2020-01-18-16 2.jpg" />
     <Content Include="jessiologoblackhearttransparent.png" />
+    <Content Include="kisspng-smiley-emoticon-question-mark-clip-art-fear-pictures-5aab27924aa9f5.8649946515211662263058.png" />
     <Content Include="music.html" />
     <Content Include="MusicStyleSheet.css" />
     <Content Include="NewSkillGraphic.png" />

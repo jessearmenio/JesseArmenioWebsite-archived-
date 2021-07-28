@@ -291,6 +291,16 @@ spanB {
 	color: #Fe5c00;
 }
 
+/*Contact Me footer*/
+spanC {
+	color: #f90;
+	opacity: 0.9;
+}
+
+	spanC:hover {
+		color: white;
+		text-shadow: 0 0 7px #000, 0 0 10px #000, 0 0 21px #f90, 0 0 42px #f90, 0 0 82px #000, 0 0 92px #fff, 0 0 102px #000, 0 0 151px #f90;
+	}
 
 /*Indented bullet points*/
 spanE {
@@ -304,6 +314,7 @@ spanM {
 	font-family: Aller_Std_Bd;
 }
 
+/*May 2021 Right Align*/
 spanR {
 	right: 2%;
 	position: absolute;
@@ -851,7 +862,7 @@ a.returnlink {
 		}
 
 
-/*Main About Nav Resize at 1200 px -- 2 Columns 85% bottom*/
+/*Main About Nav Resize at 1200 px -- 2 Columns 90% bottom*/
 @media only screen and (max-width: 1200px) {
 	#AboutNav {
 		display: inline-block;
@@ -867,11 +878,11 @@ a.returnlink {
 		-moz-columns: 3;
 		opacity: 0.7;
 		width: 100%;
-		animation: AboutNavMobile2 ease 3s; /*85% Bottom*/
+		animation: AboutNav ease 3s; /*90% Bottom*/
 	}
 }
 
-/*Main About Nav Resize at 500 px -- 2 Columns 80% bottom*/
+/*Main About Nav Resize at 800 px -- 2 Columns 87% bottom*/
 @media only screen and (max-width: 800px) {
 	#AboutNav {
 		display: inline-block;
@@ -886,10 +897,11 @@ a.returnlink {
 		-moz-columns: 2;
 		opacity: 0.7;
 		width: 100%;
-		animation: AboutNavMobile3 ease 3s; /*87% Bottom*/
+		animation: AboutNav87 ease 3s; /*87% Bottom*/
 	}
 }
 
+/*Main About Nav Resize at 650 px -- 2 Columns 80% bottom*/
 @media only screen and (max-width: 650px) {
 	#AboutNav {
 		display: inline-block;
@@ -904,10 +916,11 @@ a.returnlink {
 		-moz-columns: 2;
 		opacity: 0.7;
 		width: 100%;
-		animation: AboutNavMobile2 ease 3s; /*85% Bottom*/
+		animation: AboutNav80 ease 3s; /*80% Bottom*/
 	}
 }
 
+/*Main About Nav Resize at 340 px -- 2 Columns 83% bottom*/
 @media only screen and (max-width: 340px) {
 	#AboutNav {
 		display: inline-block;
@@ -922,11 +935,12 @@ a.returnlink {
 		-moz-columns: 2;
 		opacity: 0.7;
 		width: 100%;
-		animation: AboutNavMobile ease 3s; /*83% Bottom*/
+		animation: AboutNav83 ease 3s; /*83% Bottom*/
 		font-size: 17px;
 	}
 }
 
+/*Main About Nav Resize at 280 px -- 2 Columns 83% bottom*/
 @media only screen and (max-width: 280px) {
 	#AboutNav {
 		display: inline-block;
@@ -941,11 +955,12 @@ a.returnlink {
 		-moz-columns: 2;
 		opacity: 0.7;
 		width: 100%;
-		animation: AboutNavMobile ease 3s; /*83% Bottom*/
+		animation: AboutNav83 ease 3s; /*83% Bottom*/
 		font-size: 14px;
 	}
 }
 
+/*Main About Nav Resize at 913 height px -- 2 Columns 83% bottom*/
 @media only screen and (max-height: 913px) {
 	#AboutNav {
 		display: inline-block;
@@ -960,11 +975,15 @@ a.returnlink {
 		-moz-columns: 2;
 		opacity: 0.7;
 		width: 100%;
-		animation: AboutNavMobile ease 3s; /*83% Bottom*/
+		animation: AboutNav83 ease 3s; /*83% Bottom*/
 		font-size: 14px;
 	}
 }
 
+/*
+*/
+/*
+*/
 /*About Nav Links Resize at 500 px -- (iPhone)*/
 @media only screen and (max-width: 500px) {
 	#AboutNav a {
@@ -1082,6 +1101,7 @@ Social Media footer icons and hover*/
 /*"Made by" Heart coloring*/
 .heart {
 	color: salmon;
+	padding-bottom: 1px;
 }
 
 /*Adjust alignment on -- (iPhone) */
@@ -1091,6 +1111,11 @@ Social Media footer icons and hover*/
 		margin: auto;
 	}
 }
+
+.dev {
+	padding: 0;
+}
+
 
 /*Align content center*/
 .footer .copyright-text, .site-footer .social-icons {
@@ -1197,7 +1222,6 @@ Floating Bubbles Animation
 	width: 34px;
 	font-size: 14px
 }
-
 
 /*footer bubble 1*/
 .social-icons a.social1:hover {
@@ -1369,8 +1393,47 @@ Floating Bubbles Animation
 	}
 }
 
-/* Main Nav Intro at 83% from Bottom */
-@keyframes AboutNavMobile {
+@keyframes AboutNav87 {
+	0% {
+		background-color: black;
+		width: 100%;
+		height: 100%;
+		bottom: 0;
+		opacity: 1;
+	}
+
+	35% {
+		background-color: #333;
+		width: 100%;
+		height: 100%;
+		opacity: 1
+	}
+
+	50% {
+		background-color: #333;
+		width: 100%;
+		height: 100%;
+		opacity: 1;
+	}
+
+	90% {
+		background-color: #333;
+		width: 100%;
+		height: 100%;
+		bottom: 100%;
+		opacity: 0.7;
+	}
+
+	100% {
+		background-color: #333;
+		width: 100%;
+		height: 100%;
+		bottom: 87%;
+		opacity: 0.5;
+	}
+}
+
+@keyframes AboutNav83 {
 	0% {
 		background-color: black;
 		width: 100%;
@@ -1410,8 +1473,7 @@ Floating Bubbles Animation
 	}
 }
 
-/* Main Nav Intro at 85% from Bottom */
-@keyframes AboutNavMobile2 {
+@keyframes AboutNav80 {
 	0% {
 		background-color: black;
 		width: 100%;
@@ -1446,48 +1508,7 @@ Floating Bubbles Animation
 		background-color: #333;
 		width: 100%;
 		height: 100%;
-		bottom: 85%;
-		opacity: 0.5;
-	}
-}
-
-/* Main Nav Intro at 87% from Bottom */
-@keyframes AboutNavMobile3 {
-	0% {
-		background-color: black;
-		width: 100%;
-		height: 100%;
-		bottom: 0;
-		opacity: 1;
-	}
-
-	35% {
-		background-color: #333;
-		width: 100%;
-		height: 100%;
-		opacity: 1
-	}
-
-	50% {
-		background-color: #333;
-		width: 100%;
-		height: 100%;
-		opacity: 1;
-	}
-
-	90% {
-		background-color: #333;
-		width: 100%;
-		height: 100%;
-		bottom: 100%;
-		opacity: 0.7;
-	}
-
-	100% {
-		background-color: #333;
-		width: 100%;
-		height: 100%;
-		bottom: 87%;
+		bottom: 80%;
 		opacity: 0.5;
 	}
 }
