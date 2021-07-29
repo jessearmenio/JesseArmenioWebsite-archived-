@@ -281,7 +281,7 @@ SpanA {
 }
 
 @media only screen and (max-width: 800px) {
-	spanw {
+	spanW {
 		font-size: 15px;
 	}
 }
@@ -1079,6 +1079,7 @@ Social Media footer icons and hover*/
 		-webkit-transition-duration: 0.5s;
 		-moz-transition-duration: 0.5s;
 		-o-transition-duration: 0.5s;
+		color: #333;
 	}
 	/* Multicoloured Hover Variations */
 
@@ -1090,12 +1091,12 @@ Social Media footer icons and hover*/
 		color: #b300b3;
 	}
 
-	#social_icon_footer #social-sc:hover {
-		color: #FFFC00;
-	}
-
 	#social_icon_footer #social-ln:hover {
 		color: #008fdd;
+	}
+
+	#social_icon_footer #social-em:hover{
+		color: #F47174;
 	}
 
 /*"Made by" Heart coloring*/

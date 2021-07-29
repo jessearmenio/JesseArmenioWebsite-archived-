@@ -276,6 +276,7 @@
     <Content Include="aller.zip" />
     <Content Include="Aller_Std_Bd.ttf" />
     <Content Include="jesse-armenio-july21-resume.pdf" />
+    <Content Include="jesse-armenio-july-27-2021-resume.pdf" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Properties\PublishProfiles\_PersonalWebsite_.ghcr.io.pubxml" />
     <Content Include="Scripts\index.js.flow" />

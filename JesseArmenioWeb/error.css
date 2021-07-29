@@ -285,7 +285,7 @@ spanI {
 #AboutNav {
 	display: inline-block;
 	left: 0;
-	padding: 0px 0px 0px 40px;
+	padding: 40px 0px 0px 0px;
 	margin: 0;
 	overflow: hidden;
 	text-align: center;
@@ -329,7 +329,7 @@ spanI {
 	#AboutNav {
 		display: inline-block;
 		margin: 0;
-		padding: 0px 0px 0px 60px;
+		padding: 60px 0px 0px 0px;
 		align-content: center;
 		list-style: none;
 		bottom: 95%;
@@ -347,7 +347,7 @@ spanI {
 	#AboutNav {
 		display: inline-block;
 		margin: 0;
-		padding: 0px 0px 0px 80px;
+		padding: 80px 0px 0px 0px;
 		align-content: center;
 		list-style: none;
 		bottom: 95%;
@@ -469,12 +469,12 @@ Social Media footer icons and hover*/
 		color: #b300b3;
 	}
 
-	#social_icon_footer #social-sc:hover {
-		color: #FFFC00;
-	}
-
 	#social_icon_footer #social-ln:hover {
 		color: #008fdd;
+	}
+
+	#social_icon_footer #social-em:hover {
+		color: #F47174;
 	}
 
 /*"Made by" Heart coloring*/
