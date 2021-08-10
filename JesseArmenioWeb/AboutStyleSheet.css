@@ -258,7 +258,7 @@ img {
 	border-radius: 4%;
 	transition: 0.5s ease-in;
 	transition-timing-function: cubic-bezier(.25,.7,.45,.05);
-	box-shadow: 0 0 0 1pt #FFF;
+	box-shadow: 0 0 0 1pt #FFF, 0 0 7px #E58900, 0 0 10px #000, 0 0 21px #E58900, 0 0 42px #E58900, 0 0 82px #E58900, 0 0 92px #fff, 0 0 102px #000, 0 0 151px #000;
 }
 
 	/*AboutPicture Animation when Hovered*/
@@ -347,17 +347,16 @@ spanR {
 	opacity: 0.7;
 	transition: 0.3s linear;
 	box-shadow: 0 0 0 1pt #FFF;
-	animation: opacity 2.9s;
+	animation: opacity 3.3s;
 }
 
 	/*hover return full visibility*/
 	#aboutsidenav a:hover {
 		left: 0;
 		opacity: 1;
-		box-shadow: 0 0 3pt 2pt #FFF;
+		box-shadow: 0 0 0 1pt #FFF, 0 0 6pt 4pt #F90, 0 0 6pt 4pt #F90;
 		outline: none;
 		transition: 0.7s ease-out;
-		transition-timing-function: cubic-bezier(.25,.7,.39,.81);
 	}
 
 @keyframes opacity {
@@ -459,7 +458,7 @@ spanR {
 	transform: perspective(1px) translateZ(0);
 	transition: 0.5s ease-in;
 	transition-timing-function: cubic-bezier(.25,.7,.45,.05);
-	box-shadow: 0 0 0 1pt #FFF;
+	box-shadow: 0 0 0 1pt #FFF, 0 0 7px #E58900, 0 0 10px #000, 0 0 21px #E58900, 0 0 42px #E58900, 0 0 82px #E58900, 0 0 92px #fff, 0 0 102px #000, 0 0 121px #000;
 	position: relative;
 }
 
@@ -632,7 +631,7 @@ a.returnlink {
 	color: black;
 	-webkit-transform: perspective(1px) translateZ(0);
 	transform: perspective(1px) translateZ(0);
-	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	box-shadow: 0 0 0 1pt #FFF, 0 0 7px #E58900, 0 0 10px #000, 0 0 21px #E58900, 0 0 42px #E58900, 0 0 82px #E58900, 0 0 92px #fff, 0 0 102px #000, 0 0 151px #000;
 	-webkit-transition-property: color;
 	transition-property: color;
 	-webkit-transition-duration: 0.5s;
@@ -731,7 +730,7 @@ a.returnlink {
 	color: black;
 	-webkit-transform: perspective(1px) translateZ(0);
 	transform: perspective(1px) translateZ(0);
-	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	box-shadow: 0 0 0 1pt #FFF, 0 0 7px #E58900, 0 0 10px #000, 0 0 21px #E58900, 0 0 42px #E58900, 0 0 82px #E58900, 0 0 92px #fff, 0 0 102px #000, 0 0 151px #000;
 	-webkit-transition-property: color;
 	transition-property: color;
 	-webkit-transition-duration: 0.5s;
@@ -817,7 +816,14 @@ a.returnlink {
 	opacity: 0.7;
 	animation: AboutNav ease 3s;
 	font-size: 20px;
+	transition: 0.3s ease-in;
 }
+
+	#AboutNav:hover {
+		box-shadow: 0 0 0 1pt #FFF, 0 0 6pt 4pt #F90, 0 0 6pt 4pt #F90;
+		opacity: 1;
+		transition: 0.3s ease-out;
+	}
 
 	/*About Nav Links Styling*/
 	#AboutNav a {
@@ -832,12 +838,15 @@ a.returnlink {
 		animation: AboutNavLetters ease 3s;
 		border: 3px;
 		border-color: black;
+		transition: 0.3s ease-in;
 	}
 
 		/*AboutNav Links Hover Animation*/
 		#AboutNav a:hover {
 			color: white;
 			opacity: 1;
+			transition: 0.3s ease-out;
+			font-weight: 600;
 		}
 
 
