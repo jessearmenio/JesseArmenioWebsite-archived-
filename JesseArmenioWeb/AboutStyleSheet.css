@@ -1,4 +1,10 @@
-﻿
+﻿.inner {
+	transform: rotate(90deg);
+	text-align: center;
+	padding-bottom: 170px;
+	overflow: visible;
+	opacity: 1;
+}
 
 /*
 /*
@@ -93,6 +99,208 @@ a {
 	text-decoration: none;
 }
 
+/*
+/*
+/*Styling for About NAVBAR at top of page // fixed
+/*
+/*
+/*
+*/
+/*AboutNav at Top of Page*/
+#AboutNav {
+	display: inline-block;
+	left: 0;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+	text-align: center;
+	position: fixed;
+	bottom: 90%;
+	width: 100%;
+	list-style: none;
+	overflow: hidden;
+	box-shadow: 0 0 0 1pt #FFF;
+	background-color: #333;
+	font-family: Calibri;
+	columns: 6;
+	-webkit-columns: 6;
+	-moz-columns: 6;
+	opacity: 0.7;
+	animation: AboutNav ease 3s;
+	font-size: 20px;
+	transition: 0.5s ease-in;
+}
+
+	#AboutNav:hover {
+		box-shadow: 0 0 0 1pt #FFF, 0 0 7px #E58900, 0 0 10px #000, 0 0 21px #E58900, 0 0 22px #E58900, 0 0 22px #E58900, 0 0 22px #fff, 0 0 23px #000, 0 0 24px #000;
+		opacity: 1;
+		transition: 0.3s ease-out;
+	}
+
+	/*About Nav Links Styling*/
+	#AboutNav a {
+		width: 100%;
+		margin: 0;
+		padding: 10px 10px;
+		display: block;
+		color: white;
+		text-align: center;
+		opacity: 0.7;
+		text-decoration: none;
+		animation: AboutNavLetters ease 3s;
+		border: 3px;
+		border-color: black;
+		transition: 0.5s ease-in;
+	}
+
+		/*AboutNav Links Hover Animation*/
+		#AboutNav a:hover {
+			color: white;
+			opacity: 1;
+			transition: 0.3s ease-out;
+			font-weight: 600;
+		}
+
+
+/*Main About Nav Resize at 1200 px -- 2 Columns 90% bottom*/
+@media only screen and (max-width: 1200px) {
+	#AboutNav {
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		bottom: 90%;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 5%;
+		columns: 3;
+		-webkit-columns: 3;
+		-moz-columns: 3;
+		opacity: 0.7;
+		width: 100%;
+		animation: AboutNav ease 3s; /*90% Bottom*/
+		font-size: 20px;
+	}
+}
+
+/*Main About Nav Resize at 800 px -- 2 Columns 87% bottom*/
+@media only screen and (max-width: 800px) {
+	#AboutNav {
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+		align-content: center;
+		list-style: none;
+		bottom: 87%;
+		margin: 0 auto;
+		columns: 2;
+		-webkit-columns: 2;
+		-moz-columns: 2;
+		opacity: 0.7;
+		width: 100%;
+		animation: AboutNav87 ease 3s; /*87% Bottom*/
+		font-size: 18px;
+	}
+}
+
+/*Main About Nav Resize at 650 px -- 2 Columns 80% bottom*/
+@media only screen and (max-width: 650px) {
+	#AboutNav {
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+		align-content: center;
+		list-style: none;
+		bottom: 80%;
+		margin: 0 auto;
+		columns: 2;
+		-webkit-columns: 2;
+		-moz-columns: 2;
+		opacity: 0.7;
+		width: 100%;
+		animation: AboutNav80 ease 3s; /*80% Bottom*/
+		font-size: 18px;
+	}
+}
+
+/*Main About Nav Resize at 340 px -- 2 Columns 83% bottom*/
+@media only screen and (max-width: 340px) {
+	#AboutNav {
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+		align-content: center;
+		list-style: none;
+		bottom: 83%;
+		margin: 0 auto;
+		columns: 2;
+		-webkit-columns: 2;
+		-moz-columns: 2;
+		opacity: 0.7;
+		width: 100%;
+		animation: AboutNav83 ease 3s; /*83% Bottom*/
+		font-size: 16px;
+	}
+}
+
+/*Main About Nav Resize at 280 px -- 2 Columns 83% bottom*/
+@media only screen and (max-width: 280px) {
+	#AboutNav {
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+		align-content: center;
+		list-style: none;
+		bottom: 83%;
+		margin: 0 auto;
+		columns: 2;
+		-webkit-columns: 2;
+		-moz-columns: 2;
+		opacity: 0.7;
+		width: 100%;
+		animation: AboutNav83 ease 3s; /*83% Bottom*/
+		font-size: 16px;
+	}
+}
+
+/*Main About Nav Resize at 913 height px -- 2 Columns 83% bottom*/
+@media only screen and (max-height: 913px) {
+	#AboutNav {
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+		align-content: center;
+		list-style: none;
+		bottom: 83%;
+		margin: 0 auto;
+		columns: 2;
+		-webkit-columns: 2;
+		-moz-columns: 2;
+		opacity: 0.7;
+		width: 100%;
+		animation: AboutNav83 ease 3s; /*83% Bottom*/
+		font-size: 16px;
+	}
+}
+
+/*
+*/
+/*
+*/
+/*About Nav Links Resize at 500 px -- (iPhone)*/
+@media only screen and (max-width: 500px) {
+	#AboutNav a {
+		width: 100%;
+		margin: auto;
+		padding: 0;
+		display: inline-block;
+		color: white;
+		text-align: center;
+		opacity: 0.7;
+		text-decoration: none;
+		animation: AboutNavLetters ease 3s;
+	}
+}
 /*
 /*
 -----Header 1 (Jesse Armenio)
@@ -265,7 +473,7 @@ img {
 	img:hover {
 		-webkit-filter: blur(1.5px) grayscale(40%); /* compatability with Safari */
 		filter: blur(1.5px) grayscale(40%);
-		box-shadow: 0 0 3pt 2pt #FFF;
+		box-shadow: 0 0 0 1pt #FFF, 0 0 10px #000;
 		outline: none;
 		transition: 0.5s ease-out;
 		transition-timing-function: cubic-bezier(.25,.7,.39,.81);
@@ -315,7 +523,7 @@ spanM {
 
 /*May 2021 Right Align*/
 spanR {
-	right: 2%;
+	right: 10%;
 	position: absolute;
 }
 
@@ -327,18 +535,24 @@ spanR {
 	}
 }
 
+@media only screen and (max-width: 800px) {
+	spanY {
+		font-size: 20px;
+	}
+}
+
 /*
 /*
-/*Styling for Top left side appear tab to return home
+/* TOP LEFT SIDE NAV RETURN to HOME Start
 /*
 /*
 /*
 */
-/*side nav - return home button*/
+/*side nav - return home (top left) button*/
 #aboutsidenav a {
-	position: absolute;
-	left: -80px;
-	padding: 10px 20px 10px 20px;
+	position: fixed;
+	left: -90px;
+	padding: 10px 0px 10px 0px;
 	width: 100px;
 	text-decoration: none;
 	font-size: 20px;
@@ -346,19 +560,36 @@ spanR {
 	border-radius: 0 5px 15px 0;
 	opacity: 0.7;
 	transition: 0.3s linear;
-	box-shadow: 0 0 0 1pt #FFF;
+	text-shadow: 0 0 5px #333, 0 0 10px #333, 0 0 15px #333;
+	box-shadow: 0 0 0 1px #FFF, 0 0 7px #E58900, 0 0 10px #E58900, 0 0 20px #E58900;
 	animation: opacity 3.3s;
+	opacity: 0.7;
+	z-index: 1;
 }
 
-	/*hover return full visibility*/
+	/*hover return button to show more (i.e., move from -90px left to -80px left*/
 	#aboutsidenav a:hover {
-		left: 0;
 		opacity: 1;
-		box-shadow: 0 0 0 1pt #FFF, 0 0 6pt 4pt #F90, 0 0 6pt 4pt #F90;
+		left: -80px;
+		opacity: 1;
+		box-shadow: 0 0 0 1pt #FFF, 0 0 7px #E58900, 0 0 10px #000, 0 0 21px #E58900, 0 0 22px #E58900, 0 0 22px #E58900, 0 0 22px #fff, 0 0 23px #000, 0 0 24px #000;
 		outline: none;
-		transition: 0.7s ease-out;
+		transition: 0.3s ease-out;
+		text-shadow: 0 0 5px #f90, 0 0 10px #f90, 0 0 15px #f90
 	}
 
+	/*click or focus return button to resemble feedback of it being pushed (i.e., move from -90px left to -110px left)*/
+	#aboutsidenav a:active, #aboutsidenav a:focus {
+		opacity: 1;
+		left: -95px;
+		opacity: 1;
+		box-shadow: 0 0 0 1px #FFF, 0 0 7px #E58900, 0 0 10px #E58900, 0 0 20px #E58900;
+		outline: none;
+		transition: 0.1s ease-out;
+		text-shadow: 0 0 5px #f90, 0 0 10px #f90, 0 0 15px #f90
+	}
+
+/*Animation to hide Top Left Side Nav until intro animation is finished*/
 @keyframes opacity {
 	0% {
 		opacity: 0;
@@ -369,17 +600,30 @@ spanR {
 	}
 
 	100% {
-		opacity: 1;
+		opacity: 0.7;
 	}
 }
-
 
 /*coloring and position for button*/
 #home {
 	top: 250px;
 	background-color: #333;
 	opacity: 0.7;
+	z-index: 1;
+	transition: 0.3s linear;
 }
+
+	#home:hover {
+		background-color: #333;
+		transition: 0.3s ease-out;
+		opacity: 1;
+	}
+
+	#home:active, #home:focus {
+		background-color: #737373;
+		transition: 0.1s ease-out;
+		opacity: 1;
+	}
 
 @media only screen and (max-width: 800px) {
 	#home {
@@ -394,6 +638,423 @@ spanR {
 /*
 */
 /*Return to home Button*/
+#AboutReturnBottom {
+	height: 25px;
+	width: 100%;
+	background-color: transparent;
+	border-radius: 4%;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 5%;
+	color: white;
+	text-decoration: none;
+}
+
+/*Return to home Button*/
+@media only screen and (min-width: 800px) {
+	#AboutReturnBottom {
+		height: 25px;
+		width: 100px;
+		background-color: transparent;
+		border-radius: 4%;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 20%;
+		color: white;
+		text-decoration: none;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	#AboutReturnBottom {
+		height: 25px;
+		width: 100%;
+		background-color: transparent;
+		border-radius: 4%;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top: 5%;
+		color: white;
+		text-decoration: none;
+		margin-bottom: 10px;
+	}
+}
+
+/*Return to home - Inside Box / Text* -- (bottom of page)*/
+#Return {
+	background-color: #737373;
+	border-radius: 10%;
+	text-align: center;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: 'Century Gothic';
+	text-decoration: none;
+	text-decoration-style: none;
+	font-size: 25px;
+	color: white;
+	width: 100px;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	transition: 0.5s ease-in;
+	transition-timing-function: cubic-bezier(.25,.7,.45,.05);
+	box-shadow: 0 0 0 1pt #FFF, 0 0 7px #E58900, 0 0 10px #000, 0 0 21px #E58900, 0 0 42px #E58900, 0 0 82px #E58900, 0 0 92px #fff, 0 0 102px #000, 0 0 121px #000;
+	position: relative;
+}
+
+	#Return:before {
+		pointer-events: none;
+		position: absolute;
+		z-index: -1;
+		content: '';
+		border-style: solid;
+		-webkit-transition-duration: 0.3s;
+		transition-duration: 0.3s;
+		-webkit-transition-property: transform;
+		transition-property: transform;
+		left: calc(50% - 15px);
+		top: 0;
+		border-width: 0 15px 15px 15px;
+		border-color: transparent transparent #737373 transparent;
+	}
+
+	#Return:hover {
+		border-color: transparent transparent white transparent;
+		box-shadow: 0 0 3pt 2pt #FFF;
+		outline: none;
+		transition: 0.5s ease-out;
+		transition-timing-function: cubic-bezier(.25,.7,.39,.81);
+	}
+
+		#Return:hover:before, #Return:focus:before, #Return:active:before {
+			-webkit-transform: translateY(-10px);
+			transform: translateY(-10px);
+		}
+
+/*Extra Link Text* Styling*/
+a.returnlink {
+	color: white;
+	text-decoration-style: none;
+	text-decoration: none;
+	-webkit-transition: all .2s linear;
+	-o-transition: all .2s linear;
+	transition: all .2s linear;
+}
+
+/*About Paragraph Positioning -- (About)*/
+#About1 {
+	padding-right: 0;
+	display: block;
+	text-align: left;
+	position: absolute;
+	top: 35%;
+	left: 45%;
+	-webkit-transform: translateY(-70px);
+	transform: translateY(-70px);
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	transition: ease-in 0.5s;
+}
+
+
+/*About Paragraph 700 px Resizing -- (mobile)*/
+@media only screen and (max-width: 800px) {
+	#About1 {
+		top: 75%;
+		position: absolute;
+		margin-top: 10%;
+		margin-bottom: 5%;
+		left: 4%;
+		margin-left: 0 auto;
+		padding: 2%;
+		margin-right: 0 auto;
+		width: 92%;
+		-webkit-transform: perspective(1px) translateZ(0);
+		transform: perspective(1px) translateZ(0);
+	}
+}
+
+/*First Paragraph Styling -- (About)*/
+#Ap1 {
+	background-color: white;
+	border-radius: 4%;
+	padding-left: 3%;
+	padding-right: 3%;
+	padding-bottom: 3%;
+	padding-top: 3%;
+	margin-left: auto;
+	margin-right: 5%;
+	margin-bottom: auto;
+	margin-top: 2%;
+	font-family: Calibri;
+	font-size: 20px;
+	display: block;
+	float: right;
+	width: 100%;
+	position: relative;
+	animation: About1 3s;
+	transition: ease-out 0.5s;
+}
+
+/*About & Education 700 px Resize -- (Half/Full-Window)*/
+@media only screen and (max-width: 1200px) {
+	#Ap1 {
+		background-color: white;
+		border-radius: 4%;
+		padding-left: 5%;
+		padding-right: 5%;
+		padding-bottom: 5%;
+		padding-top: 3%;
+		margin-left: 0 auto;
+		margin-right: 0 auto;
+		margin-bottom: auto;
+		margin-top: 4%;
+		font-family: Calibri;
+		font-size: 20px;
+		display: block;
+		position: relative;
+		width: 90%;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	#Ap1 {
+		background-color: white;
+		border-radius: 4%;
+		padding-left: 5%;
+		padding-right: 5%;
+		padding-bottom: 5%;
+		padding-top: 3%;
+		margin-left: 0 auto;
+		margin-right: 0 auto;
+		margin-bottom: auto;
+		margin-top: 5%;
+		font-family: Calibri;
+		font-size: 20px;
+		display: block;
+		position: relative;
+		width: 90%;
+	}
+}
+
+@media only screen and (max-width: 620px) {
+	#Ap1 {
+		background-color: white;
+		border-radius: 4%;
+		padding-left: 5%;
+		padding-right: 5%;
+		padding-bottom: 5%;
+		padding-top: 3%;
+		margin-left: 0 auto;
+		margin-right: 0 auto;
+		margin-bottom: auto;
+		margin-top: 5%;
+		font-family: Calibri;
+		font-size: 20px;
+		display: block;
+		position: relative;
+		width: 90%;
+	}
+}
+
+/*Initial Paragraph after About 1 (WideScreen) -- (Education)*/
+#About2 {
+	margin-top: 75%;
+	margin-right: 5%;
+	margin-left: 5%;
+	margin-bottom: 1%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	padding-left: 5%;
+	padding-right: 10%;
+	text-align: left;
+	position: relative;
+	background-color: white;
+	width: 80%;
+	color: black;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 0 1pt #FFF, 0 0 7px #E58900, 0 0 10px #E58900, 0 0 21px #E58900, 0 0 22px #E58900, 0 0 22px #E58900, 0 0 22px #fff, 0 0 23px #000, 0 0 24px #000;
+	-webkit-transition-property: color;
+	transition-property: color;
+	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+}
+
+
+	/* About2 (Education) animation when hovered*/
+	#About2:hover, #About2:focus, #About2:active {
+		color: #f90;
+		transition: ease-out 0.5s;
+	}
+
+		#About2:hover spanW {
+			color: white;
+		}
+
+/* About2 Spacing for Different Size Screen Widths -- (Education)*/
+/*-- 550 px Resize -- (iPhone)*/
+@media only screen and (max-width: 1000px) {
+	#About2 {
+		margin-top: 275%;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	#About2 {
+		padding-left: 5%;
+		padding-right: 5%;
+		width: 90%;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	#About2 {
+		margin-top: 360%;
+	}
+}
+
+@media only screen and (max-width: 280px) {
+	#About2 {
+		margin-top: 450%;
+	}
+}
+
+@media only screen and (min-width: 1000px) {
+	#About2 {
+		margin-top: 105%;
+	}
+}
+
+@media only screen and (min-width: 1450px) {
+	#About2 {
+		margin-top: 75%;
+	}
+}
+
+#About2:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: #000000;
+	border: 1px solid white;
+	-webkit-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transform-origin: 100% 50%;
+	transform-origin: 100% 50%;
+	-webkit-transition-property: transform;
+	transition-property: transform;
+	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+}
+
+#About2:hover:before, #About2:focus:before, #About2:active:before {
+	-webkit-transform: scaleX(1);
+	transform: scaleX(1);
+	-webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+	transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+	color: #f90
+}
+/*
+/*
+/*Styling for Paragraphs following About 2 -- (Work Experience, Development Skills, Soft Skills, Invovlement)*/
+/*
+/*
+/*
+*/
+#About3 {
+	margin-top: 7%;
+	margin-right: 5%;
+	margin-left: 5%;
+	margin-bottom: 1%;
+	padding-top: 2%;
+	padding-bottom: 2%;
+	padding-left: 5%;
+	padding-right: 10%;
+	text-align: left;
+	position: relative;
+	background-color: white;
+	width: 80%;
+	left: 0;
+	color: black;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 0 1pt #FFF, 0 0 7px #E58900, 0 0 10px #E58900, 0 0 21px #E58900, 0 0 22px #E58900, 0 0 22px #E58900, 0 0 22px #fff, 0 0 23px #000, 0 0 24px #000;
+	-webkit-transition-property: color;
+	transition-property: color;
+	-webkit-transition-duration: 0.5s;
+	transition-duration: 0.5s;
+}
+
+	#About3:before {
+		content: "";
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: #000000;
+		border: 1px solid white;
+		-webkit-transform: scaleX(0);
+		transform: scaleX(0);
+		-webkit-transform-origin: 100% 50%;
+		transform-origin: 100% 50%;
+		-webkit-transition-property: transform;
+		transition-property: transform;
+		-webkit-transition-duration: 0.5s;
+		transition-duration: 0.5s;
+		-webkit-transition-timing-function: ease-out;
+		transition-timing-function: ease-out;
+	}
+
+	/*About3 animation on hover --  (Work Experience, Development Skills, Soft Skills, Invovlement)*/
+	#About3:hover, #About3:focus, #About3:active {
+		color: #f90;
+		transition: ease-out 0.5s;
+	}
+
+		#About3:hover spanW {
+			color: white;
+		}
+
+
+		#About3:hover:before, #About3:focus:before, #About3:active:before {
+			-webkit-transform: scaleX(1);
+			transform: scaleX(1);
+			-webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+			transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+			color: #f90
+		}
+
+
+@media only screen and (max-width: 800px) {
+	#About3 {
+		padding-left: 2%;
+		padding-right: 2%;
+		width: 90%;
+	}
+}
+/*
+*/
+/*
+/*
+/*Styling for Bottom Nav "Return to Top" Button
+/*
+/*
+/*
+*/
+/*Return to top Button*/
 #AboutReturnBottom {
 	height: 25px;
 	width: 100%;
@@ -486,10 +1147,10 @@ spanR {
 		transition-timing-function: cubic-bezier(.25,.7,.39,.81);
 	}
 
-	#Return:hover:before, #Return:focus:before, #Return:active:before {
-		-webkit-transform: translateY(-10px);
-		transform: translateY(-10px);
-	}
+		#Return:hover:before, #Return:focus:before, #Return:active:before {
+			-webkit-transform: translateY(-10px);
+			transform: translateY(-10px);
+		}
 
 /*Extra Link Text* Styling*/
 a.returnlink {
@@ -501,494 +1162,6 @@ a.returnlink {
 	transition: all .2s linear;
 }
 
-/*About Paragraph Positioning -- (About)*/
-#About1 {
-	padding-right: 0;
-	display: block;
-	text-align: left;
-	position: absolute;
-	top: 35%;
-	left: 45%;
-	-webkit-transform: translateY(-70px);
-	transform: translateY(-70px);
-	-webkit-transform: perspective(1px) translateZ(0);
-	transform: perspective(1px) translateZ(0);
-	transition: ease-in 0.5s;
-}
-
-
-/*About Paragraph 700 px Resizing -- (mobile)*/
-@media only screen and (max-width: 800px) {
-	#About1 {
-		top: 75%;
-		position: absolute;
-		margin-top: 10%;
-		margin-bottom: 5%;
-		left: 4%;
-		margin-left: 0 auto;
-		padding: 2%;
-		margin-right: 0 auto;
-		width: 92%;
-		-webkit-transform: perspective(1px) translateZ(0);
-		transform: perspective(1px) translateZ(0);
-	}
-}
-
-/*First Paragraph Styling -- (About)*/
-#Ap3 {
-	background-color: white;
-	border-radius: 4%;
-	padding-left: 3%;
-	padding-right: 3%;
-	padding-bottom: 3%;
-	padding-top: 3%;
-	margin-left: auto;
-	margin-right: 5%;
-	margin-bottom: auto;
-	margin-top: 2%;
-	font-family: Calibri;
-	font-size: 20px;
-	display: block;
-	float: right;
-	width: 100%;
-	position: relative;
-	animation: About1 3s;
-	transition: ease-out 0.5s;
-}
-
-/*About & Education 700 px Resize -- (Half/Full-Window)*/
-@media only screen and (max-width: 1200px) {
-	#Ap3 {
-		background-color: white;
-		border-radius: 4%;
-		padding-left: 5%;
-		padding-right: 5%;
-		padding-bottom: 5%;
-		padding-top: 3%;
-		margin-left: 0 auto;
-		margin-right: 0 auto;
-		margin-bottom: auto;
-		margin-top: 4%;
-		font-family: Calibri;
-		font-size: 20px;
-		display: block;
-		position: relative;
-		width: 90%;
-	}
-}
-
-@media only screen and (min-width: 1200px) {
-	#Ap3 {
-		background-color: white;
-		border-radius: 4%;
-		padding-left: 5%;
-		padding-right: 5%;
-		padding-bottom: 5%;
-		padding-top: 3%;
-		margin-left: 0 auto;
-		margin-right: 0 auto;
-		margin-bottom: auto;
-		margin-top: 5%;
-		font-family: Calibri;
-		font-size: 20px;
-		display: block;
-		position: relative;
-		width: 90%;
-	}
-}
-
-@media only screen and (max-width: 620px) {
-	#Ap3 {
-		background-color: white;
-		border-radius: 4%;
-		padding-left: 5%;
-		padding-right: 5%;
-		padding-bottom: 5%;
-		padding-top: 3%;
-		margin-left: 0 auto;
-		margin-right: 0 auto;
-		margin-bottom: auto;
-		margin-top: 5%;
-		font-family: Calibri;
-		font-size: 20px;
-		display: block;
-		position: relative;
-		width: 90%;
-	}
-}
-
-/*Initial Paragraph after About 1 (WideScreen) -- (Education)*/
-#About2 {
-	margin-top: 75%;
-	margin-right: auto;
-	margin-left: auto;
-	margin-bottom: 1%;
-	padding: 2%;
-	text-align: left;
-	position: relative;
-	background-color: white;
-	width: 80%;
-	color: black;
-	-webkit-transform: perspective(1px) translateZ(0);
-	transform: perspective(1px) translateZ(0);
-	box-shadow: 0 0 0 1pt #FFF, 0 0 7px #E58900, 0 0 10px #000, 0 0 21px #E58900, 0 0 42px #E58900, 0 0 82px #E58900, 0 0 92px #fff, 0 0 102px #000, 0 0 151px #000;
-	-webkit-transition-property: color;
-	transition-property: color;
-	-webkit-transition-duration: 0.5s;
-	transition-duration: 0.5s;
-}
-
-
-	/* About2 (Education) animation when hovered*/
-	#About2:hover, #About2:focus, #About2:active {
-		color: #f90;
-	}
-
-		#About2:hover spanW {
-			color: white;
-		}
-
-/* About2 Spacing for Different Size Screen Widths -- (Education)*/
-/*-- 550 px Resize -- (iPhone)*/
-@media only screen and (max-width: 1000px) {
-	#About2 {
-		margin-top: 275%;
-	}
-}
-
-@media only screen and (max-width: 400px) {
-	#About2 {
-		margin-top: 360%;
-	}
-}
-
-@media only screen and (max-width: 280px) {
-	#About2 {
-		margin-top: 450%;
-	}
-}
-
-@media only screen and (min-width: 1000px) {
-	#About2 {
-		margin-top: 105%;
-	}
-}
-
-@media only screen and (min-width: 1450px) {
-	#About2 {
-		margin-top: 75%;
-	}
-}
-
-#About2:before {
-	content: "";
-	position: absolute;
-	z-index: -1;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	background: #000000;
-	border: 1px solid white;
-	-webkit-transform: scaleX(0);
-	transform: scaleX(0);
-	-webkit-transform-origin: 100% 50%;
-	transform-origin: 100% 50%;
-	-webkit-transition-property: transform;
-	transition-property: transform;
-	-webkit-transition-duration: 0.5s;
-	transition-duration: 0.5s;
-	-webkit-transition-timing-function: ease-out;
-	transition-timing-function: ease-out;
-}
-
-#About2:hover:before, #About2:focus:before, #About2:active:before {
-	-webkit-transform: scaleX(1);
-	transform: scaleX(1);
-	-webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-	transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-	color: #f90
-}
-/*
-/*
-/*Styling for Paragraphs following About 2 -- (Work Experience, Development Skills, Soft Skills, Invovlement)*/
-/*
-/*
-/*
-*/
-#About3 {
-	margin-top: 7%;
-	margin-right: auto;
-	margin-left: auto;
-	margin-bottom: 1%;
-	padding: 2%;
-	text-align: left;
-	position: relative;
-	background-color: white;
-	width: 80%;
-	left: 0;
-	color: black;
-	-webkit-transform: perspective(1px) translateZ(0);
-	transform: perspective(1px) translateZ(0);
-	box-shadow: 0 0 0 1pt #FFF, 0 0 7px #E58900, 0 0 10px #000, 0 0 21px #E58900, 0 0 42px #E58900, 0 0 82px #E58900, 0 0 92px #fff, 0 0 102px #000, 0 0 151px #000;
-	-webkit-transition-property: color;
-	transition-property: color;
-	-webkit-transition-duration: 0.5s;
-	transition-duration: 0.5s;
-}
-
-	#About3:before {
-		content: "";
-		position: absolute;
-		z-index: -1;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		background: #000000;
-		border: 1px solid white;
-		-webkit-transform: scaleX(0);
-		transform: scaleX(0);
-		-webkit-transform-origin: 100% 50%;
-		transform-origin: 100% 50%;
-		-webkit-transition-property: transform;
-		transition-property: transform;
-		-webkit-transition-duration: 0.5s;
-		transition-duration: 0.5s;
-		-webkit-transition-timing-function: ease-out;
-		transition-timing-function: ease-out;
-	}
-
-	/*About3 animation on hover --  (Work Experience, Development Skills, Soft Skills, Invovlement)*/
-	#About3:hover, #About3:focus, #About3:active {
-		color: #f90;
-	}
-
-		#About3:hover spanW {
-			color: white;
-		}
-
-@media only screen and (max-width: 800px) {
-	#About3:hover, #About3:focus, #About3:active {
-		background-color: black;
-		color: #f90 !important;
-		transition: 1s ease-in-out;
-		outline-offset: 5px;
-		outline: 1px solid white;
-		animation-fill-mode: forwards;
-	}
-}
-
-#About3:hover:before, #About3:focus:before, #About3:active:before {
-	-webkit-transform: scaleX(1);
-	transform: scaleX(1);
-	-webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-	transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-	color: #f90
-}
-
-/*
-/*
-/*Styling for About Navbar at top of page // fixed
-/*
-/*
-/*
-*/
-/*AboutNav at Top of Page*/
-#AboutNav {
-	display: inline-block;
-	left: 0;
-	padding: 0;
-	margin: 0;
-	overflow: hidden;
-	text-align: center;
-	position: fixed;
-	bottom: 90%;
-	width: 100%;
-	list-style: none;
-	overflow: hidden;
-	box-shadow: 0 0 0 1pt #FFF;
-	background-color: #333;
-	font-family: Calibri;
-	columns: 6;
-	-webkit-columns: 6;
-	-moz-columns: 6;
-	opacity: 0.7;
-	animation: AboutNav ease 3s;
-	font-size: 20px;
-	transition: 0.3s ease-in;
-}
-
-	#AboutNav:hover {
-		box-shadow: 0 0 0 1pt #FFF, 0 0 6pt 4pt #F90, 0 0 6pt 4pt #F90;
-		opacity: 1;
-		transition: 0.3s ease-out;
-	}
-
-	/*About Nav Links Styling*/
-	#AboutNav a {
-		width: 100%;
-		margin: 0;
-		padding: 10px 10px;
-		display: block;
-		color: white;
-		text-align: center;
-		opacity: 0.7;
-		text-decoration: none;
-		animation: AboutNavLetters ease 3s;
-		border: 3px;
-		border-color: black;
-		transition: 0.3s ease-in;
-	}
-
-		/*AboutNav Links Hover Animation*/
-		#AboutNav a:hover {
-			color: white;
-			opacity: 1;
-			transition: 0.3s ease-out;
-			font-weight: 600;
-		}
-
-
-/*Main About Nav Resize at 1200 px -- 2 Columns 90% bottom*/
-@media only screen and (max-width: 1200px) {
-	#AboutNav {
-		display: inline-block;
-		margin: 0;
-		padding: 0;
-		list-style: none;
-		bottom: 90%;
-		margin-left: auto;
-		margin-right: auto;
-		margin-top: 5%;
-		columns: 3;
-		-webkit-columns: 3;
-		-moz-columns: 3;
-		opacity: 0.7;
-		width: 100%;
-		animation: AboutNav ease 3s; /*90% Bottom*/
-		font-size: 20px;
-	}
-}
-
-/*Main About Nav Resize at 800 px -- 2 Columns 87% bottom*/
-@media only screen and (max-width: 800px) {
-	#AboutNav {
-		display: inline-block;
-		margin: 0;
-		padding: 0;
-		align-content: center;
-		list-style: none;
-		bottom: 87%;
-		margin: 0 auto;
-		columns: 2;
-		-webkit-columns: 2;
-		-moz-columns: 2;
-		opacity: 0.7;
-		width: 100%;
-		animation: AboutNav87 ease 3s; /*87% Bottom*/
-		font-size: 18px;
-	}
-}
-
-/*Main About Nav Resize at 650 px -- 2 Columns 80% bottom*/
-@media only screen and (max-width: 650px) {
-	#AboutNav {
-		display: inline-block;
-		margin: 0;
-		padding: 0;
-		align-content: center;
-		list-style: none;
-		bottom: 80%;
-		margin: 0 auto;
-		columns: 2;
-		-webkit-columns: 2;
-		-moz-columns: 2;
-		opacity: 0.7;
-		width: 100%;
-		animation: AboutNav80 ease 3s; /*80% Bottom*/
-		font-size: 18px;
-	}
-}
-
-/*Main About Nav Resize at 340 px -- 2 Columns 83% bottom*/
-@media only screen and (max-width: 340px) {
-	#AboutNav {
-		display: inline-block;
-		margin: 0;
-		padding: 0;
-		align-content: center;
-		list-style: none;
-		bottom: 83%;
-		margin: 0 auto;
-		columns: 2;
-		-webkit-columns: 2;
-		-moz-columns: 2;
-		opacity: 0.7;
-		width: 100%;
-		animation: AboutNav83 ease 3s; /*83% Bottom*/
-		font-size: 16px;
-	}
-}
-
-/*Main About Nav Resize at 280 px -- 2 Columns 83% bottom*/
-@media only screen and (max-width: 280px) {
-	#AboutNav {
-		display: inline-block;
-		margin: 0;
-		padding: 0;
-		align-content: center;
-		list-style: none;
-		bottom: 83%;
-		margin: 0 auto;
-		columns: 2;
-		-webkit-columns: 2;
-		-moz-columns: 2;
-		opacity: 0.7;
-		width: 100%;
-		animation: AboutNav83 ease 3s; /*83% Bottom*/
-		font-size: 16px;
-	}
-}
-
-/*Main About Nav Resize at 913 height px -- 2 Columns 83% bottom*/
-@media only screen and (max-height: 913px) {
-	#AboutNav {
-		display: inline-block;
-		margin: 0;
-		padding: 0;
-		align-content: center;
-		list-style: none;
-		bottom: 83%;
-		margin: 0 auto;
-		columns: 2;
-		-webkit-columns: 2;
-		-moz-columns: 2;
-		opacity: 0.7;
-		width: 100%;
-		animation: AboutNav83 ease 3s; /*83% Bottom*/
-		font-size: 16px;
-	}
-}
-
-/*
-*/
-/*
-*/
-/*About Nav Links Resize at 500 px -- (iPhone)*/
-@media only screen and (max-width: 500px) {
-	#AboutNav a {
-		width: 100%;
-		margin: auto;
-		padding: 0;
-		display: inline-block;
-		color: white;
-		text-align: center;
-		opacity: 0.7;
-		text-decoration: none;
-		animation: AboutNavLetters ease 3s;
-	}
-}
 /*
 /*
 /*START FOOTER STYLING*/
@@ -1349,13 +1522,15 @@ Floating Bubbles Animation
 		height: 100%;
 		bottom: 0;
 		opacity: 1;
+		box-shadow: 0 0 0 1pt #FFF, 0 0 7px #f90, 0 0 10px #000, 0 0 21px #f90, 0 0 42px #f90, 0 0 82px #f90, 0 0 92px #fff, 0 0 102px #000, 0 0 151px #000;
 	}
 
 	35% {
 		background-color: #333;
 		width: 100%;
 		height: 100%;
-		opacity: 1
+		opacity: 1;
+		box-shadow: 0 0 0 1pt #FFF, 0 0 7px #f90, 0 0 10px #000, 0 0 21px #f90, 0 0 42px #f90, 0 0 82px #f90, 0 0 92px #fff, 0 0 102px #000, 0 0 151px #000;
 	}
 
 	50% {
@@ -1363,6 +1538,7 @@ Floating Bubbles Animation
 		width: 100%;
 		height: 100%;
 		opacity: 1;
+		box-shadow: 0 0 0 1pt #FFF, 0 0 7px #E58900, 0 0 10px #000, 0 0 21px #E58900, 0 0 42px #E58900, 0 0 82px #E58900, 0 0 92px #fff, 0 0 102px #000,
 	}
 
 	90% {
@@ -1371,6 +1547,7 @@ Floating Bubbles Animation
 		height: 100%;
 		bottom: 100%;
 		opacity: 0.7;
+		box-shadow: 0 0 0 1pt #FFF, 0 0 7px #f90, 0 0 10px #000, 0 0 21px #f90, 0 0 42px #f90,
 	}
 
 	100% {
@@ -1379,6 +1556,8 @@ Floating Bubbles Animation
 		height: 100%;
 		bottom: 90%;
 		opacity: 0.5;
+		box-shadow: 0 0 0 1pt #FFF;
+		transition: 0.3s linear;
 	}
 }
 
@@ -1389,13 +1568,15 @@ Floating Bubbles Animation
 		height: 100%;
 		bottom: 0;
 		opacity: 1;
+		box-shadow: 0 0 0 1pt #FFF, 0 0 7px #f90, 0 0 10px #000, 0 0 21px #f90, 0 0 42px #f90, 0 0 82px #f90, 0 0 92px #fff, 0 0 102px #000, 0 0 151px #000;
 	}
 
 	35% {
 		background-color: #333;
 		width: 100%;
 		height: 100%;
-		opacity: 1
+		opacity: 1;
+		box-shadow: 0 0 0 1pt #FFF, 0 0 7px #f90, 0 0 10px #000, 0 0 21px #f90, 0 0 42px #f90, 0 0 82px #f90, 0 0 92px #fff, 0 0 102px #000, 0 0 151px #000;
 	}
 
 	50% {
@@ -1403,6 +1584,7 @@ Floating Bubbles Animation
 		width: 100%;
 		height: 100%;
 		opacity: 1;
+		box-shadow: 0 0 0 1pt #FFF, 0 0 7px #E58900, 0 0 10px #000, 0 0 21px #E58900, 0 0 42px #E58900, 0 0 82px #E58900, 0 0 92px #fff, 0 0 102px #000,
 	}
 
 	90% {
@@ -1411,6 +1593,7 @@ Floating Bubbles Animation
 		height: 100%;
 		bottom: 100%;
 		opacity: 0.7;
+		box-shadow: 0 0 0 1pt #FFF, 0 0 7px #f90, 0 0 10px #000, 0 0 21px #f90, 0 0 42px #f90,
 	}
 
 	100% {
@@ -1419,6 +1602,8 @@ Floating Bubbles Animation
 		height: 100%;
 		bottom: 87%;
 		opacity: 0.5;
+		box-shadow: 0 0 0 1pt #FFF;
+		transition: 0.3s linear;
 	}
 }
 
@@ -1429,13 +1614,15 @@ Floating Bubbles Animation
 		height: 100%;
 		bottom: 0;
 		opacity: 1;
+		box-shadow: 0 0 0 1pt #FFF, 0 0 7px #f90, 0 0 10px #000, 0 0 21px #f90, 0 0 42px #f90, 0 0 82px #f90, 0 0 92px #fff, 0 0 102px #000, 0 0 151px #000;
 	}
 
 	35% {
 		background-color: #333;
 		width: 100%;
 		height: 100%;
-		opacity: 1
+		opacity: 1;
+		box-shadow: 0 0 0 1pt #FFF, 0 0 7px #f90, 0 0 10px #000, 0 0 21px #f90, 0 0 42px #f90, 0 0 82px #f90, 0 0 92px #fff, 0 0 102px #000, 0 0 151px #000;
 	}
 
 	50% {
@@ -1443,6 +1630,7 @@ Floating Bubbles Animation
 		width: 100%;
 		height: 100%;
 		opacity: 1;
+		box-shadow: 0 0 0 1pt #FFF, 0 0 7px #f90, 0 0 10px #000, 0 0 21px #f90, 0 0 42px #f90, 0 0 82px #f90, 0 0 92px #fff, 0 0 102px #000,
 	}
 
 	90% {
@@ -1451,6 +1639,7 @@ Floating Bubbles Animation
 		height: 100%;
 		bottom: 100%;
 		opacity: 0.7;
+		box-shadow: 0 0 0 1pt #FFF, 0 0 7px #f90, 0 0 10px #000, 0 0 21px #f90, 0 0 42px #f90,
 	}
 
 	100% {
@@ -1459,6 +1648,8 @@ Floating Bubbles Animation
 		height: 100%;
 		bottom: 83%;
 		opacity: 0.5;
+		box-shadow: 0 0 0 1pt #FFF;
+		transition: 0.3s linear;
 	}
 }
 
@@ -1469,13 +1660,15 @@ Floating Bubbles Animation
 		height: 100%;
 		bottom: 0;
 		opacity: 1;
+		box-shadow: 0 0 0 1pt #FFF, 0 0 7px #f90, 0 0 10px #000, 0 0 21px #f90, 0 0 42px #f90, 0 0 82px #f90, 0 0 92px #fff, 0 0 102px #000, 0 0 151px #000;
 	}
 
 	35% {
 		background-color: #333;
 		width: 100%;
 		height: 100%;
-		opacity: 1
+		opacity: 1;
+		box-shadow: 0 0 0 1pt #FFF, 0 0 7px #f90, 0 0 10px #000, 0 0 21px #f90, 0 0 42px #f90, 0 0 82px #f90, 0 0 92px #fff, 0 0 102px #000, 0 0 151px #000;
 	}
 
 	50% {
@@ -1483,6 +1676,7 @@ Floating Bubbles Animation
 		width: 100%;
 		height: 100%;
 		opacity: 1;
+		box-shadow: 0 0 0 1pt #FFF, 0 0 7px #f90, 0 0 10px #000, 0 0 21px #f90, 0 0 42px #f90, 0 0 82px #f90, 0 0 92px #fff, 0 0 102px #000,
 	}
 
 	90% {
@@ -1491,6 +1685,7 @@ Floating Bubbles Animation
 		height: 100%;
 		bottom: 100%;
 		opacity: 0.7;
+		box-shadow: 0 0 0 1pt #FFF, 0 0 7px #f90, 0 0 10px #000, 0 0 21px #f90, 0 0 42px #f90,
 	}
 
 	100% {
@@ -1499,6 +1694,8 @@ Floating Bubbles Animation
 		height: 100%;
 		bottom: 80%;
 		opacity: 0.5;
+		box-shadow: 0 0 0 1pt #FFF;
+		transition: 0.3s linear;
 	}
 }
 
@@ -2013,3 +2210,4 @@ Floating Bubbles Animation
 /*
 /*
 */
+

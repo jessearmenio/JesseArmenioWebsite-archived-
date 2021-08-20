@@ -18,7 +18,13 @@
 html {
 	width: 100%
 }
+/*
+*/
+/*
 
+*/
+/*
+*/
 /*General Body Styling*/
 body {
 	height: 100%;
@@ -29,7 +35,13 @@ body {
 	background-color: black;
 	width: 100%;
 }
+/*
+*/
+/*
 
+*/
+/*
+*/
 /*Container-fluid Sizing, Alignment and Responsivenss*/
 .HomeContainer {
 	text-align: center;
@@ -41,13 +53,32 @@ body {
 	display: block;
 	width: 100%;
 }
+/*
+*/
+/*
 
+*/
+/*
+*/
 /*Full Name Span Styling*/
 .container-fluid span {
 	text-transform: uppercase;
 	display: block;
 }
+/*
+*/
+/*
 
+*/
+/*
+*/
+/*
+*/
+/*
+
+*/
+/*
+*/
 /*
 /*
 /*
@@ -64,30 +95,52 @@ body {
 	letter-spacing: 6px;
 	margin-bottom: 0px;
 	position: relative;
-	animation: text 3s ease;
+	animation: text 2.35s linear;
 	color: white;
 	font-family: sans-serif;
 	text-align: center;
 	text-shadow: 0 0 7px #000, 0 0 10px #000, 0 0 21px #f90, 0 0 42px #f90, 0 0 82px #000, 0 0 92px #fff, 0 0 102px #000, 0 0 151px #f90;
 }
+/*
+*/
+/*
 
+*/
+/*
+*/
 /*Last Name*/
 .text2 {
 	font-size: 35px;
 	color: lightgrey;
 	position: relative;
-	animation: text 3s 1 ease;
+	animation: text2 2.4s linear;
 	font-family: sans-serif;
 	text-align: center;
 }
 
+@media only screen (max-width: 800px) {
+	.text2 {
+		animation: Post 2s linear;
+	}
+}
+/*
+*/
+/*
+/*
+*/
+/*
+*/
+/*
+*/
+/*
+*/
 /*Resume Link Styling*/
 .link1 {
 	font-size: 28px;
 	color: white;
 	position: relative;
 	margin-top: 30px;
-	animation: link 3.2s ease;
+	animation: Post 2.5s linear;
 	display: block;
 	font-family: sans-serif;
 	text-shadow: 0 0 7px #f90, 0 0 10px #000, 0 0 21px #f90, 0 0 42px #f90, 0 0 82px #000, 0 0 92px #fff, 0 0 102px #000, 0 0 151px #f90;
@@ -98,13 +151,30 @@ body {
 		text-shadow: 0 0 7px #f90, 0 0 10px #000, 0 0 21px #f90, 0 0 42px #FFFFFF, 0 0 82px #000, 0 0 92px #fff, 0 0 102px #FFFFFF, 0 0 151px #FFFFFF;
 	}
 
+@media only screen (max-width: 800px) {
+	.link1 {
+		animation: Post 2.2s linear;
+	}
+}
+/*
+*/
+/*
+*/
+/*
+*/
 /*LinkedIn Link Styling*/
+/*
+*/
+/*
+*/
+/*
+*/
 .link2 {
 	font-size: 20px;
 	color: white;
 	position: relative;
 	margin-top: 20px;
-	animation: Post 3.4s 1 ease;
+	animation: Post 2.5s linear;
 	display: block;
 	font-weight: 500;
 	font-family: Arial;
@@ -123,14 +193,24 @@ body {
 		animation-delay: 3s;
 		z-index: -1;
 	}
-
+/*
+*/
+/*
+/*
+*/
+/*
+*/
+/*
+*/
+/*
+*/
 /*GitHub Link Styling*/
 .link3 {
 	font-size: 20px;
 	color: white;
 	position: relative;
 	margin-top: 20px;
-	animation: Post 3.5s 1 ease;
+	animation: Post 3s linear;
 	display: block;
 	font-weight: 500;
 	font-family: Arial;
@@ -147,7 +227,12 @@ body {
 		animation: git 13s linear infinite;
 		z-index: -1;
 	}
-
+/*
+*/
+/*
+*/
+/*
+*/
 /*
 /*
 /*
@@ -160,29 +245,31 @@ body {
 #AboutNav {
 	text-decoration: none;
 	background-color: transparent;
-	font-size: 28px;
+	font-size: 32px;
 	font-family: sans-serif;
 	text-align: right;
 	color: lightgrey;
-	font-weight: 500;
 	display: block;
 	float: right;
 	margin-top: auto;
 	margin-right: auto;
 	opacity: 0.9;
 	height: 100%;
-	animation: AboutPost 3.6s ease;
-	text-shadow: 0 0 7px #E58900, 0 0 10px #000, 0 0 21px #E58900, 0 0 42px #E58900, 0 0 82px #E58900, 0 0 92px #fff, 0 0 102px #000, 0 0 151px #000;
+	animation: AboutPost 2.5s linear;
 }
 
-/*Full transparency on hover*/
-	#AboutNav:hover, #AboutNav:focus, #AboutNav:active {
+	/*No transparency on hover*/
+	#AboutNav:hover {
 		opacity: 1;
-		text-decoration: none;
-		color: white;
-		text-shadow: 0 0 7px #E58900, 0 0 10px #000, 0 0 21px #E58900, 0 0 42px #E58900, 0 0 82px #E58900, 0 0 92px #fff, 0 0 102px #000, 0 0 151px #000;
+		filter: brightness(110%);
+		animation: hoverbody 1s;
 	}
-
+/*
+*/
+/*
+*/
+/*
+*/
 /*
 /*
 /*
@@ -275,7 +362,7 @@ div.clouds {
 	width: 200px;
 	opacity: 0.2;
 }
-/*Cloud 9*/
+/*Cloud 9
 .NinthCloud {
 	top: 62%;
 	left: -200px;
@@ -285,7 +372,7 @@ div.clouds {
 	width: 200px;
 	opacity: 0.4;
 }
-/*Cloud 10*/
+/*Cloud 10
 .TenthCloud {
 	top: 70%;
 	left: -200px;
@@ -308,6 +395,8 @@ div.clouds {
 /*
 /*
 /*Circling Skills Graphic Styling / Positiong*/
+/*
+*/
 #SkillGraphic {
 	position: relative;
 	width: 50%;
@@ -319,7 +408,7 @@ div.clouds {
 	margin-top: 5%;
 	-webkit-animation: Rotation 16s linear infinite;
 	animation: Rotation 16s linear infinite;
-	animation-delay: 3.2s;
+	animation-delay: 2.5s;
 	opacity: 0;
 }
 
@@ -340,7 +429,16 @@ div.clouds {
 		height: 75%;
 	}
 }
-
+/*
+*/
+/*
+*/
+/*
+*/
+/*
+*/
+/*
+*/
 
 /*Contact Me footer*/
 spanC {
@@ -496,7 +594,12 @@ span3:hover:after {
 	font-weight: 600;
 	overflow: hidden;
 }
-
+/*
+*/
+/*
+*/
+/*
+*/
 /*
 /*END of Span Stylings
 /*
@@ -506,9 +609,11 @@ span3:hover:after {
 /*
 /*
 /*Main Footer Div*/
-
 /*
-/*START FOOTER STYLING*/
+/*
+*/
+/*
+*/
 /*
 /*
 /*
@@ -554,7 +659,19 @@ span3:hover:after {
 	}
 /*
 /*
+*/
+/*
+*/
+/*
+*/
+/*
 Social Media footer icons and hover*/
+/*
+*/
+/*
+*/
+/*
+*/
 /*
 */
 #social_icon_footer {
@@ -602,13 +719,21 @@ Social Media footer icons and hover*/
 	#social_icon_footer #social-ca:hover {
 		color: #FFFC00;
 	}
-
+/*
+*/
+/*
+*/
+/*
+*/
 /*"Made by" Heart coloring*/
 .heart {
 	color: salmon;
 	padding-bottom: 1px;
 }
-
+/*
+*/
+/*
+*/
 /*Adjust alignment on -- (iPhone) */
 @media only screen and (max-width:767px) {
 	.copyright-text {
@@ -616,23 +741,27 @@ Social Media footer icons and hover*/
 		margin: auto;
 	}
 }
-
+/*
+*/
+/*
+*/
 .dev {
 	padding: 0;
 }
-
+/*
+*/
+/*
+*/
 /*Align content center*/
 .footer .copyright-text, .site-footer .social-icons {
 	text-align: center;
 	margin: auto;
 	font-size: 15px;
 }
-
-/*space in-between circles in aniamtion*/
-#balls {
-	padding-left: 0px;
-}
-
+/*
+*/
+/*
+*/
 /*centering the entire footer as one*/
 #footercontainer {
 	margin-left: 0 auto;
@@ -673,7 +802,14 @@ Floating Bubbles Animation
 		font-weight: 700;
 		font-size: 13px
 	}
-
+/*
+*/
+/*
+*/
+/*
+*/
+/*
+*/
 /*footer bubble linking and ease transition*/
 .social-icons a {
 	background-color: #eceeef;
@@ -744,7 +880,14 @@ Floating Bubbles Animation
 .social-icons a.social4:hover {
 	background-color: #000000
 }
-
+/*
+*/
+/*
+*/
+/*
+*/
+/*
+*/
 /*
 /*
 /*
@@ -753,31 +896,33 @@ Floating Bubbles Animation
 /*
 /*
 /*
-/*Full Name Animation*/
+/*First Name Animation*/
 @keyframes text {
 	0% {
-		color: black;
+		color: #737373;
 		letter-spacing: 400px;
-		margin-bottom: -40px;
+		margin-bottom: 0px;
 		margin-top: 100px;
+		opacity: 0;
 	}
 
 	33% {
 		letter-spacing: 25px;
 		margin-bottom: -40px;
-		color: grey;
+		color: #000;
+		opacity: 1;
 	}
 
 	43% {
 		letter-spacing: 25px;
 		margin-bottom: -40px;
-		color: white;
+		color: #000;
 	}
 
 	47% {
 		letter-spacing: 25px;
 		margin-bottom: -40px;
-		color: white;
+		color: #737373;
 	}
 
 
@@ -790,71 +935,71 @@ Floating Bubbles Animation
 	75% {
 		letter-spacing: 8px;
 		margin-bottom: -40px;
-		color: white;
+		color: #FFF;
 	}
 }
-
-/*Resume Link Animation*/
-@keyframes link {
+/*
+*/
+/*
+/*Second Name Animation*/
+/*
+*/
+@keyframes text2 {
 	0% {
 		color: black;
-		transform: translateX(500);
-		transform: translateY(500);
-		margin-top: 100px;
-		opacity: 0;
-	}
-
-
-	10% {
-		color: black;
-		transform: translateX(0);
-		transform: translateY(0);
+		letter-spacing: 400px;
+		margin-bottom: 0px;
 		margin-top: 100px;
 		opacity: 0;
 	}
 
 	33% {
-		transform: translateX(-78px);
-		transform: translateY(-78px);
-		margin-top: 50px;
-		color: black;
-		opacity: 0;
+		letter-spacing: 25px;
+		margin-bottom: -40px;
+		color: grey;
+		opacity: 1;
 	}
 
-	40% {
-		transform: translateX(-80px);
-		transform: translateY(-75px);
-		margin-top: 50px;
-		font-weight: 900;
-		letter-spacing: 100px;
-		color: white;
+	43% {
+		letter-spacing: 25px;
+		margin-bottom: -40px;
+		color: #FFF;
 	}
 
 	47% {
-		transform: translateX(-80px);
-		transform: translateY(-75px);
-		margin-top: 50px;
 		letter-spacing: 25px;
-		color: white;
+		margin-bottom: -40px;
+		color: #FFF;
 	}
 
+
 	66% {
-		transform: translateX(50px);
-		transform: translateY(50px);
-		margin-top: 0px;
-		color: white;
+		letter-spacing: 25px;
+		margin-bottom: -40px;
+		color: #FFF;
 	}
 
 	75% {
-		transform: translateX(50px);
-		transform: translateY(50px);
-		margin-top: 0px;
-		color: white;
-		font-weight: 400;
+		letter-spacing: 8px;
+		margin-bottom: -40px;
+		color: #FFF;
 	}
 }
+/*
+*/
+/*
 
-/*LinkedIn and GitHub NavLink Animation*/
+*/
+/*
+*/
+/*Resume, LinkedIn and GitHub NavLink Animation*/
+/*
+*/
+/*
+
+*/
+/*
+*/
 @keyframes Post {
 
 	0% {
@@ -869,7 +1014,13 @@ Floating Bubbles Animation
 		opacity: 100;
 	}
 }
-
+/*
+*/
+/*
+About Nav (Top Right) Animation
+*/
+/*
+*/
 @keyframes AboutPost {
 
 	0% {
@@ -882,6 +1033,39 @@ Floating Bubbles Animation
 
 	100% {
 		opacity: 0.5;
+	}
+}
+/*
+*/
+/*
+Hover Body Animation
+*/
+/*
+*/
+@keyframes hoverbody {
+	0%, 20% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	40% {
+		-webkit-transform: translateY(-20px);
+		transform: translateY(-20px);
+	}
+
+	60% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+
+	80% {
+		-webkit-transform: translateY(-10px);
+		transform: translateY(-10px);
+	}
+
+	100% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
 	}
 }
 
@@ -899,7 +1083,13 @@ Floating Bubbles Animation
 		opacity: 0.5;
 	}
 }
+/*
+*/
+/*
 
+*/
+/*
+*/
 /*Makes About Tab bounce on hover*/
 @keyframes AboutNav {
 	0%, 20% {
@@ -927,7 +1117,13 @@ Floating Bubbles Animation
 		transform: translateY(0);
 	}
 }
+/*
+*/
+/*
 
+*/
+/*
+*/
 /*Cloud Animation*/
 @keyframes move {
 	from {
@@ -938,7 +1134,13 @@ Floating Bubbles Animation
 		left: 100%;
 	}
 }
+/*
+*/
+/*
 
+*/
+/*
+*/
 /*Compatability Cloud Animation*/
 @-webkit-keyframes move {
 	from {
@@ -949,7 +1151,13 @@ Floating Bubbles Animation
 		left: 100%;
 	}
 }
+/*
+*/
+/*
 
+*/
+/*
+*/
 /*Rotation Animation for Skills Graphic*/
 @keyframes Rotation {
 	0% {
@@ -1001,7 +1209,13 @@ Floating Bubbles Animation
 	}
 }
 
+/*
+*/
+/*
 
+*/
+/*
+*/
 /*Resume link no-flicker*/
 @keyframes noflicker {
 
@@ -1009,7 +1223,13 @@ Floating Bubbles Animation
 		text-shadow: 0 0 4px #E58900, 0 0 20px #E58900, 0 0 30px #E58900;
 	}
 }
+/*
+*/
+/*
 
+*/
+/*
+*/
 /*linkedin*/
 @keyframes linked {
 	0%,12%,18.999%,23%,31.999%,37%,44.999%,46%,49.999%,51%,58.999%,61%,68.999%,71%,85.999%,96%,100% {
@@ -1022,7 +1242,13 @@ Floating Bubbles Animation
 		text-shadow: none;
 	}
 }
+/*
+*/
+/*
 
+*/
+/*
+*/
 @keyframes git {
 	0%,12%,18.999%,23%,31.999%,37%,44.999%,46%,49.999%,51%,58.999%,61%,68.999%,71%,85.999%,96%,100% {
 		opacity: 0.99;
@@ -1034,7 +1260,13 @@ Floating Bubbles Animation
 		text-shadow: none;
 	}
 }
+/*
+*/
+/*
 
+*/
+/*
+*/
 @-webkit-keyframes hvr-wobble-top {
 	16.65% {
 		-webkit-transform: skew(-12deg);
@@ -1066,7 +1298,13 @@ Floating Bubbles Animation
 		transform: skew(0);
 	}
 }
+/*
+*/
+/*
 
+*/
+/*
+*/
 @keyframes hvr-wobble-top {
 	16.65% {
 		-webkit-transform: skew(-12deg);
@@ -1098,7 +1336,13 @@ Floating Bubbles Animation
 		transform: skew(0);
 	}
 }
+/*
+*/
+/*
 
+*/
+/*
+*/
 @-webkit-keyframes hvr-wobble-bottom {
 	16.65% {
 		-webkit-transform: skew(-12deg);
@@ -1130,7 +1374,13 @@ Floating Bubbles Animation
 		transform: skew(0);
 	}
 }
+/*
+*/
+/*
 
+*/
+/*
+*/
 @keyframes hvr-wobble-bottom {
 	16.65% {
 		-webkit-transform: skew(-12deg);
