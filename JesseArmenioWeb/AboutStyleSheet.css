@@ -475,7 +475,7 @@ img {
 		filter: blur(1.5px) grayscale(40%);
 		box-shadow: 0 0 0 1pt #FFF, 0 0 10px #000;
 		outline: none;
-		transition: 0.5s ease-out;
+		transition: 1s ease-out;
 		transition-timing-function: cubic-bezier(.25,.7,.39,.81);
 	}
 
@@ -807,7 +807,7 @@ a.returnlink {
 		border-radius: 4%;
 		padding-left: 5%;
 		padding-right: 5%;
-		padding-bottom: 5%;
+		padding-bottom: 3%;
 		padding-top: 3%;
 		margin-left: 0 auto;
 		margin-right: 0 auto;
@@ -827,7 +827,7 @@ a.returnlink {
 		border-radius: 4%;
 		padding-left: 5%;
 		padding-right: 5%;
-		padding-bottom: 5%;
+		padding-bottom: 3%;
 		padding-top: 3%;
 		margin-left: 0 auto;
 		margin-right: 0 auto;
@@ -847,7 +847,7 @@ a.returnlink {
 		border-radius: 4%;
 		padding-left: 5%;
 		padding-right: 5%;
-		padding-bottom: 5%;
+		padding-bottom: 3%;
 		padding-top: 3%;
 		margin-left: 0 auto;
 		margin-right: 0 auto;
