@@ -466,7 +466,7 @@ img {
 	border-radius: 4%;
 	transition: 0.5s ease-in;
 	transition-timing-function: cubic-bezier(.25,.7,.45,.05);
-	box-shadow: 0 0 0 1pt #FFF, 0 0 7px #E58900, 0 0 10px #000, 0 0 21px #E58900, 0 0 42px #E58900, 0 0 82px #E58900, 0 0 92px #fff, 0 0 102px #000, 0 0 151px #000;
+	box-shadow: 0 0 0 1pt #FFF, 0 0 7px #E58900, 0 0 10px #000, 0 0 21px #E58900, 0 0 42px #E58900, 0 0 62px #E58900, 0 0 72px #fff, 0 0 82px #000;
 }
 
 	/*AboutPicture Animation when Hovered*/
@@ -541,6 +541,8 @@ spanR {
 	}
 }
 
+
+
 /*
 /*
 /* TOP LEFT SIDE NAV RETURN to HOME Start
@@ -575,7 +577,6 @@ spanR {
 		box-shadow: 0 0 0 1pt #FFF, 0 0 7px #E58900, 0 0 10px #000, 0 0 21px #E58900, 0 0 22px #E58900, 0 0 22px #E58900, 0 0 22px #fff, 0 0 23px #000, 0 0 24px #000;
 		outline: none;
 		transition: 0.3s ease-out;
-		text-shadow: 0 0 5px #f90, 0 0 10px #f90, 0 0 15px #f90
 	}
 
 	/*click or focus return button to resemble feedback of it being pushed (i.e., move from -90px left to -110px left)*/
@@ -586,7 +587,6 @@ spanR {
 		box-shadow: 0 0 0 1px #FFF, 0 0 7px #E58900, 0 0 10px #E58900, 0 0 20px #E58900;
 		outline: none;
 		transition: 0.1s ease-out;
-		text-shadow: 0 0 5px #f90, 0 0 10px #f90, 0 0 15px #f90
 	}
 
 /*Animation to hide Top Left Side Nav until intro animation is finished*/
@@ -892,6 +892,11 @@ a.returnlink {
 		transition: ease-out 0.5s;
 	}
 
+		#About2:hover spanT {
+			text-decoration: line-through !important;
+			transition: 0.5s ease-out;
+		}
+
 		#About2:hover spanW {
 			color: white;
 		}
@@ -1028,6 +1033,10 @@ a.returnlink {
 			color: white;
 		}
 
+		#About3:hover spanT {
+			text-decoration: line-through !important;
+			transition: 0.5s ease-out;
+		}
 
 		#About3:hover:before, #About3:focus:before, #About3:active:before {
 			-webkit-transform: scaleX(1);

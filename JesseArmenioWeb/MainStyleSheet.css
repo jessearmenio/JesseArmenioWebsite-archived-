@@ -245,16 +245,14 @@ body {
 #AboutNav {
 	text-decoration: none;
 	background-color: transparent;
-	font-size: 32px;
+	font-size: 25px;
 	font-family: sans-serif;
-	text-align: right;
+	text-align: center;
 	color: lightgrey;
-	display: block;
-	float: right;
-	margin-top: auto;
+	margin-left: auto;
+	margin-bottom: 100px;
 	margin-right: auto;
 	opacity: 0.9;
-	height: 100%;
 	animation: AboutPost 2.5s linear;
 }
 
@@ -262,10 +260,14 @@ body {
 	#AboutNav:hover {
 		opacity: 1;
 		filter: brightness(110%);
-		animation: hoverbody 1s;
 	}
-/*
-*/
+
+@media only screen and (max-width: 800px) {
+	#AboutNav {
+		font-size: 32px;
+		margin-bottom: 20px;
+	}
+}
 /*
 */
 /*
@@ -323,6 +325,14 @@ div.clouds {
 	animation: move 30s linear 4s infinite;
 	width: 200px;
 	opacity: 0.3;
+}
+
+@media only screen and (max-width: 800px) {
+	.fourthCloud {
+		opacity: 0;
+		animation: none;
+		z-index: -1;
+	}
 }
 /*Cloud 5*/
 .FifthCloud {
@@ -614,7 +624,8 @@ span3:hover:after {
 */
 /*
 */
-/*
+
+
 /*
 /*
 /*Main Footer Div*/
@@ -631,6 +642,7 @@ span3:hover:after {
 	padding-left: 0;
 	bottom: 0;
 	position: absolute;
+	animation: Post 2.5s;
 }
 
 /*Adjust Sizing on -- (iPhone)*/
