@@ -1,12 +1,4 @@
-﻿.inner {
-	transform: rotate(90deg);
-	text-align: center;
-	padding-bottom: 170px;
-	overflow: visible;
-	opacity: 1;
-}
-
-/*
+﻿/*
 /*
 /*
 /*
@@ -464,19 +456,20 @@ img {
 	height: 35%;
 	width: 40%;
 	border-radius: 4%;
-	transition: 0.5s ease-in;
-	transition-timing-function: cubic-bezier(.25,.7,.45,.05);
-	box-shadow: 0 0 0 1pt #FFF, 0 0 7px #E58900, 0 0 10px #000, 0 0 21px #E58900, 0 0 42px #E58900, 0 0 62px #E58900, 0 0 72px #fff, 0 0 82px #000;
+	transition: transform .5s, filter 1.5s ease-in, 0.5s ease-in;
+	transform: scale(0.9);
+	-webkit-filter: grayscale(100%); /* compatability with Safari */
+	box-shadow: 0 0 0 1pt #FFF, 0 0 7px #E58900, 0 0 10px #000, 0 0 21px #E58900, 0 0 42px #fff, 0 0 62px #000;
 }
 
 	/*AboutPicture Animation when Hovered*/
 	img:hover {
-		-webkit-filter: blur(1.5px) grayscale(40%); /* compatability with Safari */
-		filter: blur(1.5px) grayscale(40%);
-		box-shadow: 0 0 0 1pt #FFF, 0 0 10px #000;
+		-webkit-filter: blur(1.5px) grayscale(0%); /* compatability with Safari */
+		filter: grayscale(0);
 		outline: none;
-		transition: 1s ease-out;
-		transition-timing-function: cubic-bezier(.25,.7,.39,.81);
+		transition: 0.5s ease-out;
+		transform: scale(1);
+		box-shadow: 0 0 0 1pt #FFF;
 	}
 
 
@@ -508,6 +501,7 @@ spanC {
 	spanC:hover {
 		color: #f90;
 	}
+
 
 /*Indented bullet points*/
 spanE {
@@ -551,43 +545,56 @@ spanR {
 /*
 */
 /*side nav - return home (top left) button*/
-#aboutsidenav a {
-	position: fixed;
-	left: -90px;
-	padding: 10px 0px 10px 0px;
-	width: 100px;
-	text-decoration: none;
-	font-size: 20px;
-	color: white;
-	border-radius: 0 5px 15px 0;
+#aboutsidenav {
 	opacity: 0.7;
-	transition: 0.3s linear;
-	text-shadow: 0 0 5px #333, 0 0 10px #333, 0 0 15px #333;
-	box-shadow: 0 0 0 1px #FFF, 0 0 7px #E58900, 0 0 10px #E58900, 0 0 20px #E58900;
-	animation: opacity 3.3s;
-	opacity: 0.7;
-	z-index: 1;
 }
 
-	/*hover return button to show more (i.e., move from -90px left to -80px left*/
-	#aboutsidenav a:hover {
+	#aboutsidenav:hover {
 		opacity: 1;
-		left: -80px;
-		opacity: 1;
-		box-shadow: 0 0 0 1pt #FFF, 0 0 7px #E58900, 0 0 10px #000, 0 0 21px #E58900, 0 0 22px #E58900, 0 0 22px #E58900, 0 0 22px #fff, 0 0 23px #000, 0 0 24px #000;
-		outline: none;
-		transition: 0.3s ease-out;
 	}
 
-	/*click or focus return button to resemble feedback of it being pushed (i.e., move from -90px left to -110px left)*/
-	#aboutsidenav a:active, #aboutsidenav a:focus {
-		opacity: 1;
-		left: -95px;
-		opacity: 1;
-		box-shadow: 0 0 0 1px #FFF, 0 0 7px #E58900, 0 0 10px #E58900, 0 0 20px #E58900;
-		outline: none;
-		transition: 0.1s ease-out;
+	#aboutsidenav a {
+		position: fixed;
+		left: -90px;
+		text-decoration: none;
+		font-size: 18px;
+		font-weight: 500;
+		color: white;
+		border-radius: 0 5px 15px 0;
+		transition: 0.3s linear;
+		text-shadow: 0 0 5px #333, 0 0 10px #333, 0 0 15px #333;
+		box-shadow: 0 0 0 1px #FFF;
+		animation: opacity 3.3s;
+		z-index: 1;
+		opacity: 0.7;
 	}
+
+		/*hover return button to show more (i.e., move from -90px left to -80px left*/
+		#aboutsidenav a:hover {
+			left: -80px;
+			opacity: 1;
+			box-shadow: 0 0 0 1pt #FFF, 0 0 7px #E58900, 0 0 10px #000, 0 0 21px #E58900, 0 0 22px #E58900, 0 0 22px #E58900, 0 0 22px #fff, 0 0 23px #000, 0 0 24px #000;
+			outline: none;
+			transition: 0.3s ease-out;
+		}
+
+		/*click or focus return button to resemble feedback of it being pushed (i.e., move from -90px left to -110px left)*/
+		#aboutsidenav a:active, #aboutsidenav a:focus {
+			left: -95px;
+			opacity: 1;
+			box-shadow: 0 0 0 1px #FFF, 0 0 7px #E58900, 0 0 10px #E58900, 0 0 20px #E58900;
+			outline: none;
+			transition: 0.1s ease-out;
+		}
+
+/*Text Positioning to turn "Return Home" sideways for the side nav*/
+.inner {
+	transform: rotate(90deg);
+	text-align: center;
+	padding-bottom: 150px;
+	overflow: visible;
+	opacity: 1;
+}
 
 /*Animation to hide Top Left Side Nav until intro animation is finished*/
 @keyframes opacity {
@@ -608,7 +615,6 @@ spanR {
 #home {
 	top: 250px;
 	background-color: #333;
-	opacity: 0.7;
 	z-index: 1;
 	transition: 0.3s linear;
 }
@@ -616,13 +622,11 @@ spanR {
 	#home:hover {
 		background-color: #333;
 		transition: 0.3s ease-out;
-		opacity: 1;
 	}
 
 	#home:active, #home:focus {
 		background-color: #737373;
 		transition: 0.1s ease-out;
-		opacity: 1;
 	}
 
 @media only screen and (max-width: 800px) {
@@ -1271,6 +1275,10 @@ Social Media footer icons and hover*/
 .heart {
 	color: salmon;
 	padding-bottom: 1px;
+}
+
+.copyright-text {
+	opacity: 0.7;
 }
 
 /*Adjust alignment on -- (iPhone) */

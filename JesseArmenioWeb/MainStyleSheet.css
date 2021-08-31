@@ -1,7 +1,11 @@
 ﻿/*
 /*
 /*
-/*
+*/
+@font-face {
+	font-family: 'DarkSeed-qZ3Rx';
+	src: url('../DarkSeed-qZ3Rx.ttf') format('truetype');
+}
 /*
 /*
 /*
@@ -233,33 +237,49 @@ body {
 */
 /*
 */
+.MidNav{
+	position: absolute;
+	bottom: 10%;
+	width: 100%;
+	margin-left: 0 auto;
+	margin-right: 0 auto;
+	padding: 0;
+	text-align: center;
+}
 /*
 /*
 /*
 /*
------ Nav button top right to About Page
+----- Nav button Lower Middle (Learn More) to About Page
 /*
 /*
 /*
-/*About Tab (Top Right) Styling*/
+/*About Tab (Lower Middle) Styling*/
 #AboutNav {
 	text-decoration: none;
 	background-color: transparent;
-	font-size: 25px;
-	font-family: sans-serif;
+	font-size: 28px;
+	font-family: DarkSeed-qZ3Rx;
 	text-align: center;
 	color: lightgrey;
-	margin-left: auto;
-	margin-bottom: 100px;
-	margin-right: auto;
-	opacity: 0.9;
-	animation: AboutPost 2.5s linear;
+	margin-left: 0 auto;
+	margin-right: 0 auto;
+	opacity: 0.8;
+	margin-top: -100px;
+	transition: 0.5s ease-in;
+	animation: AboutPost 2.8s linear;
+	-webkit-transform: perspective(1px) translateZ(0);
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	position: relative;
+	z-index: 1;
 }
 
 	/*No transparency on hover*/
 	#AboutNav:hover {
 		opacity: 1;
 		filter: brightness(110%);
+		transition: 1s ease-out;
 	}
 
 @media only screen and (max-width: 800px) {
@@ -268,6 +288,47 @@ body {
 		margin-bottom: 20px;
 	}
 }
+
+@media only screen and (max-height: 1000px) {
+	#AboutNav {
+		font-size: 32px;
+		margin-bottom: 50px;
+	}
+}
+
+@media (max-height: 360px) {
+	#AboutNav {
+		position: absolute;
+		margin-left: 0 auto;
+		margin-right: 0 auto;
+		width: 100%;
+		bottom: 15%;
+	}
+}
+
+#AboutNav:before {
+	pointer-events: none;
+	position: absolute;
+	content: '';
+	height: 0;
+	width: 0;
+	top: 0;
+	right: 0;
+	background: white;
+	/* IE9 */
+	background: linear-gradient(225deg, white 45%, #aaa 50%, #ccc 56%, white 80%);
+	box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.4);
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-property: width, height;
+	transition-property: width, height;
+}
+
+#AboutNav:hover:before, #AboutNav:focus:before, #AboutNav:active:before {
+	width: 25px;
+	height: 25px;
+}
+
 /*
 */
 /*
@@ -289,13 +350,21 @@ div.clouds {
 	padding-bottom: 20%;
 }
 
+/*Clouds Disappear at a box width of 1975px to prevent wide-screen displays from distorting the animation*/
+@media only screen and (min-width: 1975px){
+	div.clouds {
+		height: 0;
+		opacity: 0;
+	}
+}
+
 /*All Cloud Styling, Placement, and Animation Settings; Cloud Animations are staggered by durations and delays*/
 /*Cloud 1*/
 .firstCloud {
 	position: relative;
 	left: -200px;
 	top: 65%;
-	animation: move 28s ease-out 6s infinite;
+	animation: move 28s linear 6s infinite;
 	width: 150px;
 	opacity: 0.25;
 }
@@ -313,7 +382,7 @@ div.clouds {
 	top: 8%;
 	left: -200px;
 	position: relative;
-	animation: move 32s ease-out 3.6s infinite;
+	animation: move 32s linear 3.6s infinite;
 	width: 200px;
 	opacity: 0.55;
 }
@@ -339,7 +408,7 @@ div.clouds {
 	top: 42%;
 	left: -200px;
 	position: relative;
-	animation: move 27s ease-out 4.5s infinite;
+	animation: move 27s linear 4.5s infinite;
 	animation-delay: 4.5s;
 	width: 200px;
 	opacity: 0.6;
@@ -358,7 +427,7 @@ div.clouds {
 	position: absolute;
 	left: -200px;
 	top: 35%;
-	animation: move 30s ease-out 5.5s infinite;
+	animation: move 30s linear 5.5s infinite;
 	width: 200px;
 	opacity: 0.3;
 }
@@ -418,7 +487,7 @@ div.clouds {
 	margin-top: 5%;
 	-webkit-animation: Rotation 16s linear infinite;
 	animation: Rotation 16s linear infinite;
-	animation-delay: 2.5s;
+	animation-delay: 2.6s;
 	opacity: 0;
 }
 
@@ -434,9 +503,9 @@ div.clouds {
 /* This enables the Skills Graphic Animation scale to Height -- (iPhone)*/
 @media only screen and (max-height: 850px) {
 	#SkillGraphic {
-		margin-top: 225px;
-		width: 75%;
-		height: 75%;
+		margin-top: 215px;
+		width: 70%;
+		height: 70%;
 	}
 }
 /*
@@ -642,7 +711,8 @@ span3:hover:after {
 	padding-left: 0;
 	bottom: 0;
 	position: absolute;
-	animation: Post 2.5s;
+	animation: Post 2.8s;
+	z-index: -1;
 }
 
 /*Adjust Sizing on -- (iPhone)*/
@@ -650,6 +720,13 @@ span3:hover:after {
 	.footer {
 		padding: 0;
 		font-size: 10px;
+	}
+}
+
+@media (max-height: 360px) {
+	.footer {
+		width: 0;
+		opacity: 0;
 	}
 }
 
@@ -744,6 +821,11 @@ Social Media footer icons and hover*/
 }
 /*
 */
+/*
+*/
+.copyright-text{
+	opacity: 0.7;
+}
 /*
 */
 /*Adjust alignment on -- (iPhone) */
