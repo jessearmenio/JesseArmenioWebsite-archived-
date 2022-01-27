@@ -111,20 +111,20 @@ a {
 	width: 100%;
 	list-style: none;
 	overflow: hidden;
-	box-shadow: 0 0 0 1pt #FFF;
+	box-shadow: 0 0 0 2pt #FFF;
 	background-color: #333;
 	font-family: Calibri;
 	columns: 6;
 	-webkit-columns: 6;
 	-moz-columns: 6;
 	opacity: 0.7;
-	animation: AboutNav ease 3s;
+	animation: AboutNav linear 3s;
 	font-size: 20px;
 	transition: 0.5s ease-in;
 }
 
 	#AboutNav:hover {
-		box-shadow: 0 0 0 1pt #FFF, 0 0 7px #E58900, 0 0 10px #000, 0 0 21px #E58900, 0 0 22px #E58900, 0 0 22px #E58900, 0 0 22px #fff, 0 0 23px #000, 0 0 24px #000;
+		box-shadow: 0 0 5px #f90, 0 0 10px #f90, 0 0 15px #f90;
 		opacity: 1;
 		transition: 0.3s ease-out;
 	}
@@ -139,7 +139,7 @@ a {
 		text-align: center;
 		opacity: 0.7;
 		text-decoration: none;
-		animation: AboutNavLetters ease 3s;
+		animation: AboutNavLetters linear 3s;
 		border: 3px;
 		border-color: black;
 		transition: 0.5s ease-in;
@@ -149,7 +149,7 @@ a {
 		#AboutNav a:hover {
 			color: white;
 			opacity: 1;
-			transition: 0.3s ease-out;
+			transition: 0.05s ease-out;
 			font-weight: 600;
 		}
 
@@ -161,7 +161,7 @@ a {
 		margin: 0;
 		padding: 0;
 		list-style: none;
-		bottom: 90%;
+		bottom: 85%;
 		margin-left: auto;
 		margin-right: auto;
 		margin-top: 5%;
@@ -170,12 +170,12 @@ a {
 		-moz-columns: 3;
 		opacity: 0.7;
 		width: 100%;
-		animation: AboutNav ease 3s; /*90% Bottom*/
+		animation: AboutNav85 linear 3s; /*90% Bottom*/
 		font-size: 20px;
 	}
 }
 
-/*Main About Nav Resize at 800 px -- 2 Columns 87% bottom*/
+/*Main About Nav Resize at 800 px -- 2 Columns 83% bottom*/
 @media only screen and (max-width: 800px) {
 	#AboutNav {
 		display: inline-block;
@@ -183,19 +183,19 @@ a {
 		padding: 0;
 		align-content: center;
 		list-style: none;
-		bottom: 87%;
+		bottom: 85%;
 		margin: 0 auto;
 		columns: 2;
 		-webkit-columns: 2;
 		-moz-columns: 2;
 		opacity: 0.7;
 		width: 100%;
-		animation: AboutNav87 ease 3s; /*87% Bottom*/
+		animation: AboutNav85 linear 3s; /*83% Bottom*/
 		font-size: 18px;
 	}
 }
 
-/*Main About Nav Resize at 650 px -- 2 Columns 80% bottom*/
+/*Main About Nav Resize at 650 px -- 2 Columns 80% bottom
 @media only screen and (max-width: 650px) {
 	#AboutNav {
 		display: inline-block;
@@ -203,19 +203,19 @@ a {
 		padding: 0;
 		align-content: center;
 		list-style: none;
-		bottom: 80%;
+		bottom: 83%;
 		margin: 0 auto;
 		columns: 2;
 		-webkit-columns: 2;
 		-moz-columns: 2;
 		opacity: 0.7;
 		width: 100%;
-		animation: AboutNav80 ease 3s; /*80% Bottom*/
+		animation: AboutNav83 linear 3s; /*80% Bottom
 		font-size: 18px;
 	}
 }
 
-/*Main About Nav Resize at 340 px -- 2 Columns 83% bottom*/
+/*Main About Nav Resize at 340 px -- 2 Columns 83% bottom
 @media only screen and (max-width: 340px) {
 	#AboutNav {
 		display: inline-block;
@@ -230,7 +230,7 @@ a {
 		-moz-columns: 2;
 		opacity: 0.7;
 		width: 100%;
-		animation: AboutNav83 ease 3s; /*83% Bottom*/
+		animation: AboutNav83 linear 3s; /*83% Bottom
 		font-size: 16px;
 	}
 }
@@ -250,13 +250,13 @@ a {
 		-moz-columns: 2;
 		opacity: 0.7;
 		width: 100%;
-		animation: AboutNav83 ease 3s; /*83% Bottom*/
+		animation: AboutNav83 linear 3s; /*83% Bottom*/
 		font-size: 16px;
 	}
 }
 
-/*Main About Nav Resize at 913 height px -- 2 Columns 83% bottom*/
-@media only screen and (max-height: 913px) {
+/*Main About Nav Resize at 700 height px -- 2 Columns 80% bottom*/
+@media only screen and (max-height: 700px) {
 	#AboutNav {
 		display: inline-block;
 		margin: 0;
@@ -270,7 +270,7 @@ a {
 		-moz-columns: 2;
 		opacity: 0.7;
 		width: 100%;
-		animation: AboutNav83 ease 3s; /*83% Bottom*/
+		animation: AboutNav83 linear 3s; /*80% Bottom*/
 		font-size: 16px;
 	}
 }
@@ -290,7 +290,7 @@ a {
 		text-align: center;
 		opacity: 0.7;
 		text-decoration: none;
-		animation: AboutNavLetters ease 3s;
+		animation: AboutNavLetters linear 3s;
 	}
 }
 /*
@@ -305,7 +305,7 @@ h1 {
 	color: #333;
 	text-align: right;
 	font-size: 38px;
-	margin-top: 45%;
+	margin-top: 40%;
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: -1%;
@@ -320,8 +320,9 @@ h1 {
 	font-family: sans-serif;
 	font-weight: 600;
 	overflow: visible;
-	animation: jesse 15s ease-in-out, flicker 7s ease infinite;
+	animation: flicker 7s ease infinite;
 	text-shadow: 0 0 5px #f90, 0 0 10px #f90, 0 0 15px #f90, 0 0 20px #fff, 0 0 25px #f90, 0 0 30px #fff, 0 0 35px #f90, 0 0 40px #f90;
+	z-index: 2;
 }
 
 /*Main Name Header Resize at 1700px -- (UltraWide-Window)*/
@@ -402,7 +403,7 @@ h2 {
 /*read full bio link styling*/
 #fullbio {
 	color: #E58900;
-	font-size: 16px;
+	font-size: 20px;
 }
 
 	/*read full bio hover styling*/
@@ -416,7 +417,7 @@ h2 {
 	position: absolute;
 	margin-right: 10%;
 	margin-left: 10%;
-	margin-top: 15%;
+	margin-top: 20%;
 	display: block;
 	top: 5%;
 	float: left;
@@ -426,9 +427,24 @@ h2 {
 /*About Picture Resize at 1250px -- (Half-Window)*/
 @media only screen and (max-width: 1250px) {
 	#AboutPicture {
-		margin-top: 20%;
+		margin-top: 25%;
 		margin-left: 5%;
 		margin-right: 5%;
+		animation: AboutPictureMobile 3s;
+		display: block;
+		top: 10%;
+		float: left;
+		position: absolute;
+		padding: 0;
+	}
+}
+
+/*About Picture Resize at 800px -- (iPhone - mobile)*/
+@media only screen and (max-width: 800px) {
+	#AboutPicture {
+		margin-top: 20%;
+		margin-left: 25%;
+		margin-right: 10%;
 		animation: AboutPictureMobile 3s;
 		display: block;
 		top: 10%;
@@ -438,11 +454,11 @@ h2 {
 }
 
 /*About Picture Resize at 800px -- (iPhone - mobile)*/
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 700px) {
 	#AboutPicture {
-		margin-top: 30%;
-		margin-left: 5%;
-		margin-right: 5%;
+		margin-top: 40%;
+		margin-left: 25%;
+		margin-right: 10%;
 		animation: AboutPictureMobile2 3s;
 		display: block;
 		top: 10%;
@@ -455,11 +471,11 @@ h2 {
 img {
 	height: 35%;
 	width: 40%;
-	border-radius: 4%;
+	border-radius: 3%;
 	transition: transform .5s, filter 1.5s ease-in, 0.5s ease-in;
-	transform: scale(0.9);
-	-webkit-filter: grayscale(100%); /* compatability with Safari */
-	box-shadow: 0 0 0 1pt #FFF, 0 0 7px #E58900, 0 0 10px #000, 0 0 21px #E58900, 0 0 42px #fff, 0 0 62px #000;
+	transform: scale(1);
+	-webkit-filter: grayscale(75%); /* compatability with Safari */
+	box-shadow: 0 0 0 2pt #FFF;
 }
 
 	/*AboutPicture Animation when Hovered*/
@@ -467,9 +483,10 @@ img {
 		-webkit-filter: blur(1.5px) grayscale(0%); /* compatability with Safari */
 		filter: grayscale(0);
 		outline: none;
+		transform: scale(0.98);
 		transition: 0.5s ease-out;
-		transform: scale(1);
-		box-shadow: 0 0 0 1pt #FFF;
+		border-radius: 4%;
+		box-shadow: 0 0 5px #f90, 0 0 10px #f90, 0 0 15px #f90;
 	}
 
 
@@ -490,6 +507,7 @@ SpanA {
 /*Oklahoma State University font color*/
 spanB {
 	color: #Fe5c00;
+	font-weight: 700;
 }
 
 /*Contact Me footer*/
@@ -563,7 +581,7 @@ spanR {
 		border-radius: 0 5px 15px 0;
 		transition: 0.3s linear;
 		text-shadow: 0 0 5px #333, 0 0 10px #333, 0 0 15px #333;
-		box-shadow: 0 0 0 1px #FFF;
+		box-shadow: 0 0 0 2px #FFF;
 		animation: opacity 3.3s;
 		z-index: 1;
 		opacity: 0.7;
@@ -573,7 +591,7 @@ spanR {
 		#aboutsidenav a:hover {
 			left: -80px;
 			opacity: 1;
-			box-shadow: 0 0 0 1pt #FFF, 0 0 7px #E58900, 0 0 10px #000, 0 0 21px #E58900, 0 0 22px #E58900, 0 0 22px #E58900, 0 0 22px #fff, 0 0 23px #000, 0 0 24px #000;
+			box-shadow: 0 0 5px #f90, 0 0 10px #f90, 0 0 15px #f90;
 			outline: none;
 			transition: 0.3s ease-out;
 		}
@@ -582,7 +600,7 @@ spanR {
 		#aboutsidenav a:active, #aboutsidenav a:focus {
 			left: -95px;
 			opacity: 1;
-			box-shadow: 0 0 0 1px #FFF, 0 0 7px #E58900, 0 0 10px #E58900, 0 0 20px #E58900;
+			box-shadow: 0 0 5px #f90, 0 0 10px #f90, 0 0 15px #f90;
 			outline: none;
 			transition: 0.1s ease-out;
 		}
@@ -770,7 +788,7 @@ a.returnlink {
 	#About1 {
 		top: 75%;
 		position: absolute;
-		margin-top: 10%;
+		margin-top: 30%;
 		margin-bottom: 5%;
 		left: 4%;
 		margin-left: 0 auto;
@@ -1132,7 +1150,7 @@ a.returnlink {
 	transform: perspective(1px) translateZ(0);
 	transition: 0.5s ease-in;
 	transition-timing-function: cubic-bezier(.25,.7,.45,.05);
-	box-shadow: 0 0 0 1pt #FFF, 0 0 7px #E58900, 0 0 10px #000, 0 0 21px #E58900, 0 0 42px #E58900, 0 0 82px #E58900, 0 0 92px #fff, 0 0 102px #000, 0 0 121px #000;
+	box-shadow: 0 0 3pt 4pt #FFF;
 	position: relative;
 }
 
@@ -1154,7 +1172,7 @@ a.returnlink {
 
 	#Return:hover {
 		border-color: transparent transparent white transparent;
-		box-shadow: 0 0 3pt 2pt #FFF;
+		box-shadow: 0 0 0 2pt #f90;
 		outline: none;
 		transition: 0.5s ease-out;
 		transition-timing-function: cubic-bezier(.25,.7,.39,.81);
@@ -1452,7 +1470,7 @@ Floating Bubbles Animation
 		margin-left: -100%;
 		opacity: 0;
 		border-radius: 0;
-		margin-top: 15%;
+		margin-top: 20%;
 	}
 
 	90% {
@@ -1462,7 +1480,7 @@ Floating Bubbles Animation
 	100% {
 		opacity: 1;
 		margin-left: 10%;
-		margin-top: 15%;
+		margin-top: 20%;
 	}
 }
 
@@ -1480,7 +1498,7 @@ Floating Bubbles Animation
 
 	100% {
 		opacity: 1;
-		margin-top: 20%;
+		margin-top: 25%;
 		margin-left: 5%;
 		margin-right: 5%;
 	}
@@ -1499,9 +1517,9 @@ Floating Bubbles Animation
 
 	100% {
 		opacity: 1;
-		margin-top: 30%;
-		margin-left: 5%;
-		margin-right: 5%;
+		margin-top: 40%;
+		margin-left: 25%;
+		margin-right: 10%;
 	}
 }
 
@@ -1578,7 +1596,7 @@ Floating Bubbles Animation
 	}
 }
 
-@keyframes AboutNav87 {
+@keyframes AboutNav85 {
 	0% {
 		background-color: black;
 		width: 100%;
@@ -1617,7 +1635,7 @@ Floating Bubbles Animation
 		background-color: #333;
 		width: 100%;
 		height: 100%;
-		bottom: 87%;
+		bottom: 85%;
 		opacity: 0.5;
 		box-shadow: 0 0 0 1pt #FFF;
 		transition: 0.3s linear;

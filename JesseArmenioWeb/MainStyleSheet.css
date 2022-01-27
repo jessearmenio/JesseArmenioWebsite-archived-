@@ -50,13 +50,14 @@ body {
 .HomeContainer {
 	text-align: center;
 	position: absolute;
-	top: 50%;
+	top: 40%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	align-content: center;
 	display: block;
 	width: 100%;
 }
+
 /*
 */
 /*
@@ -70,16 +71,6 @@ body {
 	display: block;
 }
 /*
-*/
-/*
-
-*/
-/*
-*/
-/*
-*/
-/*
-
 */
 /*
 */
@@ -143,21 +134,22 @@ body {
 	font-size: 28px;
 	color: white;
 	position: relative;
-	margin-top: 30px;
+	margin-top: 40px;
 	animation: Post 2.5s linear;
-	display: block;
+	text-align: center;
+	display: inline;
 	font-family: sans-serif;
 	text-shadow: 0 0 7px #f90, 0 0 10px #000, 0 0 21px #f90, 0 0 42px #f90, 0 0 82px #000, 0 0 92px #fff, 0 0 102px #000, 0 0 151px #f90;
 }
 	/*Resume Hover Animation*/
 	.link1:hover, .link1:focus, .link1:active {
 		color: #f90;
-		text-shadow: 0 0 7px #f90, 0 0 10px #000, 0 0 21px #f90, 0 0 42px #FFFFFF, 0 0 82px #000, 0 0 92px #fff, 0 0 102px #FFFFFF, 0 0 151px #FFFFFF;
 	}
 
 @media only screen (max-width: 800px) {
 	.link1 {
 		animation: Post 2.2s linear;
+		margin-top: 140px;
 	}
 }
 /*
@@ -174,12 +166,13 @@ body {
 /*
 */
 .link2 {
-	font-size: 20px;
+	font-size: 24px;
 	color: white;
 	position: relative;
-	margin-top: 20px;
+	margin-top: 40px;
 	animation: Post 2.5s linear;
-	display: block;
+	display: inline;
+	text-align: center;
 	font-weight: 500;
 	font-family: Arial;
 	text-shadow: 0 0 7px #008fdd, 0 0 10px #000, 0 0 21px #008fdd, 0 0 42px #008fdd, 0 0 82px #000, 0 0 92px #fff, 0 0 102px #000, 0 0 151px #008fdd;
@@ -188,7 +181,6 @@ body {
 	/*LinkedIn Hover Animation*/
 	.link2:hover, .link2:focus, .link2:active {
 		color: #008fdd;
-		text-shadow: 0 0 7px #008fdd, 0 0 10px #000, 0 0 21px #008fdd, 0 0 42px #FFFFFF, 0 0 82px #000, 0 0 92px #fff, 0 0 102px #FFFFFF, 0 0 151px #FFFFFF;
 	}
 
 	/*linked in "n" letter flicker */
@@ -210,12 +202,13 @@ body {
 */
 /*GitHub Link Styling*/
 .link3 {
-	font-size: 20px;
+	font-size: 24px;
 	color: white;
 	position: relative;
-	margin-top: 20px;
-	animation: Post 3s linear;
-	display: block;
+	margin-top: 120px;
+	animation: Post 2.5s linear;
+	display: inline;
+	text-align: center;
 	font-weight: 500;
 	font-family: Arial;
 	text-shadow: 0 0 7px #b300b3, 0 0 10px #b300b3, 0 0 21px #b300b3, 0 0 42px #b300b3, 0 0 82px #000, 0 0 92px #fff, 0 0 102px #b300b3, 0 0 151px #b300b3;
@@ -224,7 +217,6 @@ body {
 	/*GitHub Hover Animation*/
 	.link3:hover, .link3:focus, .link3:active {
 		color: #b300b3;
-		text-shadow: 0 0 7px #b300b3, 0 0 10px #000, 0 0 21px #b300b3, 0 0 42px #FFFFFF, 0 0 82px #000, 0 0 92px #fff, 0 0 102px #FFFFFF, 0 0 151px #FFFFFF;
 	}
 
 	.link3 spang {
@@ -236,16 +228,6 @@ body {
 /*
 */
 /*
-*/
-.MidNav{
-	position: absolute;
-	bottom: 10%;
-	width: 100%;
-	margin-left: 0 auto;
-	margin-right: 0 auto;
-	padding: 0;
-	text-align: center;
-}
 /*
 /*
 /*
@@ -258,18 +240,19 @@ body {
 #AboutNav {
 	text-decoration: none;
 	background-color: transparent;
-	font-size: 28px;
+	font-size: 32px;
 	font-family: DarkSeed-qZ3Rx;
 	text-align: center;
-	color: lightgrey;
+	color: white;
 	margin-left: 0 auto;
 	margin-right: 0 auto;
-	opacity: 0.8;
+	opacity: 1 !important;
 	margin-top: -100px;
 	transition: 0.5s ease-in;
-	animation: AboutPost 2.8s linear;
+	animation: AboutPost2 2.8s linear;
 	-webkit-transform: perspective(1px) translateZ(0);
 	transform: perspective(1px) translateZ(0);
+	text-shadow: 0 0 7px #f90, 0 0 10px #000, 0 0 21px #f90, 0 0 42px #f90, 0 0 82px #000, 0 0 92px #fff, 0 0 102px #000;
 	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
 	position: relative;
 	z-index: 1;
@@ -277,22 +260,13 @@ body {
 
 	/*No transparency on hover*/
 	#AboutNav:hover {
-		opacity: 1;
-		filter: brightness(110%);
+		text-shadow: 0 0 7px #f90, 0 0 10px #000, 0 0 13px #f90;
 		transition: 1s ease-out;
 	}
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
 	#AboutNav {
-		font-size: 32px;
-		margin-bottom: 20px;
-	}
-}
-
-@media only screen and (max-height: 1000px) {
-	#AboutNav {
-		font-size: 32px;
-		margin-bottom: 50px;
+		margin-top: -300px !important;
 	}
 }
 
@@ -350,16 +324,8 @@ div.clouds {
 	padding-bottom: 20%;
 }
 
-/*Clouds Disappear at a box width of 1975px to prevent wide-screen displays from distorting the animation*/
-@media only screen and (min-width: 1975px){
-	div.clouds {
-		height: 0;
-		opacity: 0;
-	}
-}
 
 /*All Cloud Styling, Placement, and Animation Settings; Cloud Animations are staggered by durations and delays*/
-/*Cloud 1*/
 .firstCloud {
 	position: relative;
 	left: -200px;
@@ -394,14 +360,6 @@ div.clouds {
 	animation: move 30s linear 4s infinite;
 	width: 200px;
 	opacity: 0.3;
-}
-
-@media only screen and (max-width: 800px) {
-	.fourthCloud {
-		opacity: 0;
-		animation: none;
-		z-index: -1;
-	}
 }
 /*Cloud 5*/
 .FifthCloud {
@@ -441,30 +399,10 @@ div.clouds {
 	width: 200px;
 	opacity: 0.2;
 }
-/*Cloud 9
-.NinthCloud {
-	top: 62%;
-	left: -200px;
-	position: absolute;
-	animation: move 28s ease-out 7s infinite;
-	animation-delay: 7s;
-	width: 200px;
-	opacity: 0.4;
-}
-/*Cloud 10
-.TenthCloud {
-	top: 70%;
-	left: -200px;
-	position: absolute;
-	animation: move 25s linear 5s infinite;
-	animation-delay: 5s;
-	width: 200px;
-	opacity: 0.45;
-}
 
 /*
-/*END of Cloud Styling*/
 /*
+------END of Cloud Styling*/
 /*
 /*
 /*
@@ -487,7 +425,7 @@ div.clouds {
 	margin-top: 5%;
 	-webkit-animation: Rotation 16s linear infinite;
 	animation: Rotation 16s linear infinite;
-	animation-delay: 2.6s;
+	animation-delay: 2.4s;
 	opacity: 0;
 }
 
@@ -503,9 +441,9 @@ div.clouds {
 /* This enables the Skills Graphic Animation scale to Height -- (iPhone)*/
 @media only screen and (max-height: 850px) {
 	#SkillGraphic {
-		margin-top: 215px;
-		width: 70%;
-		height: 70%;
+		margin-top: 0px;
+		width: 90%;
+		height: 90%;
 	}
 }
 /*
@@ -530,151 +468,7 @@ spanC {
 	}
 
 /*
-/*
-/*
-/*
------ Span Animations across links on hover (laser highlighting)
-/*
-/*
-/*
-/*Span 1, 2, 3 Hover Animation Styling*/
-span1, span2, span3 {
-	position: relative;
-	display: block;
-	cursor: pointer;
-	text-align: center;
-}
 
-span4 {
-	font-family: sans-serif;
-	font-size: 25px;
-}
-
-/*
-/*
-*/
-/*Resume Line-Through Hover Animation Settings*/
-span1:before, span1:after {
-	content: '';
-	position: absolute;
-	width: 0%;
-	height: 1px;
-	top: 50%;
-	margin-top: -0.5px;
-	background: #b8860b;
-	font-weight: 600;
-	overflow: hidden;
-}
-
-span1:before {
-	left: -2.5px;
-}
-
-span1:after {
-	right: 2.5px;
-	background: #b8860b;
-	transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
-	font-weight: 600;
-	overflow: hidden;
-}
-
-span1:hover:before {
-	background: #b8860b;
-	width: 100%;
-	transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
-}
-
-span1:hover:after {
-	background: transparent;
-	width: 100%;
-	transition: 0s;
-	font-weight: 600;
-	overflow: hidden;
-}
-
-/*
-*/
-/*LinkedIn Line-Through Hover Animation Settings*/
-span2:before, span2:after {
-	content: '';
-	position: absolute;
-	width: 0%;
-	height: 1px;
-	top: 50%;
-	margin-top: -0.5px;
-	background: #008fdd;
-	font-weight: 600;
-	overflow: hidden;
-}
-
-span2:before {
-	left: -2.5px;
-}
-
-span2:after {
-	right: 2.5px;
-	background: #008fdd;
-	transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
-	font-weight: 600;
-	overflow: hidden;
-}
-
-span2:hover:before {
-	background: #008fdd;
-	width: 100%;
-	transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
-}
-
-span2:hover:after {
-	background: transparent;
-	width: 100%;
-	transition: 0s;
-	font-weight: 600;
-	overflow: hidden;
-}
-
-/*
-*/
-/*GitHub Line-Through Animation Hover Settings*/
-span3:before, span3:after {
-	content: '';
-	position: absolute;
-	width: 0%;
-	height: 1px;
-	top: 50%;
-	margin-top: -0.5px;
-	background: #b300b3;
-	font-weight: 600;
-	overflow: hidden;
-}
-
-span3:before {
-	left: -2.5px;
-}
-
-span3:after {
-	right: 2.5px;
-	background: #b300b3;
-	transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
-	font-weight: 600;
-	overflow: hidden;
-}
-
-span3:hover:before {
-	background: #b300b3;
-	width: 100%;
-	transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
-}
-
-span3:hover:after {
-	background: transparent;
-	width: 100%;
-	transition: 0s;
-	font-weight: 600;
-	overflow: hidden;
-}
-/*
-*/
 /*
 */
 /*
@@ -711,8 +505,7 @@ span3:hover:after {
 	padding-left: 0;
 	bottom: 0;
 	position: absolute;
-	animation: Post 2.8s;
-	z-index: -1;
+	animation: Post 2.7s;
 }
 
 /*Adjust Sizing on -- (iPhone)*/
@@ -1050,14 +843,13 @@ Floating Bubbles Animation
 	33% {
 		letter-spacing: 25px;
 		margin-bottom: -40px;
-		color: grey;
-		opacity: 1;
+		color: black;
 	}
 
 	43% {
 		letter-spacing: 25px;
 		margin-bottom: -40px;
-		color: #FFF;
+		color: dimgrey;
 	}
 
 	47% {
@@ -1129,6 +921,24 @@ About Nav (Top Right) Animation
 		opacity: 0.5;
 	}
 }
+
+@keyframes AboutPost2 {
+
+	0% {
+		opacity: 0;
+	}
+
+	25% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+
+
 /*
 */
 /*
@@ -1517,4 +1327,148 @@ Hover Body Animation
 /*
 /*
 /*
+*/
+/*
+/*
+/*
+----- Archived -- Span Animations across links on hover (laser highlighting)
+/*
+/*
+/*
+/*Span 1, 2, 3 Hover Animation Styling
+span1, span2, span3 {
+	position: relative;
+	display: block;
+	cursor: pointer;
+	text-align: center;
+}
+
+span4 {
+	font-family: sans-serif;
+	font-size: 25px;
+}
+
+/*
+/*
+*/
+/*Resume Line-Through Hover Animation Settings
+span1:before, span1:after {
+	content: '';
+	position: absolute;
+	width: 0%;
+	height: 1px;
+	top: 50%;
+	margin-top: -0.5px;
+	background: #b8860b;
+	font-weight: 600;
+	overflow: hidden;
+}
+
+span1:before {
+	left: -2.5px;
+}
+
+span1:after {
+	right: 2.5px;
+	background: #b8860b;
+	transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+	font-weight: 600;
+	overflow: hidden;
+}
+
+span1:hover:before {
+	background: #b8860b;
+	width: 100%;
+	transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+span1:hover:after {
+	background: transparent;
+	width: 100%;
+	transition: 0s;
+	font-weight: 600;
+	overflow: hidden;
+}
+
+/*
+*/
+/*LinkedIn Line-Through Hover Animation Settings
+span2:before, span2:after {
+	content: '';
+	position: absolute;
+	width: 0%;
+	height: 1px;
+	top: 50%;
+	margin-top: -0.5px;
+	background: #008fdd;
+	font-weight: 600;
+	overflow: hidden;
+}
+
+span2:before {
+	left: -2.5px;
+}
+
+span2:after {
+	right: 2.5px;
+	background: #008fdd;
+	transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+	font-weight: 600;
+	overflow: hidden;
+}
+
+span2:hover:before {
+	background: #008fdd;
+	width: 100%;
+	transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+span2:hover:after {
+	background: transparent;
+	width: 100%;
+	transition: 0s;
+	font-weight: 600;
+	overflow: hidden;
+}
+
+/*
+*/
+/*GitHub Line-Through Animation Hover Settings
+span3:before, span3:after {
+	content: '';
+	position: absolute;
+	width: 0%;
+	height: 1px;
+	top: 50%;
+	margin-top: -0.5px;
+	background: #b300b3;
+	font-weight: 600;
+	overflow: hidden;
+}
+
+span3:before {
+	left: -2.5px;
+}
+
+span3:after {
+	right: 2.5px;
+	background: #b300b3;
+	transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+	font-weight: 600;
+	overflow: hidden;
+}
+
+span3:hover:before {
+	background: #b300b3;
+	width: 100%;
+	transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+span3:hover:after {
+	background: transparent;
+	width: 100%;
+	transition: 0s;
+	font-weight: 600;
+	overflow: hidden;
+}
 */
