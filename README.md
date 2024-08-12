@@ -1,3 +1,2 @@
-# Welcome to my personal resume website,
-# a creative showcase and resume.
+# LEGACY WEBSITE // NO LONGER UPDATED
 Project lifespan: August 2019 to Present.
